@@ -1,40 +1,90 @@
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
-
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+/*  @font-face {
+  font-family: "Electronic Arts Text";
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
+}   */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Electronic Arts Text";
+  font-family: "Electronic Arts Text", "Poppins", "sans-serif";
+}
+
+main {
+  background-color: #f3f3f3;
 }
 
 .container-ea-game {
-  height: 100vh;
-  width: 90%;
+  width: 85%;
   margin: auto;
   text-align: center;
 }
 
 .ea-game {
   font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
   padding: 16px;
   line-height: 1.15;
 }
 
 .img-container-game {
-  width: 100%;
   margin-bottom: 4%;
+  position: relative;
 }
 
 .img-container-game img {
-  width: 95%;
+  width: 100%;
 }
 
 .last-games {
-  width: 95%;
+  width: 100%;
   margin: auto;
   padding: 12px 24px;
   border: 2px solid #161616;
   border-radius: 3px;
+}
+
+.overlay {
+  background-color: hsla(0, 0%, 0%, 0.354);
+  width: 100%;
+  height: 99.6%;
+  top: 0;
+  position: absolute;
+}
+
+.name-container-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.name-container-game img {
+  filter: drop-shadow(8px 7px 23px #000);
+  filter: opacity(80%);
+  width: 49%;
+  position: relative;
+}
+
+.name-container-game img:nth-child(2) {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 20px;
+  filter: invert(100%);
 }
 
 /*# sourceMappingURL=giochiInEvidenza.css.map */
