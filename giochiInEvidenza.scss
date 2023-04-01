@@ -1,5 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
-/* @font-face {
+ /*  @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
@@ -12,16 +12,36 @@
       format("truetype"),
     url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
       format("svg");
-} */
+}   */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Electronic Arts Text";
+}
 .container-ea-game{
   height: 100vh;
   width: 90%;
   margin: auto;
-  background-color: rgba(255, 109, 83, 0.251);
   text-align: center;
-  border: 1px solid black;
 }
+
 .ea-game{
   font-size: 32px;
-  
+  padding: 16px;
+  line-height: 1.15;
+}
+.img-container-game{
+  width: 100%;
+  margin-bottom: 4%;
+}
+.img-container-game img{
+  width: 95%;
+}
+.last-games{
+  width: 95%;
+  margin: auto;
+  padding: 12px 24px;
+  border: 2px solid #161616;
+  border-radius: 3px;
 }
