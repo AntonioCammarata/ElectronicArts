@@ -43,9 +43,11 @@ main{
 .img-container-game{
   margin-bottom: 4%;
   position: relative;
+  display: flex;
 }
 .img-container-game img{
   width: 100%;
+  
 }
 .last-games{
   width: 100%;
@@ -55,9 +57,9 @@ main{
   border-radius: 3px;
 }
  .overlay{
-  background-color: hsla(0, 0%, 0%, 0.354);
+  background-color: hsla(0, 0%, 0%, 0.301);
   width: 100%;
-  height: 99.6%;
+  height: 100%;
   top: 0;
   position: absolute;
  }
@@ -69,17 +71,12 @@ main{
 }
 .name-container-game img{
   filter: drop-shadow(8px 7px 23px #000);
-  filter: opacity(80%);
-  width: 49%;
+  width: 45%;
   position: relative;
 }
-.name-container-game img:nth-child(2){
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  width: 20px;
-  filter: invert(100%);
+#apex{
+  width: 31%;
 }
-
-
- 
+ #fifa23{
+  width: 40%;
+ }
