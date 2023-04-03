@@ -1,0 +1,44 @@
+@use "style.scss" as s;
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+.container-titleEA{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.UltimeNovitàList{
+    display: flex;
+    background-color: yellow;
+    margin:0px 33px;
+    display:flex;
+    justify-content: space-between;
+
+    li{
+        list-style: none;
+    }
+}
+
+.BIGCONTAINER-CARD{
+    background-color: blue;
+    .cardUltimeNovità{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    border: 1px solid red;
+        margin:15px  30px;
+        padding: 24px 16px;
+
+        h3{
+            margin-top: 5px;
+        }
+    }
+}
+

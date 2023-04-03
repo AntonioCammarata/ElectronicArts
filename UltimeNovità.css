@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* -- colori Elementi -- */
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-titleEA {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.UltimeNovitàList {
+  display: flex;
+  background-color: yellow;
+  margin: 0px 33px;
+  display: flex;
+  justify-content: space-between;
+}
+.UltimeNovitàList li {
+  list-style: none;
+}
+
+.BIGCONTAINER-CARD {
+  background-color: blue;
+}
+.BIGCONTAINER-CARD .cardUltimeNovità {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  margin: 15px 30px;
+  padding: 24px 16px;
+}
+.BIGCONTAINER-CARD .cardUltimeNovità h3 {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=UltimeNovit%C3%A0.css.map */
