@@ -1,0 +1,14 @@
+.content:not(.visible) {
+    display: none;
+  }
+  
+  .content.visible {
+    display: block;
+  }
+  
+  .content {
+    padding: 15px;
+    margin: 10px;
+    border: solid black 1px;
+    border-radius: 5px;
+  }
