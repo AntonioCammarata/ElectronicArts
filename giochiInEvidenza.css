@@ -1,19 +1,7 @@
+/* -- colori Elementi -- */
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
-/*  @font-face {
-  font-family: "Electronic Arts Text";
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
-      format("svg");
-}   */
 * {
   margin: 0;
   padding: 0;
@@ -87,4 +75,4 @@ main {
   width: 40%;
 }
 
-/*# sourceMappingURL=giochiInEvidenza.css.map */
+/*# sourceMappingURL=giochiInevidenza.css.map */

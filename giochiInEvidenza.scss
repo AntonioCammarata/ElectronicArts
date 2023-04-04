@@ -1,20 +1,7 @@
+@use "style.scss" as s;
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
   @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
-
- /*  @font-face {
-  font-family: "Electronic Arts Text";
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
-      format("svg");
-}   */
+  
 *{
   margin: 0;
   padding: 0;
@@ -22,7 +9,8 @@
   font-family: "Electronic Arts Text", "Poppins", "sans-serif";
 }
 main{
-  background-color: #f3f3f3;
+  
+  background-color: s.$white1;
 }
 .container-ea-game{
   width: 85%;
@@ -53,7 +41,7 @@ main{
   width: 100%;
   margin: auto;
   padding: 12px 24px;
-  border: 2px solid #161616;
+  border: 2px solid s.$nero;
   border-radius: 3px;
 }
  .overlay{
