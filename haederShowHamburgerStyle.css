@@ -1,0 +1,169 @@
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+@import url(./com);
+/* -- colori Elementi -- */
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+}
+.backgoundHamburger {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateX(-100%);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.navClick {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 40px;
+  font-family: "Electronic Arts TeXt";
+  transform: translateX(-500px);
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.showermenu {
+  transform: translateX(0px);
+}
+
+.navClick .contentH3 {
+  color: rgb(158, 158, 158);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navClick .contentH3 h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.navClick .symbols {
+  width: 10px;
+  height: 10px;
+  background-image: url("./imageHeaderNavberClick/svgX/letterx_83737.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 6px;
+}
+
+.navClick .symbols:hover {
+  background-color: #ff4747;
+}
+
+/* -- DIV LOGO -- */
+.navClick .image-navClick {
+  background-image: url("./imageHeaderNavberClick/divPlay/ea-play-16x9.png.adapt.crop1x1.767w.png");
+  background-position: center center;
+  background-size: cover;
+  width: 305px;
+  height: 305px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.navClick .image-navClick .contentImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navClick .image-navClick .contentImg :hover {
+  width: 300px;
+  transition: 1s;
+}
+
+/* -- GRID ITEMS -- */
+.navClick .contnt-NavGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 0;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.navClick .contnt-NavGrid .gridItems {
+  width: 135px;
+  height: 135px;
+}
+
+.navClick .contnt-NavGrid .gridItems .items01 {
+  background-image: url("./imageHeaderNavberClick/01/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navClick .contnt-NavGrid .gridItems .items02 {
+  background-image: url("./imageHeaderNavberClick/02/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png");
+  background-size: cover;
+  background-position: center center;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navClick .contnt-NavGrid .gridItems .items03 {
+  background-image: url("./imageHeaderNavberClick/03/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navClick .contnt-NavGrid .gridItems .items04 {
+  background-image: url("./imageHeaderNavberClick/04/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navClick .contnt-NavGrid .gridItems .items05 {
+  background-image: url("./imageHeaderNavberClick/05/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navClick .contnt-NavGrid .gridItems .items06 {
+  background-image: url("./imageHeaderNavberClick/06/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoverLogo:hover {
+  width: 100px;
+  transition: 0.3s;
+}/*# sourceMappingURL=haederShowHamburgerStyle.css.map */
