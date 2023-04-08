@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Electronic Arts Text", "Poppins", "sans-serif";
+  font-family: "Electronic Arts Text", "Verdana", "Helvetica"," Arial", "sans-serif";
 }
 main{
   
@@ -44,12 +44,32 @@ main{
   border: 2px solid s.$nero;
   border-radius: 3px;
 }
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: hsla(0, 0%, 0%, 0.185);
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: hsla(0, 0%, 0%, 0.185);
+  inherits: false;
+}
  .overlay{
-  background-color: hsla(0, 0%, 0%, 0.301);
   width: 100%;
   height: 100%;
   top: 0;
   position: absolute;
+  background: linear-gradient(to right, var( --myColor1), var(--myColor2));
+  transition: --myColor1 0.3s, --myColor2 0.4s;
+ }
+ .overlay:hover {  
+  --myColor1: #15004fe8;
+  --myColor2: #ff4747e8;
+}
+
+ .name-container-game:hover img{
+  margin-bottom: 38%;
  }
 .name-container-game{
   display: flex;
@@ -60,7 +80,9 @@ main{
 .name-container-game img{
   filter: drop-shadow(8px 7px 23px #000);
   width: 45%;
-  position: relative;
+  margin-bottom: 0;
+  transition-property: margin-bottom;
+  transition-duration: 0.5s;
 }
 #apex{
   width: 31%;
