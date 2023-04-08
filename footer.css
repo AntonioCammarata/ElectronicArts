@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.lastPart {
+  width: 100%;
+  height: 100vh;
+}
+
+.backgroungImg {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.hover {
+  position: absolute;
+  top: 10%;
+  padding: 20px;
+  left: 20%;
+}
+
+.img_button {
+  background: local;
+  padding: 20px;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.hover p {
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
+.hover p:hover {
+  transition: 0.3;
+  transform: 0.3;
+}
+
+.blueP {
+  width: 100%;
+  height: 13%;
+  background-color: #67b0d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -4px;
+}
+
+.blueP p {
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  margin-right: 220px;
+}
+
+.blueP button {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: #67b0d6;
+  padding: 15px;
+  border-radius: 4%;
+  margin-left: 210px;
+}
+
+.footerLinks {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  top: -4px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+
+.footerLinks ul {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+
+.footerLinks ul li {
+  list-style: none;
+  color: black;
+}
+
+.footerLinks ul li a {
+  text-decoration: none;
+}
+.footerLinks ul li a:hover {
+  color: red;
+  transition: 0, 3s;
+}
+
+/*# sourceMappingURL=footer.css.map */
