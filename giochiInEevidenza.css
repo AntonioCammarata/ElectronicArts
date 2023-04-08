@@ -48,12 +48,12 @@ main {
 
 @property --myColor1 {
   syntax: "<color>";
-  initial-value: hsla(0, 0%, 0%, 0.325);
+  initial-value: hsla(0, 0%, 0%, 0.185);
   inherits: false;
 }
 @property --myColor2 {
   syntax: "<color>";
-  initial-value: hsla(0, 0%, 0%, 0.325);
+  initial-value: hsla(0, 0%, 0%, 0.185);
   inherits: false;
 }
 .overlay {
@@ -66,12 +66,12 @@ main {
 }
 
 .overlay:hover {
-  --myColor1: #0d012dda;
-  --myColor2: #ff4747c9;
+  --myColor1: #15004fe8;
+  --myColor2: #ff4747e8;
 }
 
 .name-container-game:hover img {
-  bottom: 60%;
+  margin-bottom: 38%;
 }
 
 .name-container-game {
@@ -79,16 +79,14 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
-  position: relative;
 }
 
 .name-container-game img {
   filter: drop-shadow(8px 7px 23px #000);
   width: 45%;
-  bottom: 40%;
-  transition-property: bottom;
-  transition-duration: 0.4s;
-  position: absolute;
+  margin-bottom: 0;
+  transition-property: margin-bottom;
+  transition-duration: 0.5s;
 }
 
 #apex {
@@ -99,13 +97,4 @@ main {
   width: 40%;
 }
 
-.central-text {
-  color: #f3f3f3;
-  display: none;
-}
-
-.overlay:hover > .name-container-game > .central-text {
-  display: block;
-}
-
-/*# sourceMappingURL=giochiInEvidenza.css.map */
+/*# sourceMappingURL=giochiInEevidenza.css.map */
