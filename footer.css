@@ -3,6 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
+}
 
 .lastPart {
   width: 100%;
@@ -55,6 +69,7 @@
   font-weight: 500;
   font-size: 30px;
   margin-right: 220px;
+  font-family: "Electronic Arts Text";
 }
 
 .blueP button {
@@ -75,13 +90,18 @@
   top: -4px;
   background-color: #f3f3f3;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footerLinks ul {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 140px;
+  padding: 50px;
+  padding-left: 20%;
+  padding-bottom: 10%;
+  gap: 20px;
 }
 
 .footerLinks ul li {
@@ -91,10 +111,36 @@
 
 .footerLinks ul li a {
   text-decoration: none;
+  font-size: medium;
+  color: black;
+  font-family: "Electronic Arts Text";
 }
 .footerLinks ul li a:hover {
   color: red;
   transition: 0, 3s;
+}
+
+.svgIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerLinksImages {
+  padding: 40px;
+  padding-right: 21%;
+}
+
+.footerLinksImages h3 {
+  font-size: medium;
+  font-family: "Electronic Arts Text";
+}
+
+.footerLinksImages svg {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  padding-top: 2%;
 }
 
 /*# sourceMappingURL=footer.css.map */
