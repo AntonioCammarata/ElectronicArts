@@ -128,3 +128,132 @@
   display: flex;
   padding-top: 2%;
 }
+.eaImg {
+  padding-right: 25px;
+}
+.eaImg img {
+  width: 64px;
+  height: 64px;
+}
+.footerEnd {
+  width: 100%;
+  height: 30%;
+}
+.flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .eaFooter {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .buttons {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .baseSection {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .test {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+.eaFooter ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .div3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .div4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .div5 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .div6 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .div7 {
+    grid-area: 1 / 4 / 3 / 5;
+  }
+}
+.eaFooter ul li {
+  list-style: none;
+}
+.eaFooter ul li a {
+  text-decoration: none;
+  font-family: "Electronic Arts Text";
+  color: black;
+  font-size: 15px;
+}
+.baseSection ul {
+  list-style: none;
+  & a {
+    text-decoration: none;
+    color: black;
+    font-family: "Electronic Arts Text";
+    font-size: 15px;
+  }
+}
+.baseSection ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .div7 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .div8 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .div9 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .div10 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .div11 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .div12 {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  
+}
+.test {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 100px;
+}
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  & button{
+    padding: 20px;
+  }
+  & .button1{
+    margin-right: 40px;
+  }
+  
+}

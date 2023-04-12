@@ -2,20 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 }
 @font-face {
-  font-family: "Electronic Arts Text";
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
-      format("svg");
+  * {
+    font-family: "Electronic Arts Text";
+    src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+    src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+  }
 }
 
 .lastPart {
@@ -47,6 +41,7 @@
   color: white;
   font-weight: 500;
   font-size: 30px;
+  font-family: "Electronic Arts Text";
 }
 .hover p:hover {
   transition: 0.3;
@@ -141,6 +136,141 @@
   width: 28px;
   display: flex;
   padding-top: 2%;
+}
+
+.eaImg {
+  padding-right: 25px;
+}
+
+.eaImg img {
+  width: 64px;
+  height: 64px;
+}
+
+.footerEnd {
+  width: 100%;
+  height: 30%;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.flex .eaFooter {
+  grid-area: 1/1/2/2;
+}
+.flex .buttons {
+  grid-area: 1/2/2/3;
+}
+.flex .baseSection {
+  grid-area: 2/1/3/2;
+}
+.flex .test {
+  grid-area: 2/2/3/3;
+}
+
+.eaFooter ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.eaFooter ul .div1 {
+  grid-area: 1/1/2/2;
+}
+.eaFooter ul .div2 {
+  grid-area: 1/2/2/3;
+}
+.eaFooter ul .div3 {
+  grid-area: 1/3/2/4;
+}
+.eaFooter ul .div4 {
+  grid-area: 2/1/3/2;
+}
+.eaFooter ul .div5 {
+  grid-area: 2/2/3/3;
+}
+.eaFooter ul .div6 {
+  grid-area: 2/3/3/4;
+}
+.eaFooter ul .div7 {
+  grid-area: 1/4/3/5;
+}
+
+.eaFooter ul li {
+  list-style: none;
+}
+
+.eaFooter ul li a {
+  text-decoration: none;
+  font-family: "Electronic Arts Text";
+  color: black;
+  font-size: 15px;
+}
+
+.baseSection ul {
+  list-style: none;
+}
+.baseSection ul a {
+  text-decoration: none;
+  color: black;
+  font-family: "Electronic Arts Text";
+  font-size: 15px;
+}
+
+.baseSection ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.baseSection ul .div7 {
+  grid-area: 1/1/2/2;
+}
+.baseSection ul .div8 {
+  grid-area: 1/2/2/3;
+}
+.baseSection ul .div9 {
+  grid-area: 2/1/3/3;
+}
+.baseSection ul .div10 {
+  grid-area: 3/1/4/2;
+}
+.baseSection ul .div11 {
+  grid-area: 3/2/4/3;
+}
+.baseSection ul .div12 {
+  grid-area: 4/1/5/3;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+.test {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.buttons button {
+  padding: 20px;
+}
+.buttons .button1 {
+  margin-right: 40px;
 }
 
 /*# sourceMappingURL=footer.css.map */
