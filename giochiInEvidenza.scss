@@ -8,16 +8,17 @@
   box-sizing: border-box;
   font-family: "Electronic Arts Text", "Verdana", "Helvetica"," Arial", "sans-serif";
 }
-main{
-  
+
+ .external-container{
   background-color: s.$white1;
-}
+  height: 100vh;
+} 
 .container-ea-game{
   width: 85%;
   margin: auto;
   text-align: center;
-  
 }
+
 
 .ea-game{
   font-size: 32px;
@@ -40,10 +41,13 @@ main{
 .last-games{
   width: 100%;
   margin: auto;
-  padding: 12px 24px;
+  padding: 12px 20px;
+  font-size: 18px;
   border: 2px solid s.$nero;
   border-radius: 3px;
 }
+
+
 @property --myColor1 {
   syntax: '<color>';
   initial-value: hsla(0, 0%, 0%, 0.325);
@@ -100,4 +104,33 @@ main{
  .overlay:hover > .name-container-game > .central-text{
   display: block;
  }
- 
+ @media screen and (min-width:640px) {
+  .last-games{
+    width: 150px;
+  }
+ }
+ @media screen and (min-width: 768px){
+   .wrapper-img-game{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+ }  
+ .img-container-game{
+  margin: 4%;
+ }
+ /* .external-container{
+  height: 15vh;
+} */
+  
+ }
+ @media  screen and (min-width:1024px) {
+.wrapper-img-game{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ }
+ @media screen and (min-width:1300px) {
+  .container-ea-game{
+    width: 75%;
+  }
+ }
