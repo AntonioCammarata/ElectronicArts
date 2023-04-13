@@ -177,7 +177,6 @@ header .nav-02 .cotain02-nav-02 {
 .dropdown-content a:hover {
   color: #ff4747;
   transition: 0.15s;
-  transform: translateY(50px);
 }
 
 .dropdown:hover .dropdown-content {
@@ -196,11 +195,39 @@ header .nav-02 .cotain02-nav-02 {
 .freccia:hover {
   transform: rotate(180deg);
   transition: 0.3s;
+  color: #ff4747;
+}
+
+.freccia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
+
+.freccia .span01 {
+  width: 15px;
+  height: 1px;
+  background-color: #161616;
+  transform: rotate(45deg);
+  position: relative;
+  left: 2px;
+}
+
+.freccia .span02 {
+  width: 15px;
+  height: 1px;
+  background-color: #161616;
+  transform: rotate(-45deg);
+  position: relative;
+  right: 1px;
 }
 
 /* ---- PROVA SCROLL ------*/
 /* ----- NAVBAR ----- */
-/* ----- SECTION SCR00L 01 ----- */
+/* ----- SECTION SCR0LL 01 ----- */
 .section01 {
   height: 400px;
   background-color: #161616;
@@ -317,7 +344,7 @@ header .nav-02 .cotain02-nav-02 {
   text-align: center;
 }
 
-/* ----- SECTION SCR00L 02 ----- */
+/* ----- SECTION SCR0LL 02 ----- */
 .section02 {
   height: 400px;
   background-color: #161616;
@@ -569,7 +596,7 @@ header .backGround .divVideo video {
   flex-direction: column;
   position: absolute;
   top: 320px;
-  left: 400px;
+  left: 410px;
   color: #ffffff;
 }
 
