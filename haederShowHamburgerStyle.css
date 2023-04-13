@@ -1,5 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
-@import url(./com);
 /* -- colori Elementi -- */
 @font-face {
   font-family: "Electronic Arts Text";
@@ -11,6 +10,8 @@
   transform: translateX(-100%);
   overflow: hidden;
   transition: 0.3s;
+  position: relative;
+  bottom: 800px;
 }
 
 .navClick {
@@ -166,4 +167,43 @@
 .hoverLogo:hover {
   width: 100px;
   transition: 0.3s;
+}
+
+/* -- MEDIA QUERY -- */
+@media screen and (max-width: 1033px) {
+  .buttonHamburger {
+    position: relative;
+    top: 14px;
+    left: 16px;
+    height: 100%;
+  }
+  .linea01 {
+    width: 23px;
+    height: 2px;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .linea01:hover {
+    background-color: #ff4747;
+  }
+  .linea02 {
+    width: 23px;
+    height: 2px;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .linea02:hover {
+    background-color: #ff4747;
+  }
+  .linea03 {
+    width: 23px;
+    height: 2px;
+    background-color: #161616;
+    border-radius: 10px;
+  }
+  .linea03:hover {
+    background-color: #ff4747;
+  }
 }/*# sourceMappingURL=haederShowHamburgerStyle.css.map */

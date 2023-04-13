@@ -1,5 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
-@import url(./componentsHeaderCss/hamburgerMenuCssHeader/haederShowHamburgerStyle.scss);
 /* -- colori Elementi -- */
 @font-face {
   font-family: "Electronic Arts Text";
@@ -21,6 +20,7 @@ header .nav-01 {
 
 header .nav-01 .content-svg {
   display: flex;
+  gap: 20px;
 }
 
 header .nav-01 .icon-01 {
@@ -31,7 +31,7 @@ header .nav-01 .icon-01 {
 }
 
 header .nav-01 .icon-margin {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .content-svg svg:hover {
@@ -47,6 +47,14 @@ header .nav-01 .icon-margin {
   background-color: #ffffff;
   font-family: "Electronic Arts Text";
   font-size: 100%;
+  position: relative;
+  bottom: 800px;
+  z-index: 0;
+}
+
+.nav2Zindex {
+  display: none;
+  z-index: -1;
 }
 
 header .nav-02 {
@@ -110,14 +118,10 @@ header .nav-02 .cotain02-nav-02 {
   cursor: pointer;
 }
 
-sup {
-  font-size: 5px;
-}
-
 .dropbtn {
   background-color: #ffffff;
   color: #161616;
-  padding: 16px;
+  padding: 1em;
   font-size: 16px;
   border: none;
   height: 50px;
@@ -138,7 +142,6 @@ sup {
   min-width: 260px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
   border-radius: 5px;
   margin-top: 2px;
   padding: 20px 10px;
@@ -147,7 +150,7 @@ sup {
 
 .dropdown-content a {
   color: #161616;
-  font-size: 90%;
+  font-size: 0.93em;
   padding: 8px 16px;
   text-decoration: none;
   display: block;
@@ -174,6 +177,7 @@ sup {
 .dropdown-content a:hover {
   color: #ff4747;
   transition: 0.15s;
+  transform: translateY(50px);
 }
 
 .dropdown:hover .dropdown-content {
@@ -194,62 +198,470 @@ sup {
   transition: 0.3s;
 }
 
-/* Background-Image */
-header .background-image {
-  background-image: url(./Images/assetsHaeder/background-image.jpg);
-  background-size: contain;
+/* ---- PROVA SCROLL ------*/
+/* ----- NAVBAR ----- */
+/* ----- SECTION SCR00L 01 ----- */
+.section01 {
+  height: 400px;
+  background-color: #161616;
+  transform: translateY(-450px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  font-family: "Electronic Arts Text";
+}
+
+.section01 .contentDivExit {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+.section01 .contentDivExit .clickExit {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-position: center center;
+  background-image: url("./imageHeaderNavberClick/svgX/letterx_83737.svg");
   background-repeat: no-repeat;
-  z-index: -1;
+  background-size: cover;
+  color: #ffffff;
+  background-color: #ffffff;
 }
 
-.information {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.showermenu01 {
+  transform: translateY(0px);
+  transition: 0.5s;
+  z-index: 500;
+}
+
+.section01 .contentBlock {
+  width: 800px;
   height: 100%;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
 }
 
-.information .box-grid-02 {
-  height: 380px;
+.section01 .contentBlock .block01 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section01 .contentBlock .block01:hover {
+  transition: 0.5px;
+  transform: translateY(-10px);
+}
+
+.section01 .contentBlock .block02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section01 .contentBlock .block02:hover {
+  position: relative;
+  bottom: 10px;
+  transition: 0.5px;
+}
+
+.section01 .contentBlock .block01 .box01 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff1e3c;
+  margin-bottom: 10px;
+}
+
+.section01 .contentBlock .block01 .box01 img {
+  width: 30px;
+  height: 30px;
+}
+
+.section01 .contentBlock .block01 p {
+  color: white;
+}
+
+.section01 .contentBlock .block02 .box02 {
+  width: 30px;
+  height: 30px;
+  background-color: #ff1e3c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.section01 .contentBlock .block02 .box02 img {
+  width: 30px;
+  height: 30px;
+}
+
+.section01 .contentBlock .block02 p {
+  color: white;
   text-align: center;
+}
+
+/* ----- SECTION SCR00L 02 ----- */
+.section02 {
+  height: 400px;
+  background-color: #161616;
+  transform: translateY(-850px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
   font-family: "Electronic Arts Text";
+}
+
+.section02 .contentDivExit2 {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+.section02 .contentDivExit2 .clickExit2 {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-position: center center;
+  background-image: url("./imageHeaderNavberClick/svgX/letterx_83737.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.showermenu02 {
+  transform: translateY(-400px);
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.section02 .contentBlock2 {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section02 .contentBlock2 .divContent01 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.section02 .contentBlock2 .divContent02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 {
+  display: flex;
+  gap: 110px;
+  margin-bottom: 20px;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01:hover {
+  position: relative;
+  bottom: 5px;
+  transition: 0.5s;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS02:hover {
+  position: relative;
+  bottom: 5px;
+  transition: 0.5s;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 .box03 {
+  width: 30px;
+  height: 30px;
+  background-color: #ff1e3c;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 .box03 img {
+  width: 30px;
+  height: 30px;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS02 .box04 {
+  width: 30px;
+  height: 30px;
+  background-color: #ff1e3c;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS02 .box04 img {
+  width: 30px;
+  height: 30px;
+}
+
+.section02 .contentBlock2 .divContent02 p {
+  color: white;
+}
+
+.section02 .divContent02Items02 {
+  display: flex;
+  gap: 150px;
+}
+
+.section02 .divContent02Items02 .itemS03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section02 .divContent02Items02 .itemS03:hover {
+  position: relative;
+  bottom: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.section02 .divContent02Items02 .itemS03 .box05 {
+  width: 30px;
+  height: 30px;
+  background-color: #ff1e3c;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 8px;
+}
+
+.section02 .divContent02Items02 .itemS03 .box05 img {
+  width: 30px;
+  height: 30px;
+}
+
+.section02 .divContent02Items02 .itemS04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section02 .divContent02Items02 .itemS04:hover {
+  position: relative;
+  bottom: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.section02 .divContent02Items02 .itemS04 .box06 {
+  width: 30px;
+  height: 30px;
+  background-color: #ff1e3c;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section02 .divContent02Items02 .itemS04 .box06 img {
+  width: 30px;
+  height: 30px;
+}
+
+.section02 .contentBlock2 .divContent01 {
+  font-size: 1rem;
+}
+
+.section02 .contentBlock2 .divContent01 span {
+  color: #ff1e3c;
+  cursor: pointer;
+}
+
+.section02 .contentBlock2 .divContent01 .divTitle p {
+  font-size: 1.5rem;
+  font-weight: 900px;
+}
+
+/* ----- BACKGROUND ----- */
+header .backGround {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  bottom: 1750px;
+  z-index: -5;
+  overflow: hidden;
+  font-family: "Electronic Arts Text";
+}
+
+header .backGround .divVideo {
+  z-index: -4;
+}
+
+header .backGround .divVideo video {
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.divContentVideo {
+  z-index: 15;
+  width: 550px;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 320px;
+  left: 400px;
   color: #ffffff;
 }
 
-sup {
-  font-size: 20px;
+.divContentVideo h1 {
+  margin-bottom: 10px;
+  font-size: 4.5rem;
 }
 
-header .background-image .information .box-grid-02 .div-h1 {
-  font-size: 150%;
-  font-weight: 100;
+.divContentVideo h3 {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
 }
 
-header .background-image .information .box-grid-02 .div-h2 {
-  font-weight: 100;
-  font-size: 100%;
-  margin-top: 15px;
-}
-
-/* -- BUTTON --------------------------------- */
-header .background-image .information .box-grid-02 .div-button button {
-  margin-top: 30px;
-  width: 140px;
+.divContentVideo .btnGround01 {
+  width: 150px;
   height: 50px;
-  color: #161616;
-  background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 50px;
   border: none;
-  letter-spacing: 0.3px;
-  font-size: 95%;
+  cursor: pointer;
+  color: #161616;
+  background-color: #0bf15f;
+  letter-spacing: 0.2;
+  font-size: 1rem;
 }
 
-/* PROVA STICKY -------------------------- */
-main div {
-  height: 500px;
-  border: solid 1px green;
+/* ----- BACKGROUND 02 ----- */
+.backGround .divImageBackGround {
+  background-image: url("./Images/assetsHaeder/background-image.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.backGround .divImageBackGround .divContent02 {
+  width: 1000px;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Electronic Arts Text";
+}
+
+.backGround .divImageBackGround .divContent02 h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.backGround .divImageBackGround .divContent02 .divBlock02 {
+  display: flex;
+}
+
+.backGround .divImageBackGround .divContent02 .divBlock02 .divBattlefield {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backGround .divImageBackGround .divContent02 .divBlock02 .divBattlefield img:hover {
+  width: 100px;
+  height: 10px;
+}
+
+.backGround .divImageBackGround .divContent02 .divBlock02 .btnBlock02 {
+  width: 160px;
+  height: 50px;
+  margin-left: 20px;
+  letter-spacing: 0.2px;
+  border: none;
+  font-family: "Electronic Arts Text";
+  border-radius: 2px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #161616;
+  cursor: pointer;
+}
+
+.divBattlefield img:hover {
+  width: 10px;
+  height: 10px;
+}
+
+/* -- MEDIA QUERY -- */
+@media screen and (max-width: 1033px) {
+  .dropbtn {
+    display: none;
+  }
 }/*# sourceMappingURL=headerStyle.css.map */

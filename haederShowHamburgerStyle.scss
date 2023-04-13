@@ -1,5 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
-@import url(./com);
 /* -- colori Elementi -- */
 
 $nero: #161616;
@@ -25,10 +24,11 @@ $white2: #eaeaea;
 .backgoundHamburger {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-
   transform: translateX(-100%);
   overflow: hidden;
   transition: 0.3s;
+  position: relative;
+  bottom: 800px;
 }
 
 .navClick {
@@ -188,4 +188,58 @@ $white2: #eaeaea;
 .hoverLogo:hover {
   width: 100px;
   transition: 0.3s;
+}
+
+/* -- MEDIA QUERY -- */
+
+@media screen and (max-width: 1033px) {
+    
+  .buttonHamburger {
+    position: relative; 
+    // left: 4px;
+    top: 14px;
+    left: 16px;
+    // background-image: url(./imageHeaderNavberClick/divPlay/3844473-hamburger-menu-more-navigation_110336.svg);
+    // background-position: center center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    height: 100%;
+    // width: 50px;
+    
+  }
+
+  .linea01 {
+    width: 23px;
+    height: 2px;
+    background-color: $nero;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+
+.linea01:hover {
+  background-color: $rosa;
+}
+
+  .linea02{
+    width: 23px;
+    height: 2px;
+    background-color: $nero;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+
+  .linea02:hover {
+    background-color: $rosa;
+  }
+
+  .linea03 {
+    width: 23px;
+    height: 2px;
+    background-color: $nero;
+    border-radius: 10px;
+  }
+
+  .linea03:hover {
+    background-color: $rosa;
+  }
 }
