@@ -1,0 +1,1085 @@
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+
+:root {
+    --color-Prymary: #161616;
+    --color-Secodary: #ff4747;;
+    --color-Tertiary: #67b0d6;
+    --color-Invert: #ff1e3c;
+    --color-White:  #ffffff;
+    --color-White01: #f3f3f3;
+    --color-White02: #eaeaea;;
+}
+
+/* -- colori Elementi -- */
+$nero: #161616;
+$rosa: #ff4747;
+$blue: #67b0d6;
+$white: #ffffff;
+$white1: #f3f3f3;
+$white2: #eaeaea;
+$green: #0bf15f;
+
+
+@font-face {
+    font-family: "Electronic Arts Text";
+    src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot")
+};
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header .navBar01 {
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    z-index: 1;
+    background-color: var(--color-Prymary);
+    gap: 10px;
+}
+
+header .navBar01 .navBar01Block01 {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header .navBar01 .navBar01Block01 svg:hover {
+    color: #ff1e3c;
+    background-color: #67b0d6;
+}
+header .navBar01 .navBar01Block02 {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header .navBar01 .navBar01Block02 svg:hover {
+    fill: white;
+    background-color: #67b0d6;
+}
+header .navBar01 .navBar01Block03 {
+    width: 30px;
+    height: 100%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header .navBar01 .navBar01Block03 svg:hover {
+    fill: #ff1e3c;
+    background-color: #67b0d6;
+}
+
+/* ----- SECTION SCR0LL 01 ----- */
+
+.section01 {
+    height: 400px;
+    background-color: $nero;
+    transform: translateY(-450px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    font-family: "Electronic Arts Text"
+}
+
+.section01 .contentDivExit {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+
+.section01 .contentDivExit .clickExit {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-position: center center;
+    background-image: url('./imageHeaderNavberClick/svgX/letterx_83737.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.showermenu01 {
+    transform: translateY(0px);
+    transition: 0.5s;
+    z-index: 500;
+}
+
+.section01 .contentBlock {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+
+.section01 .contentBlock .block01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.section01 .contentBlock .block01:hover{
+    position: relative;
+    bottom: 10px;
+    transition: 0.5px;
+    transform: translateY(-10px);
+}
+
+.section01 .contentBlock .block02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.section01 .contentBlock .block02:hover{
+    position: relative;
+    bottom: 10px;
+    transition: 0.5px;
+}
+
+.section01 .contentBlock .block01 .box01 {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-Invert);
+    margin-bottom: 10px;
+}
+
+.section01 .contentBlock .block01 .box01 img {
+    width: 30px;
+    height: 30px;
+}
+.section01 .contentBlock .block01 p{
+    color: white;
+}
+
+.section01 .contentBlock .block02 .box02 {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-Invert);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.section01 .contentBlock .block02 .box02 img {
+    width: 30px;
+    height: 30px;
+}
+
+.section01 .contentBlock .block02 p {
+    color: var(--color-White);
+    text-align: center;
+}
+
+/* ----- SECTION SCR0LL 02 ----- */
+
+.section02 {
+    height: 400px;
+    background-color: var(--color-Prymary);
+    transform: translateY(-850px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    font-family: "Electronic Arts Text"
+}
+
+.section02 .contentDivExit2 {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.section02 .contentDivExit2 .clickExit2 {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-position: center center;
+    background-image: url('./imageHeaderNavberClick/svgX/letterx_83737.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.showermenu02 {
+    transform: translateY(-400px);
+    transition: 0.5s;
+    z-index: 100;
+} 
+
+.section02 .contentBlock2 {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section02 .contentBlock2 .divContent01{
+    display: flex;
+    justify-content: center;
+    color: var(--color-White);
+}
+
+
+.section02 .contentBlock2 .divContent02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 {
+    display: flex;
+    gap: 110px;
+    margin-bottom: 20px;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01:hover {
+    position: relative;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01  .itemS02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01  .itemS02:hover {
+    position: relative;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+ 
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 .box03 {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-Invert);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 .box03 img {
+    width: 30px;
+    height: 30px;
+}
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS02 .box04  {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-Invert);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS02 .box04 img {
+    width: 30px;
+    height: 30px;
+}
+
+.section02 .contentBlock2 .divContent02 p {
+    color: white;
+}
+
+.section02 .divContent02Items02 {
+    display: flex;
+    gap: 150px;
+}
+
+.section02 .divContent02Items02 .itemS03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.section02 .divContent02Items02 .itemS03:hover {
+    position: relative;
+    bottom: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.section02 .divContent02Items02 .itemS03 .box05 {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-Invert);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section02 .divContent02Items02 .itemS03 .box05 img {
+    width: 30px;
+    height: 30px;
+}
+
+.section02 .divContent02Items02 .itemS04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.section02 .divContent02Items02 .itemS04:hover {
+    position: relative;
+    bottom: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.section02 .divContent02Items02 .itemS04 .box06{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-Invert);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section02 .divContent02Items02 .itemS04 .box06 img {
+    width: 30px;
+    height: 30px;
+}
+
+.section02 .contentBlock2 .divContent01 {
+    font-size: 1rem;
+}
+
+.section02 .contentBlock2 .divContent01 span {
+    color: var(--color-Invert);
+    cursor: pointer;
+}
+
+.section02 .contentBlock2 .divContent01 .divTitle p {
+    font-size: 1.5rem;
+    font-weight: 900px;
+}
+
+
+
+
+/* -- NAVBAR 02 ------------------------ */
+
+.index-nav {
+    display: flex;
+    gap: 15px;
+    height: 50px;
+    background-color: $white;
+    font-family: "Electronic Arts Text";
+    font-size: 100%;
+    position: relative;
+    bottom: 800px;
+    z-index: 0;
+}
+
+.nav2Zindex {
+   display: none;
+   z-index: -1;
+}
+
+header .nav-02 {
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+    background-color: $white;
+    font-family: "Electronic Arts Text";
+    margin-right: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+header .nav-02 .cotain01-nav-02 {
+    margin-right: 10px;
+    display: flex;
+}
+
+.box-01 {
+    width: 60px;
+    cursor: pointer
+}
+
+.box-01 .settings {
+    position: relative;
+    top: 14px;
+    left: 10px;
+}
+
+.settings:hover {
+    fill: #0bf15f;
+    transition: 0.3s;
+    width: 30px;
+}
+
+.box-02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Images/assetsHaeder/ea-wordmark-network-nav-coral.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 190px;
+    cursor: pointer;
+}
+
+header .nav-02 .cotain02-nav-02 {
+    display: flex;
+    gap: 30px;
+    font-family: "Electronic Arts Text";
+    color: $nero;
+    align-items: center;
+    justify-content: center;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+// dropList --------------------------------------------------
+
+.dropbtn {
+    background-color:$white;
+    color: $nero;
+    padding: 1em;
+    font-size: 16px;
+    border: none;
+    height: 50px;
+    display: flex;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 260px;
+    background-color:  rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 2px;
+    padding: 20px 10px;
+    transition: 0.3s;
+  }
+  
+.dropdown-content a {
+    color: $nero;
+    font-size: 0.93em;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 100;
+    transition: 0.15s;
+  }
+
+.grid-contet-hover{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contet-hover-02{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content-01 {
+    color: $nero;
+    border-bottom: solid 1px grey;
+  }
+  
+.dropdown-content a:hover {
+    color: $rosa;
+    transition: 0.15s;    
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.3s;
+    transition: .4s cubic-bezier(.5,.25,.015,1);
+    transition-delay: .1s;
+    transition-property: transform,opacity;
+}
+  
+  .dropdown:hover .dropbtn {
+    color: $rosa;
+    transition: 0.3s;
+  }
+
+  .freccia:hover{
+    transform: rotate(-5deg);
+    transition: 0.3s;
+    color: $rosa
+  }
+
+  .freccia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    transform: rotate(180deg);
+  }
+
+//   .freccia .span01{
+//     width: 15px;
+//     height: 1px;
+//     background-color:  $nero;
+//     transform: rotate(45deg);
+//     position: relative;
+//     left: 2px;
+//   }
+
+//   .freccia .span02 {
+//     width: 15px;
+//     height: 1px;
+//     background-color:  $nero;
+//     transform: rotate(-45deg);
+//     position: relative;
+//     right: 1px;
+//   }
+
+/* --- HAMBURGER MEMU --- */
+
+
+.backgoundHamburger {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateX(-100%);
+    overflow: hidden;
+    transition: 0.3s;
+    position: absolute;
+    top: 90px;
+  }
+  
+  .navClick {
+    width: max-content;
+    background-color: $white2;
+    border-radius: 5px;
+    padding: 40px;
+    font-family: 'Electronic Arts TeXt';
+    transform: translateX(-500px);
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 50;
+  }
+  
+  .showermenu {
+    transform: translateX(0px);
+  }
+  
+  .navClick .contentH3 {
+    color: rgb(158, 158, 158);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .navClick .contentH3 h3{
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .navClick .symbols{
+    width: 10px;
+    height: 10px;
+    background-image: url('/imageHeaderNavberClick/svgX/letterx_83737\ Hmburger.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 6px;
+
+  }
+
+  
+  .navClick .symbols:hover {
+    background-color: $rosa;
+  }
+  
+  /* -- DIV LOGO -- */
+  
+  .navClick .image-navClick {
+    background-image: url("./imageHeaderNavberClick/divPlay/ea-play-16x9.png.adapt.crop1x1.767w.png");
+    background-position: center center;
+    background-size: cover;
+    width: 305px;
+    height: 305px;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .navClick .image-navClick .contentImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .navClick .image-navClick .contentImg :hover {
+    width: 300px;
+    transition: 1s;
+  }
+  
+  /* -- GRID ITEMS -- */
+  
+  .navClick .contnt-NavGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 0;
+    gap: 30px;
+    cursor: pointer;
+  }
+  
+  .navClick .contnt-NavGrid .gridItems {
+    width: 135px;
+    height: 135px;
+  }
+  
+  .navClick .contnt-NavGrid .gridItems .items01 {
+    background-image: url("./imageHeaderNavberClick/01/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navClick .contnt-NavGrid .gridItems .items02 {
+    background-image: url("./imageHeaderNavberClick/02/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png");
+    background-size: cover;
+    background-position: center center;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navClick .contnt-NavGrid .gridItems .items03 {
+    background-image: url("./imageHeaderNavberClick/03/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .navClick .contnt-NavGrid .gridItems .items04 {
+    background-image: url("./imageHeaderNavberClick/04/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navClick .contnt-NavGrid .gridItems .items05{
+    background-image: url("./imageHeaderNavberClick/05/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navClick .contnt-NavGrid .gridItems .items06 {
+    background-image: url("./imageHeaderNavberClick/06/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hoverLogo:hover {
+    width: 100px;
+    transition: 0.3s;
+  }
+
+
+
+/* --- BACKGROUND VIDEO --- */
+
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 30px;
+    width: 100%;
+    height: 900px;
+    z-index: -1;
+  }  
+
+  .content {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+    text-align: center;
+    gap: 30px;
+    font-family: "Electronic Arts Text";
+  }
+
+  .content .divanimation {
+    width: 400px;
+    height: 200px;
+    border: solid 1px red;
+    background-image: url('./Images/assetsHaeder/logo-test.png');
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .content h1{
+    font-size: 5rem;
+
+  }
+  .content p{
+    font-size: 2rem;
+  }
+  
+  #myBtn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: $green;
+    color: $nero;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  /* ----- BACKGROUND 02 ----- */
+
+.background02 {
+    height: 100px;
+    position: relative;
+    top: 29px;
+    background-image: url('./Images/assetsHaeder/background-image.jpg');
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divBlockContent01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background02 .divbackground02Content {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.background02 .divbackground02Content .divBlock01 {
+    font-family: "Electronic Arts Text";
+    color: $white;
+    font-size: 1.3rem;
+}
+
+
+
+.divBlock02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    gap: 20px;
+}
+
+
+.background02 .divbackground02Content .divBlock02 .divBlockContent01 {
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+}
+.background02 .divbackground02Content .divBlock02 .divBlockContent01:hover {
+    width: 190px;
+    height: 80px;
+    transition: 0.5s;
+}
+
+.background02 .divbackground02Content .divBlock02 .btnBlock02 {
+    width: 180px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: $white;
+    border: none;
+    font-size: 1.1rem;
+    color: $nero;
+    cursor: pointer;
+}
+
+.background02 .divbackground02Content .divBlock02 .btnBlock02:hover {
+    width: 190px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+// .backGround .divImageBackGround {
+//     background-image: url('./Images/assetsHaeder/background-image.jpg');
+//     background-position: center center;
+//     background-size: cover;
+//     height: 100px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     overflow: hidden;
+//     width: 100%;
+//     position: absolute;
+//     bottom: 0;
+// }
+ 
+// .backGround .divImageBackGround .divContent02 {
+//     width: 1000px;
+//     height: max-content;
+//     display: flex;
+//     justify-content: space-between;
+//     font-family: "Electronic Arts Text";
+// }
+
+// .backGround .divImageBackGround  .divContent02 h3 {
+//     font-size: 1.5rem;
+//     color: $white;
+//     cursor: pointer;
+// }
+
+
+// .backGround .divImageBackGround  .divContent02 .divBlock02 {
+//     display: flex;
+
+// }
+
+
+// .backGround .divImageBackGround  .divContent02 .divBlock02 .divBattlefield {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+// .backGround .divImageBackGround  .divContent02 .divBlock02 .divBattlefield img:hover{
+//     width: 100px;
+//     height: 10px;
+// }
+
+
+// .backGround .divImageBackGround  .divContent02 .divBlock02 .btnBlock02 {
+//     width: 160px;
+//     height: 50px;
+//     margin-left: 20px;
+//     letter-spacing: 0.2px;
+//     border: none;
+//     font-family: "Electronic Arts Text";
+//     border-radius: 2px;
+//     font-size: 1rem;
+//     background-color: $white;
+//     color: $nero;
+//     cursor: pointer;
+// }
+
+// .divBattlefield img:hover {
+//     width: 10px;
+//     height: 10px;
+// }
+
+
+
+
+// header .backGround {
+//     width: 100%;
+//     height: max-content;
+//     position: relative;
+//     bottom: 1750px;
+//     z-index: -5;
+//     overflow: hidden;
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: center;
+
+//     font-family: "Electronic Arts Text";
+// }
+
+
+// header .backGround .divVideo {
+//     z-index: -4;
+// }
+
+// header .backGround .divVideo video {
+//     z-index: -3;
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .divContentVideo {
+//     z-index: 15;
+//     width: 550px;
+//     height: max-content;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     // position: absolute;
+//     // top: 100px;
+//     // left: 410px;
+//     // position: relative;
+//     // bottom: 700px;
+//     // left: 400px;
+//     color: $white;
+// }
+
+// .backGround .divVideo .divLogo {
+//     width: 200px;
+//     height: 200px;
+//     border: solid 1px red;
+//     background-image: url(./Images/assetsHaeder/logo-test.png);
+//     background-position: center center;
+//     background-size: cover;
+
+
+// }
+
+// .divContentVideo h1 {
+//     margin-bottom: 10px;
+//     font-size: 4.5rem;
+// }
+
+// .divContentVideo h3 {
+//     margin-bottom: 30px;
+//     font-size: 1.2rem;
+// }
+
+// .divContentVideo .btnGround01 {
+//     width: 150px;
+//     height: 50px;
+//     border-radius: 50px;
+//     border: none;
+//     cursor: pointer;
+//     color: $nero;
+//     background-color: #0bf15f;
+//     letter-spacing: 0.2;
+//     font-size: 1rem;
+// }

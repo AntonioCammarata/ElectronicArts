@@ -1,6 +1,6 @@
 /* ----- SCROL 01 ----- */
 
-const scroll01 = document.querySelector('.classe01');
+const scroll01 = document.querySelector('.navBar01Block01');
 const section01 = document.querySelector('.section01');
 const remove = document.querySelector('.clickExit');
 const zindex = document.querySelector('.index-nav');
@@ -20,7 +20,7 @@ remove.addEventListener('click', function(){
 
 /* ----- SCROL 02 ----- */
 
-const scroll02 = document.querySelector('.classe02');
+const scroll02 = document.querySelector('.navBar01Block02');
 const menu2 = document.querySelector('.section02');
 const exit2 = document.querySelector('.clickExit2');
 
