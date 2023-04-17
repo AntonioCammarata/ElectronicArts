@@ -1,10 +1,12 @@
 @charset "UTF-8";
 /* -- colori Elementi -- */
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Electronic Arts Text", "Verdana", "Helvetica", " Arial", "sans-serif";
 }
 
 .container-titleEA {
@@ -27,17 +29,6 @@
 .BIGCONTAINER-CARD {
   background-color: blue;
 }
-
-
-.content:not(.visible) {
-  display: none;
-}
-
-.content.visible {
-  display: block;
-}
-
-
 .BIGCONTAINER-CARD .cardUltimeNovità {
   display: flex;
   flex-direction: column;

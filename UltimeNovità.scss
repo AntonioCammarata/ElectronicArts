@@ -1,9 +1,12 @@
 @use "style.scss" as s;
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Electronic Arts Text", "Verdana", "Helvetica"," Arial", "sans-serif";
 }
 
 .container-titleEA {
