@@ -1,0 +1,12 @@
+.content:not(.visible) {
+    display: none;
+  }
+  
+  .content.visible {
+    display: block;
+  }
+  
+  .content {
+    border: solid black 1px;
+    width: 100vw;
+  }
