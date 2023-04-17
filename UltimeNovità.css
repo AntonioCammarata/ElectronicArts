@@ -9,37 +9,34 @@
   font-family: "Electronic Arts Text", "Verdana", "Helvetica", " Arial", "sans-serif";
 }
 
-.container-titleEA {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.UltimeNovitàList {
-  display: flex;
-  background-color: yellow;
-  margin: 0px 33px;
-  display: flex;
-  justify-content: space-between;
-}
-.UltimeNovitàList li {
-  list-style: none;
-}
-
-.BIGCONTAINER-CARD {
-  background-color: blue;
-}
-.BIGCONTAINER-CARD .cardUltimeNovità {
+#ultimeNovità-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 1px solid red;
-  margin: 15px 30px;
-  padding: 24px 16px;
+  width: 100vw;
 }
-.BIGCONTAINER-CARD .cardUltimeNovità h3 {
-  margin-top: 5px;
+#ultimeNovità-container #ultimeNovità-title {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 50px;
+}
+#ultimeNovità-container .cardUltimeNovità {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+}
+#ultimeNovità-container #ultimeNovità-cardMenu {
+  height: 2.5rem;
+  white-space: nowrap;
+}
+#ultimeNovità-container #ultimeNovità-cardMenu .trigger {
+  border: none;
+  cursor: pointer;
+  background: none;
+  border: 2px solid transparent;
+  padding: 0 15px;
 }
 
 /*# sourceMappingURL=UltimeNovit%C3%A0.css.map */

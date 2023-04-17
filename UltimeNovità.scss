@@ -9,37 +9,34 @@
   font-family: "Electronic Arts Text", "Verdana", "Helvetica"," Arial", "sans-serif";
 }
 
-.container-titleEA {
+#ultimeNovità-container{
   display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.UltimeNovitàList {
-  display: flex;
-  background-color: yellow;
-  margin: 0px 33px;
-  display: flex;
-  justify-content: space-between;
-
-  li {
-    list-style: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  #ultimeNovità-title{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding:50px
   }
-}
-
-.BIGCONTAINER-CARD {
-  background-color: blue;
-  .cardUltimeNovità {
+  .cardUltimeNovità{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    margin: 15px 30px;
-    padding: 24px 16px;
-
-    h3 {
-      margin-top: 5px;
+    border: 1px solid grey
+  }
+  #ultimeNovità-cardMenu{
+    height: 2.5rem;
+    white-space: nowrap;
+    .trigger{
+      border:none;
+      cursor: pointer;
+      background: none;
+      border: 2px solid transparent;
+      padding: 0 15px;
+      
     }
   }
 }
+
