@@ -10,33 +10,46 @@
 }
 
 #ultimeNovità-container{
-  
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100vw;
+  
  
   #ultimeNovità-title{
     width: 100%;
     font-size: 16px;
     text-align: center;
-    padding:50px
+    padding:50px;
+    background-color: bisque;
   }
   .cardUltimeNovità{
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
-    background-color: rgb(242, 242, 242);
+    background-color:aqua
   }
   #ultimeNovità-cardMenu{
-    height: 40px;
-    white-space: nowrap;
+    height: 50px;
+    border:1px solid red;    
+    // white-space: nowrap;
+    background-color: burlywood;
+    display: flex;
+    #ultimeNovità-menuButtons{
+      
+    }
     .trigger{
+      display: flex;
+      flex-wrap: nowrap;
       border:none;
       cursor: pointer;
       background: none;
       border: 2px solid transparent;
       padding: 0 15px;
+      // white-space: nowrap;
+      
       
     }
   }
@@ -50,4 +63,3 @@
     }
   }
 }
-
