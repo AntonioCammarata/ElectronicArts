@@ -307,6 +307,8 @@ header .navBar01 .navBar01Block03 svg:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    right: 15px;
 }
 
 .section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 .box03 img {
@@ -822,10 +824,18 @@ header .nav-02 .cotain02-nav-02 {
   .content .divanimation {
     width: 400px;
     height: 200px;
-    border: solid 1px red;
     background-image: url('./Images/assetsHaeder/logo-test.png');
     background-position: center center;
     background-size: cover;
+    animation: line 10s;
+  }
+
+  @keyframes line {
+    // from{background-position-x:0px;}
+    // to{background-position-x:-14527px;}
+
+    from{width: 0%;}
+    to{width: 100%;;}
   }
 
   .content h1{
