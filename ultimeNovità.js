@@ -12,3 +12,12 @@ $trigger.forEach($el => {
   });
 });
 
+const prev = document.querySelector('#prev')
+const next = document.querySelector('#next')
+const ultimeNovitàMenuButtons = document.querySelector('.ultimeNovità-menuButtons')
+prev.addEventListener('click', () => {
+  ultimeNovitàMenuButtons.scrolleft -= 300
+})
+next.addEventListener('click', () => {
+  ultimeNovitàMenuButtons.scrolleft += 300 
+})
