@@ -11,7 +11,6 @@
 
 .external-container {
   background-color: #f3f3f3;
-  height: 100vh;
 }
 
 .container-ea-game {
@@ -30,7 +29,7 @@
 }
 
 .img-container-game {
-  margin-bottom: 4%;
+  margin-top: 5%;
   position: relative;
   display: flex;
 }
@@ -39,13 +38,30 @@
   width: 100%;
 }
 
+.container-last-games {
+  background-color: #f3f3f3;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
 .last-games {
-  width: 100%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-top: 30px;
+  height: 30%;
   padding: 12px 20px;
   font-size: 18px;
   border: 2px solid #161616;
   border-radius: 3px;
+}
+
+.last-games:hover {
+  width: 86%;
+  height: 32%;
+  transition: 0.1s;
 }
 
 @property --myColor1 {
@@ -112,7 +128,12 @@
 
 @media screen and (min-width: 640px) {
   .last-games {
-    width: 150px;
+    width: 200px;
+  }
+  .last-games:hover {
+    width: 210px;
+    height: 65px;
+    transition: 0.1s;
   }
 }
 @media screen and (min-width: 768px) {
@@ -122,6 +143,14 @@
   }
   .img-container-game {
     margin: 4%;
+  }
+  .last-games {
+    width: 160px;
+  }
+  .last-games:hover {
+    width: 170px;
+    height: 65px;
+    transition: 0.1s;
   }
   /* .external-container{
     height: 15vh;
