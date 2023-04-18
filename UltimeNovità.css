@@ -69,6 +69,12 @@
   padding: 24px 16px;
   width: 100vw;
 }
+#ultimeNovità-container .content:not(.visible) {
+  display: none;
+}
+#ultimeNovità-container .content .visible {
+  display: block;
+}
 #ultimeNovità-container .content .cardUltimeNovità {
   padding: 16px;
   display: flex;

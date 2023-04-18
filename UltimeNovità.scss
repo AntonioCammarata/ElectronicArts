@@ -81,6 +81,12 @@
   gap: 25px;
     padding: 24px 16px;
     width: 100vw;
+    &:not(.visible) {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
     .cardUltimeNovità{
       padding:16px;
       display: flex;
@@ -100,3 +106,6 @@
     }
   }
 }
+
+
+
