@@ -31,17 +31,23 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   position: relative;
+  scroll-behavior: smooth;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu .ultimeNovità-menuButtons {
+#ultimeNovità-container #ultimeNovità-cardMenu #prev, #ultimeNovità-container #ultimeNovità-cardMenu #next {
   background-color: #f3f3f3;
   border: none;
   color: rgba(22, 22, 22, 0.5);
+  cursor: pointer;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu :nth-child(2) {
   position: absolute;
   right: 0;
+}
+#ultimeNovità-container #ultimeNovità-cardMenu :nth-child(1) {
+  position: absolute;
+  top: 0;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu .trigger {
   height: 50px;
@@ -61,6 +67,7 @@
   flex-direction: column;
   gap: 25px;
   padding: 24px 16px;
+  width: 100vw;
 }
 #ultimeNovità-container .content .cardUltimeNovità {
   padding: 16px;
