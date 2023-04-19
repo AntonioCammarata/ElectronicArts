@@ -37,10 +37,33 @@ header .navBar01 {
     display: flex;
     height: 40px;
     justify-content: flex-end;
-    z-index: 1;
+    z-index: 30;
     background-color: var(--color-Prymary);
     gap: 10px;
 }
+
+.c1 {
+    fill: #888;
+}
+// .c1:hover {
+//     fill: blue;
+// }
+
+header .navBar01 .navBar01Block01:hover .c1 {
+    fill: $white;
+}
+header .navBar01 .navBar01Block02:hover .c1 {
+    fill: $white;
+}
+header .navBar01 .navBar01Block03:hover .c1 {
+    fill: $white;
+}
+
+
+
+// header .navBar01 .navBar01Block01:hover {
+//     background-color: #0bf15f;
+// }
 
 header .navBar01 .navBar01Block01 {
     width: 30px;
@@ -50,10 +73,12 @@ header .navBar01 .navBar01Block01 {
     justify-content: center;
     cursor: pointer;
 }
-header .navBar01 .navBar01Block01 svg:hover {
+
+header .navBar01 .navBar01Block01 svg {
     color: #ff1e3c;
-    background-color: #67b0d6;
+    // background-color: #67b0d6;
 }
+
 header .navBar01 .navBar01Block02 {
     width: 30px;
     height: 100%;
@@ -62,10 +87,12 @@ header .navBar01 .navBar01Block02 {
     justify-content: center;
     cursor: pointer;
 }
-header .navBar01 .navBar01Block02 svg:hover {
-    fill: white;
-    background-color: #67b0d6;
-}
+
+// header .navBar01 .navBar01Block02 svg: {
+//     fill: white;
+//     background-color: #67b0d6;
+// }
+
 header .navBar01 .navBar01Block03 {
     width: 30px;
     height: 100%;
@@ -75,10 +102,11 @@ header .navBar01 .navBar01Block03 {
     justify-content: center;
     cursor: pointer;
 }
-header .navBar01 .navBar01Block03 svg:hover {
-    fill: #ff1e3c;
-    background-color: #67b0d6;
-}
+
+// header .navBar01 .navBar01Block03 svg:hover {
+//     fill: #ff1e3c;
+//     background-color: #67b0d6;
+// }
 
 /* ----- SECTION SCR0LL 01 ----- */
 
@@ -110,6 +138,7 @@ header .navBar01 .navBar01Block03 svg:hover {
     background-image: url('./imageHeaderNavberClick/svgX/letterx_83737.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 30; 
 }
 
 .showermenu01 {
@@ -141,6 +170,7 @@ header .navBar01 .navBar01Block03 svg:hover {
     bottom: 10px;
     transition: 0.5px;
     transform: translateY(-10px);
+    z-index: 30; 
 }
 
 .section01 .contentBlock .block02 {
@@ -157,6 +187,8 @@ header .navBar01 .navBar01Block03 svg:hover {
     bottom: 10px;
     transition: 0.5px;
 }
+
+
 
 .section01 .contentBlock .block01 .box01 {
     width: 30px;
@@ -243,12 +275,14 @@ header .navBar01 .navBar01Block03 svg:hover {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    z-index: 30; 
 }
 
 .section02 .contentBlock2 .divContent01{
     display: flex;
     justify-content: center;
     color: var(--color-White);
+    z-index: 30; 
 }
 
 
@@ -257,12 +291,14 @@ header .navBar01 .navBar01Block03 svg:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 30; 
 }
 
 .section02 .contentBlock2 .divContent02 .divContent02Items01 {
     display: flex;
     gap: 110px;
     margin-bottom: 20px;
+    z-index: 30; 
 }
 
 .section02 .contentBlock2 .divContent02 .divContent02Items01 .itemS01 {
@@ -272,6 +308,7 @@ header .navBar01 .navBar01Block03 svg:hover {
     justify-content: center;
     cursor: pointer;
     font-size: 1rem;
+    z-index: 30; 
 }
 
 
@@ -279,6 +316,7 @@ header .navBar01 .navBar01Block03 svg:hover {
     position: relative;
     bottom: 5px;
     transition: 0.5s;
+    z-index: 30; 
 }
 
 .section02 .contentBlock2 .divContent02 .divContent02Items01  .itemS02 {
@@ -288,6 +326,7 @@ header .navBar01 .navBar01Block03 svg:hover {
     justify-content: center;    
     cursor: pointer;
     font-size: 1rem;
+    z-index: 30; 
 }
 
 
@@ -436,7 +475,7 @@ header .navBar01 .navBar01Block03 svg:hover {
     font-size: 100%;
     position: relative;
     bottom: 800px;
-    z-index: 0;
+    z-index: 5;
 }
 
 .nav2Zindex {
@@ -627,6 +666,7 @@ header .nav-02 .cotain02-nav-02 {
     transition: 0.3s;
     position: absolute;
     top: 90px;
+    z-index: 51;
   }
   
   .navClick {
@@ -662,7 +702,7 @@ header .nav-02 .cotain02-nav-02 {
   .navClick .symbols{
     width: 10px;
     height: 10px;
-    background-image: url('/imageHeaderNavberClick/svgX/letterx_83737\ Hmburger.svg');
+    background-image: url('./imageHeaderNavberClick/svgX/letterx_83737\ Hmburger.svg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -671,9 +711,12 @@ header .nav-02 .cotain02-nav-02 {
 
   }
 
+  .classHov{
+    fill: #161616;
+  }
   
-  .navClick .symbols:hover {
-    background-color: $rosa;
+  .navClick .contentH3:hover .classHov {
+    fill: $rosa;
   }
   
   /* -- DIV LOGO -- */
@@ -815,7 +858,6 @@ header .nav-02 .cotain02-nav-02 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: -1;
     text-align: center;
     gap: 30px;
     font-family: "Electronic Arts Text";
@@ -827,7 +869,8 @@ header .nav-02 .cotain02-nav-02 {
     background-image: url('./Images/assetsHaeder/logo-test.png');
     background-position: center center;
     background-size: cover;
-    animation: line 10s;
+    animation: line 7s infinite ;
+    z-index: -1;
   }
 
   @keyframes line {
@@ -836,6 +879,8 @@ header .nav-02 .cotain02-nav-02 {
 
     from{width: 0%;}
     to{width: 100%;;}
+
+
   }
 
   .content h1{
@@ -857,12 +902,14 @@ header .nav-02 .cotain02-nav-02 {
     cursor: pointer;
     border: none;
     border-radius: 50px;
-    cursor: pointer;
+    display: block;
+    margin-top: 10px;
   }
   
   #myBtn:hover {
-    background: #ddd;
-    color: black;
+    width: 160px;
+    height: 60px;
+    transition: 0.3s;
   }
 
   /* ----- BACKGROUND 02 ----- */
@@ -874,7 +921,7 @@ header .nav-02 .cotain02-nav-02 {
     background-image: url('./Images/assetsHaeder/background-image.jpg');
     background-position: center center;
     background-size: cover;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -899,8 +946,6 @@ header .nav-02 .cotain02-nav-02 {
     color: $white;
     font-size: 1.3rem;
 }
-
-
 
 .divBlock02 {
     display: flex;
@@ -938,158 +983,3 @@ header .nav-02 .cotain02-nav-02 {
     height: 60px;
     transition: 0.5s;
 }
-
-
-
-
-
-
-
-
-
-
-// .backGround .divImageBackGround {
-//     background-image: url('./Images/assetsHaeder/background-image.jpg');
-//     background-position: center center;
-//     background-size: cover;
-//     height: 100px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     overflow: hidden;
-//     width: 100%;
-//     position: absolute;
-//     bottom: 0;
-// }
- 
-// .backGround .divImageBackGround .divContent02 {
-//     width: 1000px;
-//     height: max-content;
-//     display: flex;
-//     justify-content: space-between;
-//     font-family: "Electronic Arts Text";
-// }
-
-// .backGround .divImageBackGround  .divContent02 h3 {
-//     font-size: 1.5rem;
-//     color: $white;
-//     cursor: pointer;
-// }
-
-
-// .backGround .divImageBackGround  .divContent02 .divBlock02 {
-//     display: flex;
-
-// }
-
-
-// .backGround .divImageBackGround  .divContent02 .divBlock02 .divBattlefield {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-
-// .backGround .divImageBackGround  .divContent02 .divBlock02 .divBattlefield img:hover{
-//     width: 100px;
-//     height: 10px;
-// }
-
-
-// .backGround .divImageBackGround  .divContent02 .divBlock02 .btnBlock02 {
-//     width: 160px;
-//     height: 50px;
-//     margin-left: 20px;
-//     letter-spacing: 0.2px;
-//     border: none;
-//     font-family: "Electronic Arts Text";
-//     border-radius: 2px;
-//     font-size: 1rem;
-//     background-color: $white;
-//     color: $nero;
-//     cursor: pointer;
-// }
-
-// .divBattlefield img:hover {
-//     width: 10px;
-//     height: 10px;
-// }
-
-
-
-
-// header .backGround {
-//     width: 100%;
-//     height: max-content;
-//     position: relative;
-//     bottom: 1750px;
-//     z-index: -5;
-//     overflow: hidden;
-//     // display: flex;
-//     // align-items: center;
-//     // justify-content: center;
-
-//     font-family: "Electronic Arts Text";
-// }
-
-
-// header .backGround .divVideo {
-//     z-index: -4;
-// }
-
-// header .backGround .divVideo video {
-//     z-index: -3;
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .divContentVideo {
-//     z-index: 15;
-//     width: 550px;
-//     height: max-content;
-//     text-align: center;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     // position: absolute;
-//     // top: 100px;
-//     // left: 410px;
-//     // position: relative;
-//     // bottom: 700px;
-//     // left: 400px;
-//     color: $white;
-// }
-
-// .backGround .divVideo .divLogo {
-//     width: 200px;
-//     height: 200px;
-//     border: solid 1px red;
-//     background-image: url(./Images/assetsHaeder/logo-test.png);
-//     background-position: center center;
-//     background-size: cover;
-
-
-// }
-
-// .divContentVideo h1 {
-//     margin-bottom: 10px;
-//     font-size: 4.5rem;
-// }
-
-// .divContentVideo h3 {
-//     margin-bottom: 30px;
-//     font-size: 1.2rem;
-// }
-
-// .divContentVideo .btnGround01 {
-//     width: 150px;
-//     height: 50px;
-//     border-radius: 50px;
-//     border: none;
-//     cursor: pointer;
-//     color: $nero;
-//     background-color: #0bf15f;
-//     letter-spacing: 0.2;
-//     font-size: 1rem;
-// }
