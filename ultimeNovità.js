@@ -45,3 +45,24 @@ $next.addEventListener("click", function scrollingLeft() {
   }
 });
  */
+const div = document.querySelector(".div");
+
+// $trigger.forEach("click", (event) => {
+//   div.forEach((div) => div.style.display = "none")
+
+//   const id = event.target.dataset.id;
+//   document.getElementById(id).style.display = "block";
+
+// })
+
+
+$trigger.forEach(($el) => {
+  $el.addEventListener("click", (event) => {
+    // Prima levo la classe visible da tutti i `div.content`
+    div.forEach(($_content) => $_content.classList.remove("visible"));
+    // Determina il div corretto sulla base del click
+    const id = event.target.dataset.id;
+    // Vado ad aggiungere la classe `visible` al div corretto usando l'id appena preso
+    document.getElementById(id).classList.add("visible");
+  });
+});

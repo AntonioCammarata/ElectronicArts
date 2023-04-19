@@ -81,6 +81,7 @@
   transform: width 0.1s ease-out;
   margin: 0 auto;
   background-color: red;
+  display: none;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu .trigger:hover {
   background-color: #dedede;
