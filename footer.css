@@ -2,72 +2,139 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 }
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 @font-face {
-  * {
-    font-family: "Electronic Arts Text";
-    src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-    src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+  font-family: "Electronic Arts Text";
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
+}
+footer {
+  display: flex;
+  flex-direction: row;
+}
+.last-part {
+  width: 100%;
+  height: 120vh;
+}
+.image {
+  width: 100%;
+  height: 45%;
+  background-color: aqua;
+}
+@media screen and (max-width: 375px) {
+  .image {
+    width: 100%;
+    height: 625px;
+  }
+  .hover p {
+    text-align: flex-start;
+  }
+  .hover {
+    position: absolute;
+    right: 50px;
+  }
+  .hover svg {
+    margin-right: 0px;
+  }
+  .bluePart {
+    width: 100%;
+    height: 212px;
+  }
+  .bluePart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .leftBlue {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .rightBlue {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .leftBlue p {
+    font-size: 10px;
+  }
+  .middlePart {
+    width: 100%;
+    height: 305px;
+    flex-direction: row;
+  }
+  .end {
+    width: 100%;
+    height: 712px;
   }
 }
-
-.lastPart {
+.backGround {
   width: 100%;
-  height: 100vh;
+  height: 45%;
 }
-
-.backgroungImg {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-}
-
 .hover {
   position: absolute;
-  top: 10%;
-  padding: 20px;
-  left: 20%;
+  left: 17%;
+  top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.img_button {
-  background: local;
-  padding: 20px;
-  color: white;
-  border: 1px solid #fff;
-}
-
 .hover p {
   color: white;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 18px;
   font-family: "Electronic Arts Text";
 }
 .hover p:hover {
   transition: 0.3;
   transform: 0.3;
 }
-
-.blueP {
+.hover button {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border: 2px solid white;
+  background-color: #67b0d6;
+  padding: 15px;
+  border-radius: 4%;
+  margin-left: 10px;
+}
+.hover svg {
+  margin-right: 30px;
+}
+.hover button {
+  margin-right: 60px;
+  margin-top: 20px;
+}
+.bluePart {
   width: 100%;
-  height: 13%;
+  height: 10%;
   background-color: #67b0d6;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -4px;
 }
-
-.blueP p {
+.bluePart p {
   color: black;
   font-weight: 500;
   font-size: 30px;
-  margin-right: 220px;
   font-family: "Electronic Arts Text";
 }
-
-.blueP button {
+.rightBlue {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.bluePart button {
   color: black;
   font-weight: 500;
   font-size: 20px;
@@ -75,202 +142,174 @@
   background-color: #67b0d6;
   padding: 15px;
   border-radius: 4%;
-  margin-left: 210px;
+  margin-top: 20px;
 }
-
-.footerLinks {
+.leftBlue {
+  width: 31%;
+  height: 100%;
+  background-color: #67b0d6;
+  display: flex;
+  align-items: center;
+}
+.rightBlue {
+  width: 31%;
+  height: 100%;
+  background-color: #67b0d6;
+}
+.middlePart {
   width: 100%;
   height: 20%;
-  position: relative;
-  top: -4px;
+  background-color: #f3f3f3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftLinks {
+  width: 50%;
+  height: 50%;
   background-color: #f3f3f3;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-
-.footerLinks ul {
+.leftLinks ul {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 50px;
-  padding-left: 20%;
-  padding-bottom: 10%;
-  gap: 20px;
+  padding: 20px;
+  padding-left: 15%;
+  gap: 50px;
 }
-
-.footerLinks ul li {
+.leftLinks ul li {
   list-style: none;
-  color: black;
 }
-
-.footerLinks ul li a {
+.leftLinks ul li a {
   text-decoration: none;
   font-size: medium;
   color: black;
-  font-family: "Electronic Arts Text";
 }
-.footerLinks ul li a:hover {
+.leftLinks ul li a:hover {
   color: red;
   transition: 0, 3s;
 }
-
-.svgIcon {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.rightLinks {
+  width: 31%;
+  height: 50%;
+  background-color: #f3f3f3;
+  padding: 20px;
+  padding-left: 170px;
 }
-
-.footerLinksImages {
-  padding: 40px;
-  padding-right: 21%;
+.rightLinks p {
+  padding-bottom: 10px;
+  padding-left: 50px;
 }
-
-.footerLinksImages h3 {
-  font-size: medium;
-  font-family: "Electronic Arts Text";
-}
-
-.footerLinksImages svg {
-  height: 28px;
+.rightLinks svg {
   width: 28px;
-  display: flex;
-  padding-top: 2%;
+  height: 28px;
+  margin-right: 20px;
 }
-
-.eaImg {
-  padding-right: 25px;
-}
-
-.eaImg img {
-  width: 64px;
-  height: 64px;
-}
-
-.footerEnd {
+.end {
   width: 100%;
+  background-color: white;
   height: 30%;
-}
-
-.flex {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.flex .eaFooter {
-  grid-area: 1/1/2/2;
-}
-.flex .buttons {
-  grid-area: 1/2/2/3;
-}
-.flex .baseSection {
-  grid-area: 2/1/3/2;
-}
-.flex .test {
-  grid-area: 2/2/3/3;
-}
-
-.eaFooter ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.eaFooter ul .div1 {
-  grid-area: 1/1/2/2;
-}
-.eaFooter ul .div2 {
-  grid-area: 1/2/2/3;
-}
-.eaFooter ul .div3 {
-  grid-area: 1/3/2/4;
-}
-.eaFooter ul .div4 {
-  grid-area: 2/1/3/2;
-}
-.eaFooter ul .div5 {
-  grid-area: 2/2/3/3;
-}
-.eaFooter ul .div6 {
-  grid-area: 2/3/3/4;
-}
-.eaFooter ul .div7 {
-  grid-area: 1/4/3/5;
-}
-
-.eaFooter ul li {
-  list-style: none;
-}
-
-.eaFooter ul li a {
-  text-decoration: none;
-  font-family: "Electronic Arts Text";
-  color: black;
-  font-size: 15px;
-}
-
-.baseSection ul {
-  list-style: none;
-}
-.baseSection ul a {
-  text-decoration: none;
-  color: black;
-  font-family: "Electronic Arts Text";
-  font-size: 15px;
-}
-
-.baseSection ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.baseSection ul .div7 {
-  grid-area: 1/1/2/2;
-}
-.baseSection ul .div8 {
-  grid-area: 1/2/2/3;
-}
-.baseSection ul .div9 {
-  grid-area: 2/1/3/3;
-}
-.baseSection ul .div10 {
-  grid-area: 3/1/4/2;
-}
-.baseSection ul .div11 {
-  grid-area: 3/2/4/3;
-}
-.baseSection ul .div12 {
-  grid-area: 4/1/5/3;
-}
-
-.wrap {
   display: flex;
   justify-content: center;
-  padding: 3%;
+  align-items: center;
 }
 
-.test {
+.sectionLinks {
+  width: 70%;
+  height: 80%;
+  background-color: rgb(255, 255, 255);
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 7fr 6fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 100px;
+}
+.div1 img {
+  width: 50px;
+  height: 50px;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+.div2 span {
+  padding: 30px;
+  padding-top: 20px;
+}
+.divt1 {
+  padding-top: 10px;
+}
+.divt4 {
+  padding-top: 30px;
 }
 
-.buttons {
+.div2 ul li {
+  list-style: none;
+}
+.div2 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  padding-left: 35px;
+}
+.div3 ul li {
+  list-style: none;
+}
+.div3 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.div4 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  padding: 10px;
 }
-.buttons button {
+.div9 {
+  padding-top: 10px;
+}
+.div10 {
+  padding-top: 10px;
+}
+.div12 {
+  padding-top: 10px;
+}
+.div4 button {
   padding: 20px;
 }
-.buttons .button1 {
-  margin-right: 40px;
+.button1 {
+  margin-right: 30px;
+}
+.button2 {
+  margin-right: 70px;
+  padding: 20px;
 }
 
-/*# sourceMappingURL=footer.css.map */
+.div5 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
