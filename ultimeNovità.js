@@ -22,7 +22,7 @@ const $btnElements = document.querySelector("#buttonContainer");
 
 $prev.addEventListener("click", function scrollingRight() {
   const animation = $slider.animate(
-    { scrollLeft: $slider.scrollLeft -= 300 },
+    { scrollLeft: ($slider.scrollLeft -= 300) },
     { duration: 500, easing: "ease-in" }
   );
   animation.play();
@@ -30,7 +30,7 @@ $prev.addEventListener("click", function scrollingRight() {
 
 $next.addEventListener("click", function scrollingLeft() {
   const animation = $slider.animate(
-    { scrollLeft: $slider.scrollLeft += 300 },
+    { scrollLeft: ($slider.scrollLeft += 300) },
     { duration: 5000, easing: "ease-in" }
   );
   animation.play();
@@ -45,24 +45,16 @@ $next.addEventListener("click", function scrollingLeft() {
   }
 });
  */
-const div = document.querySelector(".div");
+const div = document.querySelectorAll(".div");
 
-// $trigger.forEach("click", (event) => {
-//   div.forEach((div) => div.style.display = "none")
-
-//   const id = event.target.dataset.id;
-//   document.getElementById(id).style.display = "block";
-
-// })
-
-
-$trigger.forEach(($el) => {
-  $el.addEventListener("click", (event) => {
-    // Prima levo la classe visible da tutti i `div.content`
-    div.forEach(($_content) => $_content.classList.remove("visible"));
-    // Determina il div corretto sulla base del click
-    const id = event.target.dataset.id;
-    // Vado ad aggiungere la classe `visible` al div corretto usando l'id appena preso
-    document.getElementById(id).classList.add("visible");
+$trigger.forEach(function (trigger) {
+  trigger.addEventListener("click", function () {
+    var id = this.getAttribute("data-id");
+    var mostra = document.querySelector("#" + id + " > div");
+    if (mostra.classList.contains("visible")) {
+      mostra.classList.remove("visible");
+    } else {
+      mostra.classList.add("visible");
+    }
   });
 });
