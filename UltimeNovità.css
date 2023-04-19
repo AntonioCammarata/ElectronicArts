@@ -23,9 +23,8 @@
   background-color: #f3f3f3;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu {
-  padding: 25px;
+  padding: 0 50px;
   height: 50px;
-  border: 2px solid transparent;
   background-color: #f3f3f3;
   display: flex;
   align-items: center;
@@ -50,11 +49,28 @@
   justify-content: space-between;
   z-index: 3;
 }
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer :nth-child(1) {
+  background-color: #f3f3f3;
+  width: 50px;
+  height: 45px;
+  box-shadow: -1px 0px 18px 14px rgb(243, 243, 243);
+}
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer :nth-child(2) {
+  background-color: #f3f3f3;
+  width: 50px;
+  height: 45px;
+  box-shadow: -1px 0px 18px 14px rgb(243, 243, 243);
+}
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #prev {
   position: fixed;
-  left: 13px;
+  left: 0px;
   z-index: 4;
   top: 109px;
+}
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #prev svg {
+  width: 24px;
+  height: 24px;
+  background: none;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #next {
   position: fixed;
@@ -62,16 +78,21 @@
   z-index: 4;
   top: 109px;
 }
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #next svg {
+  width: 24px;
+  height: 24px;
+  background: none;
+}
 #ultimeNovità-container #ultimeNovità-cardMenu .trigger {
   height: 50px;
   cursor: pointer;
-  background: none;
   border: none;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   align-items: center;
+  justify-content: center;
   background-color: #f3f3f3;
   color: #161616;
   font-size: 1.1rem;
