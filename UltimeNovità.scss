@@ -53,14 +53,16 @@
       z-index:3;
       #prev{
         position: fixed;
-        left: 0;
+        left: 13px;
         z-index:4;
-        display: none;
+        top:109px;
+        // display: none;
       }
       #next{
         position: fixed;
         right: 0;
-        z-index:4
+        z-index:4;
+        top:109px
       }
 
     }

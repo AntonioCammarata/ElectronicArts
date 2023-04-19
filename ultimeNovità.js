@@ -29,12 +29,15 @@ $prev.addEventListener("click", function scrollingRight() {
 });
 
 $next.addEventListener("click", function scrollingLeft() {
+
   const animation = $slider.animate(
     { scrollLeft: ($slider.scrollLeft += 300) },
     { duration: 5000, easing: "ease-in" }
   );
+  if($slider.scrollLeft > 1){
+    $prev.style.display = "block"
   animation.play();
-});
+}});
 
 /* $slider.addEventListener("scroll", () => {
   if ($slider.scrollLeft > 1) {
@@ -45,16 +48,16 @@ $next.addEventListener("click", function scrollingLeft() {
   }
 });
  */
-const div = document.querySelectorAll(".div");
+// const div = document.querySelectorAll(".div");
 
-$trigger.forEach(function (trigger) {
-  trigger.addEventListener("click", function () {
-    var id = this.getAttribute("data-id");
-    var mostra = document.querySelector("#" + id + " > div");
-    if (mostra.classList.contains("visible")) {
-      mostra.classList.remove("visible");
-    } else {
-      mostra.classList.add("visible");
-    }
-  });
-});
+// $trigger.forEach(function (trigger) {
+//   trigger.addEventListener("click", function () {
+//     var id = this.getAttribute("data-id");
+//     var mostra = document.querySelector("#" + id + " > div");
+//     if (mostra.classList.contains("visible")) {
+//       mostra.classList.remove("visible");
+//     } else {
+//       mostra.classList.add("visible");
+//     }
+//   });
+// });

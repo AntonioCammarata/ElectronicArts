@@ -52,14 +52,15 @@
 }
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #prev {
   position: fixed;
-  left: 0;
+  left: 13px;
   z-index: 4;
-  display: none;
+  top: 109px;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #next {
   position: fixed;
   right: 0;
   z-index: 4;
+  top: 109px;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu .trigger {
   height: 50px;
