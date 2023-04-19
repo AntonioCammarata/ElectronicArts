@@ -24,7 +24,7 @@
   }
   
   #ultimeNovità-cardMenu{
-    
+    padding: 25px;
     height: 50px;
     border: 2px solid transparent;      
     background-color: $page-bg;
@@ -35,7 +35,6 @@
     width: 100%;
     overflow-x: scroll;
     position: relative;
-    
     scroll-behavior: smooth;
     #prev, #next{
      background-color: $page-bg;
@@ -44,15 +43,26 @@
       cursor: pointer;
       // z-index: 10;
     }
-    :nth-child(2){
-      position: absolute;
-      right: 0;
-      
-      
-    }
-    :nth-child(1){
-      position: absolute;
-      top:0
+    
+    #buttonContainer{
+      position: relative;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index:3;
+      #prev{
+        position: fixed;
+        left: 0;
+        z-index:4;
+        display: none;
+      }
+      #next{
+        position: fixed;
+        right: 0;
+        z-index:4
+      }
+
     }
     .trigger{
       height: 50px;

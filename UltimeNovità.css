@@ -23,6 +23,7 @@
   background-color: #f3f3f3;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu {
+  padding: 25px;
   height: 50px;
   border: 2px solid transparent;
   background-color: #f3f3f3;
@@ -41,13 +42,24 @@
   color: rgba(22, 22, 22, 0.5);
   cursor: pointer;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu :nth-child(2) {
-  position: absolute;
-  right: 0;
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu :nth-child(1) {
-  position: absolute;
-  top: 0;
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #prev {
+  position: fixed;
+  left: 0;
+  z-index: 4;
+  display: none;
+}
+#ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #next {
+  position: fixed;
+  right: 0;
+  z-index: 4;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu .trigger {
   height: 50px;

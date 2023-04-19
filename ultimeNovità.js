@@ -1,3 +1,5 @@
+//GESTIONE CARD
+
 const $trigger = document.querySelectorAll(".trigger");
 const $content = document.querySelectorAll(".content");
 
@@ -12,13 +14,26 @@ $trigger.forEach($el => {
   });
 });
 
-const prev = document.querySelector('#prev')
-const next = document.querySelector('#next')
-const slider = document.querySelector('#ultimeNovità-cardMenu')
 
-prev.addEventListener('click', () => {
-    slider.scrollLeft -= 100
+//GESTIONE MENù
+const $prev = document.querySelector('#prev')
+const $next = document.querySelector('#next')
+const $slider = document.querySelector('#ultimeNovità-cardMenu')
+const $btnElements = document.querySelector('#buttonContainer')
+
+$prev.addEventListener('click', () => {
+    $slider.scrollLeft -= 100
 })
-next.addEventListener('click', () => {
-  slider.scrollLeft += 100 
+$next.addEventListener('click', () => {
+  $slider.scrollLeft += 100;
+})
+
+$slider.addEventListener('scroll', () => {
+  if($slider.scrollLeft > 1){
+    $prev.style.display = 'block'
+
+  } else if($slider.scrollLeft > 200){
+    $next.style.display = 'none'
+    $btnElements.style.display = 'none'
+  }
 })
