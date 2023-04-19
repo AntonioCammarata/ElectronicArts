@@ -35,7 +35,7 @@
     width: 100%;
     overflow-x: scroll;
     position: relative;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
     #prev, #next{
      background-color: $page-bg;
       border: none;
@@ -71,11 +71,23 @@
       border: none;
       padding: 0 15px;
       display: flex;
+      flex-direction: column;
       flex-shrink: 0;
       align-items: center;
       background-color: $page-bg;
       color: $nero;
       font-size: 1.1rem;
+      .div{
+        height: 2px;
+        width: 80%;
+        transform: width .1s ease-out;
+        margin:0 auto;
+        background-color: red;
+
+      }
+      &:hover{
+        background-color: #dedede;
+      }
       
       
      
