@@ -53,13 +53,13 @@
   background-color: #f3f3f3;
   width: 50px;
   height: 45px;
-  box-shadow: -1px 0px 18px 14px rgb(243, 243, 243);
+  box-shadow: -1px 0px 12px 3px rgb(243, 243, 243);
 }
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer :nth-child(2) {
   background-color: #f3f3f3;
   width: 50px;
   height: 45px;
-  box-shadow: -1px 0px 18px 14px rgb(243, 243, 243);
+  box-shadow: -1px 0px 12px 3px rgb(243, 243, 243);
 }
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer #prev {
   position: fixed;
