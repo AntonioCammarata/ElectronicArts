@@ -42,8 +42,9 @@
   cursor: pointer;
 }
 #ultimeNovità-container #ultimeNovità-cardMenu #buttonContainer {
-  position: relative;
-  height: auto;
+  background-color: red;
+  height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
