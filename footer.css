@@ -18,298 +18,447 @@
     url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
       format("svg");
 }
-footer {
-  display: flex;
-  flex-direction: row;
-}
-.last-part {
-  width: 100%;
-  height: 120vh;
+header {
+  overflow-x: hidden;
 }
 .image {
-  width: 100%;
-  height: 45%;
-  background-color: aqua;
+  overflow: hidden;
 }
-@media screen and (max-width: 375px) {
-  .image {
-    width: 100%;
-    height: 625px;
-  }
-  .hover p {
-    text-align: flex-start;
-  }
-  .hover {
-    position: absolute;
-    right: 50px;
-  }
-  .hover svg {
-    margin-right: 0px;
-  }
-  .bluePart {
-    width: 100%;
-    height: 212px;
-  }
-  .bluePart {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .leftBlue {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .rightBlue {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-  .leftBlue p {
-    font-size: 10px;
-  }
-  .middlePart {
-    width: 100%;
-    height: 305px;
-    flex-direction: row;
-  }
-  .end {
-    width: 100%;
-    height: 712px;
-  }
+.background img {
+  object-fit: cover;
 }
-.backGround {
-  width: 100%;
-  height: 45%;
+footer {
+  overflow-x: hidden;
+}
+.rightLinks svg {
+  width: 22px;
+  height: 22px;
+  transform: scale(1.1);
+  margin-left: 7px;
+  margin-top: 10px;
+}
+.rightLinks svg:hover {
+  transform: scale(1.4);
+  transition: 0.3s;
+}
+.rightLinks p a {
+  text-decoration: none;
+  color: black;
+  font-family: "Electronic Arts Text";
+}
+.image {
+  height: 59vh;
+  position: relative;
 }
 .hover {
   position: absolute;
-  left: 17%;
-  top: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  top: 35%;
+  left: 25%;
 }
 .hover p {
   color: white;
-  font-weight: 500;
-  font-size: 18px;
+  font-size: 1.3rem;
   font-family: "Electronic Arts Text";
 }
-.hover p:hover {
-  transition: 0.3;
-  transform: 0.3;
-}
 .hover button {
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
   color: white;
-  font-weight: 500;
-  font-size: 20px;
-  border: 2px solid white;
-  background-color: #67b0d6;
-  padding: 15px;
-  border-radius: 4%;
-  margin-left: 10px;
-}
-.hover svg {
-  margin-right: 30px;
-}
-.hover button {
-  margin-right: 60px;
+  border-radius: 2%;
   margin-top: 20px;
+  font-family: "Electronic Arts Text";
+}
+.hover button:hover {
+  transition: 0.3s;
+  transform: 0.3s;
+  padding: 23px 23px;
 }
 .bluePart {
-  width: 100%;
-  height: 10%;
-  background-color: #67b0d6;
+  height: 10vh;
+  background-color: #6fb0d6;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .bluePart p {
-  color: black;
-  font-weight: 500;
-  font-size: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
   font-family: "Electronic Arts Text";
 }
-.rightBlue {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
 .bluePart button {
-  color: black;
-  font-weight: 500;
-  font-size: 20px;
   border: 2px solid black;
-  background-color: #67b0d6;
-  padding: 15px;
-  border-radius: 4%;
-  margin-top: 20px;
+  background-color: #6fb0d6;
+  margin-left: 310px;
+  padding: 20px 35px;
+  font-family: "Electronic Arts Text";
 }
-.leftBlue {
-  width: 31%;
-  height: 100%;
-  background-color: #67b0d6;
-  display: flex;
-  align-items: center;
-}
-.rightBlue {
-  width: 31%;
-  height: 100%;
-  background-color: #67b0d6;
+.bluePart button:hover {
+  transition: 0.3s;
+  transform: 0.3s;
+  padding: 25px 40px;
 }
 .middlePart {
-  width: 100%;
-  height: 20%;
-  background-color: #f3f3f3;
-
+  height: 20vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  background-color: rgb(234, 234, 234);
+  padding-top: 3%;
 }
-
 .leftLinks {
-  width: 50%;
-  height: 50%;
-  background-color: #f3f3f3;
-  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 16px;
 }
-.leftLinks ul {
-  display: flex;
-  padding: 20px;
-  padding-left: 15%;
-  gap: 50px;
-}
-.leftLinks ul li {
-  list-style: none;
-}
-.leftLinks ul li a {
+.leftLinks a {
   text-decoration: none;
-  font-size: medium;
   color: black;
-}
-.leftLinks ul li a:hover {
-  color: red;
-  transition: 0, 3s;
-}
-.rightLinks {
-  width: 31%;
-  height: 50%;
-  background-color: #f3f3f3;
-  padding: 20px;
-  padding-left: 170px;
-}
-.rightLinks p {
-  padding-bottom: 10px;
-  padding-left: 50px;
-}
-.rightLinks svg {
-  width: 28px;
-  height: 28px;
-  margin-right: 20px;
-}
-.end {
-  width: 100%;
-  background-color: white;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sectionLinks {
-  width: 70%;
-  height: 80%;
-  background-color: rgb(255, 255, 255);
-}
-.parent {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 7fr 6fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 30px;
-}
-
-.div1 {
-  grid-area: 1 / 1 / 3 / 2;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: flex-end;
-}
-.div1 img {
-  width: 50px;
-  height: 50px;
-}
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: flex-start;
   padding-left: 40px;
 }
-.div2 span {
-  padding: 30px;
-  padding-top: 20px;
+.leftLinks a:hover {
+  color: red;
+  transition: 0.3s;
+  transform: 0.3s;
 }
-.divt1 {
-  padding-top: 10px;
+.rightLinks {
+  margin-left: 80px;
+  height: 55px;
 }
-.divt4 {
-  padding-top: 30px;
+.rightLinks p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 195px;
+  font-family: "Electronic Arts Text";
 }
-
-.div2 ul li {
-  list-style: none;
-}
-.div2 ul li a {
-  text-decoration: none;
-  color: black;
-}
-.div3 {
-  grid-area: 2 / 2 / 3 / 3;
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  padding-left: 35px;
-}
-.div3 ul li {
-  list-style: none;
-}
-.div3 ul li a {
-  text-decoration: none;
-  color: black;
-}
-.div4 {
-  grid-area: 1 / 3 / 2 / 4;
-  background-color: rgb(255, 255, 255);
+.first-footer {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 10px;
+  justify-content: center;
+  margin-top: 25px;
 }
-.div9 {
-  padding-top: 10px;
+.eaLogo {
+  margin-left: 25px;
+  width: 64px;
+  height: 64px;
 }
-.div10 {
-  padding-top: 10px;
+.links-wrap {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  height: 30px;
+  padding: 5px;
 }
-.div12 {
-  padding-top: 10px;
+.links-first-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  align-content: flex-start;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: 45px;
+  font-family: "Electronic Arts Text";
 }
-.div4 button {
-  padding: 20px;
+.buttons {
+  margin-top: 20px;
+  margin-left: 180px;
+  font-family: "Electronic Arts Text";
 }
-.button1 {
-  margin-right: 30px;
+.country {
+  width: 160px;
+  height: 60px;
+  margin-right: 40px;
+  border-color: rgb(163, 155, 155);
+  border-radius: 1px;
+  font-family: "Electronic Arts Text";
 }
-.button2 {
-  margin-right: 70px;
-  padding: 20px;
+.language {
+  width: 160px;
+  height: 60px;
+  margin-right: 40px;
+  border-color: rgb(167, 164, 164);
+  border-radius: 1px;
+  font-family: "Electronic Arts Text";
 }
-
-.div5 {
-  grid-area: 2 / 3 / 3 / 4;
-  background-color: rgb(255, 255, 255);
+.last-part {
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+.footer-links-title {
+  margin-left: 500px;
+}
+.cookie {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Electronic Arts Text";
+  color: black;
+}
+.right-footer-part {
+  margin-top: 20px;
+  width: 570px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+#stati-menu {
+  position: absolute;
+  top: 320px;
+  right: 590px;
+  background-color: white;
+  width: 590px;
+  height: 550px;
+  visibility: hidden;
+  display: flex;
+  border: solid rgb(200, 200, 200);
+}
+
+.stato a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.column-one {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.column-two {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.column-three {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.column-four {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.column-one div {
+  width: 126px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.column-two div {
+  margin-right: 20px;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.column-three div {
+  margin-right: 20px;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.column-four div {
+  width: 74px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+.stato a:hover {
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+#bandiere-menu {
+  position: absolute;
+  top: 300px;
+  right: 390px;
+  background-color: white;
+  width: 530px;
+  height: 570px;
+  border: solid rgb(200, 200, 200);
+  visibility: hidden;
+  display: flex;
+}
+
+.language-states {
+  margin-left: 7px;
+}
+
+.asian-states {
+  margin-left: 22px;
+}
+
+.column-one-flag div,
+.column-two-flag div,
+.column-three-flag div {
+  margin-top: 20px;
+  border-bottom: solid rgb(200, 200, 200) 1px;
+  padding-bottom: 20px;
+}
+
+#bandiere-menu a {
+  text-decoration: none;
+}
+
+.column-one-flag {
+  padding-left: 20px;
+  padding-right: 30px;
+  width: 155px;
+}
+
+.column-two-flag {
+  padding-right: 30px;
+  width: 154px;
+}
+
+.column-three-flag {
+  padding-right: 55px;
+  width: 100px;
+}
+
+.line-language a:hover {
+  padding-left: 10px;
+}
+@media (max-width: 821px) {
+  .bluePart{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
+  .bluePart button{
+    margin: 0;
+  }
+  .middlePart {
+    display: block;
+  }
+  .leftLinks {
+    width: 70%;
+    margin-left: 8%;
+    height: 60px;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+  .links-hover {
+    font-size: 16px;
+  }
+  .rightLinks {
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .rightLinks p {
+    margin-left: -12px;
+    margin-bottom: 10px;
+  }
+  .first-footer {
+    display: block;
+  }
+  .eaLogo {
+    width: 47px;
+    height: 47px;
+  }
+  .eaLogo {
+    margin-left: 110px;
+  }
+  .links-first-footer {
+    width: 70%;
+    margin-left: 8%;
+  }
+  .links-wrap {
+    margin-left: 8%;
+  }
+  .last-part {
+    display: block;
+  }
+  .left-footer-part {
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
+    padding: 0;
+  }
+  .footer-links-title {
+    margin: 0px;
+    font-size: 14px;
+  }
+  .right-footer-part svg {
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .buttons{
+    display: flex;
+    margin-left: 60px;
+  }
+  .country {
+    width: 329.5px;
+    height: 65.5px;
+  }
+  .language {
+    width: 329.5px;
+    height: 65.5px;
+  }
+  #stati-menu {
+    position: absolute;
+    top: 55px;
+    right: 420px;
+    background-color: white;
+    width: 334px;
+    height: 970px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    overflow: auto;
+  }
+  #bandiere-menu {
+    position: absolute;
+    top: 55px;
+    right: 47px;
+    background-color: white;
+    width: 334px;
+    height: 970px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    overflow: auto;
+  }
+  .column-one-flag div,
+  .column-two-flag div,
+  .column-three-flag div {
+    margin: 0;
+    padding: 0;
+  }
+  .column-one-flag div,
+  .column-two-flag div,
+  .column-three-flag div {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-links-title{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
+  .right-footer-part{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+  }
+  .hover{
+    position: absolute;
+  
+  }
 }
