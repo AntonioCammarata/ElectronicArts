@@ -47,8 +47,14 @@ footer {
   font-family: "Electronic Arts Text";
 }
 .image {
-  height: 59vh;
   position: relative;
+}
+.background{
+  background-color: #6fb0d6;
+}
+.background img{
+  width: 100%;
+  height: 100%;
 }
 .hover {
   position: absolute;
@@ -330,23 +336,28 @@ footer {
   padding-left: 10px;
 }
 @media (max-width: 821px) {
-  .bluePart{
+  .bluePart {
     display: flex;
     flex-direction: column;
     height: 15vh;
   }
-  .bluePart button{
+  .bluePart button {
     margin: 0;
+    padding: 14px 30px;
+  }
+  .bluePart p {
+    font-size: 2rem;
+    margin-left: 0;
   }
   .middlePart {
     display: block;
   }
   .leftLinks {
     width: 70%;
-    margin-left: 8%;
+    margin-left: 3%;
     height: 60px;
     line-height: 2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .links-hover {
     font-size: 16px;
@@ -368,22 +379,22 @@ footer {
     height: 47px;
   }
   .eaLogo {
-    margin-left: 110px;
+    margin-left: 60px;
   }
   .links-first-footer {
     width: 70%;
-    margin-left: 8%;
+    margin-left: 4%;
   }
   .links-wrap {
-    margin-left: 8%;
+    margin-left: 4%;
   }
   .last-part {
     display: block;
   }
   .left-footer-part {
     width: 84%;
-    margin-right: 8%;
-    margin-left: 8%;
+    margin-right: 4%;
+    margin-left: 4%;
     padding: 0;
   }
   .footer-links-title {
@@ -397,7 +408,7 @@ footer {
     display: flex;
     justify-content: flex-start;
   }
-  .buttons{
+  .buttons {
     display: flex;
     margin-left: 60px;
   }
@@ -447,18 +458,124 @@ footer {
     margin: 0;
     padding: 0;
   }
-  .footer-links-title{
+  .footer-links-title {
     display: flex;
     justify-content: flex-start;
     margin-left: 60px;
   }
-  .right-footer-part{
+  .right-footer-part {
     display: flex;
     justify-content: flex-start;
     margin-left: 40px;
   }
-  .hover{
+  .hover {
     position: absolute;
-  
+    top: 20%;
+    left: 10%;
+  }
+  .background img {
+    height: 412.19px;
+  }
+  .bluePart p {
+    display: inline;
+    margin-left: 0px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .hover {
+    position: absolute;
+    top: 10%;
+    right: 9%;
+  }
+  .bluePart {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+  }
+  .bluePart p {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .bluePart button {
+    padding: 15px 100px;
+  }
+
+  .middlePart {
+    height: 190px;
+    width: 380px;
+  }
+  .leftLinks {
+    width: 330px;
+    margin-left: 8px;
+    line-height: 2;
+  }
+  .rightLinks p {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .rightLinks svg {
+    margin-left: 11px;
+  }
+  .country {
+    margin-bottom: 27px;
+  }
+  .first-footer {
+    height: 280px;
+  }
+  #stati-menu {
+    position: absolute;
+    top: 1020px;
+    right: 17px;
+    background-color: white;
+    width: 324px;
+    height: 970px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    height: 400px;
+  }
+  #bandiere-menu {
+    position: absolute;
+    top: 1100px;
+    right: 17px;
+    background-color: white;
+    width: 324px;
+    height: 1060px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 350px;
+  }
+  .country-icons {
+    display: none;
+  }
+  .eaLogo {
+    margin-left: 30px;
+  }
+  .buttons {
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 20vh;
+    flex-direction: column;
+  }
+  .cookie {
+    margin-right: 40px;
+  }
+  .footer-links-title {
+    margin-left: 30px;
+    height: 20vh;
+  }
+  .last-part {
+    height: 30vh;
+    margin-top: 80px;
+  }
+  .right-footer-part {
+    margin-left: 19px;
   }
 }
