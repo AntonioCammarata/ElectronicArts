@@ -18,6 +18,22 @@
   align-items: center;
   width: 100%;
   position: relative;
+  .ultimeNovità-menuButtons{
+    background:none;
+    border: none;
+  }
+  #prev{
+    position: absolute;
+    left: 0;
+    top:121px;
+    z-index: 2;
+  }
+  #next{
+    position: absolute;
+    right: 0;
+    top:121px;
+    z-index: 2;
+  }
  
   #ultimeNovità-title{
     width: 100%;
@@ -26,6 +42,7 @@
     padding:35px;
     background-color: bisque;
   }
+  
   
   #ultimeNovità-cardMenu{
     height: 50px;    
@@ -38,17 +55,8 @@
     width: 100%;
     overflow-x: auto;
     position: relative;
-    .ultimeNovità-menuButtons{
-      background-color: red;
-      border: none;
-      color: rgba(22, 22, 22, 0.5);
-      
-      
     }
-    :nth-child(2){
-      position: absolute;
-      right: 0;
-    }
+    
     .trigger{
       border:none;
       cursor: pointer;
@@ -58,7 +66,6 @@
       display: flex;
       flex-shrink: 0;
       align-items: center;
-
     }
   }
  .content{
@@ -85,5 +92,4 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     }
-}
 }

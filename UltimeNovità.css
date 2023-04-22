@@ -17,6 +17,22 @@
   width: 100%;
   position: relative;
 }
+#ultimeNovità-container .ultimeNovità-menuButtons {
+  background: none;
+  border: none;
+}
+#ultimeNovità-container #prev {
+  position: absolute;
+  left: 0;
+  top: 121px;
+  z-index: 2;
+}
+#ultimeNovità-container #next {
+  position: absolute;
+  right: 0;
+  top: 121px;
+  z-index: 2;
+}
 #ultimeNovità-container #ultimeNovità-title {
   width: 100%;
   font-size: 25px;
@@ -36,16 +52,7 @@
   overflow-x: auto;
   position: relative;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu .ultimeNovità-menuButtons {
-  background-color: red;
-  border: none;
-  color: rgba(22, 22, 22, 0.5);
-}
-#ultimeNovità-container #ultimeNovità-cardMenu :nth-child(2) {
-  position: absolute;
-  right: 0;
-}
-#ultimeNovità-container #ultimeNovità-cardMenu .trigger {
+#ultimeNovità-container .trigger {
   border: none;
   cursor: pointer;
   background: none;
@@ -55,19 +62,20 @@
   flex-shrink: 0;
   align-items: center;
 }
-#ultimeNovità-container .content {
+
+.content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px 16px;
 }
-#ultimeNovità-container .content:not(.visible) {
+.content:not(.visible) {
   display: none;
 }
-#ultimeNovità-container .content .visible {
+.content .visible {
   display: block;
 }
-#ultimeNovità-container .content .cardUltimeNovità {
+.content .cardUltimeNovità {
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -76,7 +84,7 @@
   background-color: aqua;
 }
 @media (min-width: 778px) {
-  #ultimeNovità-container .content {
+  .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
