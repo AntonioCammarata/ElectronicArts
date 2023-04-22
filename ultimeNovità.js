@@ -15,7 +15,7 @@ $trigger.forEach(($el) => {
 });
 
 //GESTIONE MENù
-const $prev = document.querySelector("#prev");
+/* const $prev = document.querySelector("#prev");
 const $next = document.querySelector("#next");
 const $slider = document.querySelector("#ultimeNovità-cardMenu");
 const $btnElements = document.querySelector("#buttonContainer");
@@ -26,9 +26,9 @@ $prev.addEventListener("click", function scrollingRight() {
     { duration: 500, easing: "ease-in" }
   );
   animation.play();
-});
+}); */
 
-$next.addEventListener("click", function scrollingLeft() {
+/* $next.addEventListener("click", function scrollingLeft() {
 
   const animation = $slider.animate(
     { scrollLeft: ($slider.scrollLeft += 300) },
@@ -38,7 +38,7 @@ $next.addEventListener("click", function scrollingLeft() {
     $prev.style.display = "block"
   animation.play();
 }});
-
+ */
 /* $slider.addEventListener("scroll", () => {
   if ($slider.scrollLeft > 1) {
     $prev.style.display = "block";
