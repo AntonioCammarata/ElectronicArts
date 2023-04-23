@@ -1,0 +1,611 @@
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+}
+header {
+  overflow-x: hidden;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.background img {
+  object-fit: cover;
+}
+
+footer {
+  overflow-x: hidden;
+}
+
+.rightLinks svg {
+  width: 22px;
+  height: 22px;
+  transform: scale(1.1);
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+.rightLinks svg:hover {
+  transform: scale(1.4);
+  transition: 0.3s;
+}
+
+.rightLinks p a {
+  text-decoration: none;
+  color: black;
+  font-family: "Electronic Arts Text";
+}
+
+.image {
+  position: relative;
+}
+
+.background {
+  background-color: #6fb0d6;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+}
+
+.hover {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+
+.hover p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Electronic Arts Text";
+}
+
+.hover button {
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  border-radius: 2%;
+  margin-top: 20px;
+  font-family: "Electronic Arts Text";
+}
+
+.hover button:hover {
+  transition: 0.3s;
+  transform: 0.3s;
+  padding: 23px 23px;
+}
+
+.bluePart {
+  height: 10vh;
+  background-color: #6fb0d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bluePart p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Electronic Arts Text";
+}
+
+.bluePart button {
+  border: 2px solid black;
+  background-color: #6fb0d6;
+  margin-left: 310px;
+  padding: 20px 35px;
+  font-family: "Electronic Arts Text";
+}
+
+.bluePart button:hover {
+  transition: 0.3s;
+  transform: 0.3s;
+  padding: 25px 40px;
+}
+
+.middlePart {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(234, 234, 234);
+  padding-top: 3%;
+}
+
+.leftLinks {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 16px;
+}
+
+.leftLinks a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
+
+.leftLinks a:hover {
+  color: red;
+  transition: 0.3s;
+  transform: 0.3s;
+}
+
+.rightLinks {
+  margin-left: 80px;
+  height: 55px;
+}
+
+.rightLinks p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 195px;
+  font-family: "Electronic Arts Text";
+}
+
+.first-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.eaLogo {
+  margin-left: 25px;
+  width: 64px;
+  height: 64px;
+}
+
+.links-wrap {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  height: 30px;
+  padding: 5px;
+}
+
+.links-first-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  align-content: flex-start;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: 45px;
+  font-family: "Electronic Arts Text";
+}
+
+.buttons {
+  margin-top: 20px;
+  margin-left: 180px;
+  font-family: "Electronic Arts Text";
+}
+
+.country {
+  width: 160px;
+  height: 60px;
+  margin-right: 40px;
+  border-color: rgb(163, 155, 155);
+  border-radius: 1px;
+  font-family: "Electronic Arts Text";
+}
+
+.language {
+  width: 160px;
+  height: 60px;
+  margin-right: 40px;
+  border-color: rgb(167, 164, 164);
+  border-radius: 1px;
+  font-family: "Electronic Arts Text";
+}
+
+.last-part {
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+
+.footer-links-title {
+  margin-left: 500px;
+}
+
+.cookie {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Electronic Arts Text";
+  color: black;
+}
+
+.right-footer-part {
+  margin-top: 20px;
+  width: 570px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#stati-menu {
+  position: absolute;
+  top: 320px;
+  right: 590px;
+  background-color: white;
+  width: 590px;
+  height: 550px;
+  visibility: hidden;
+  display: flex;
+  border: solid rgb(200, 200, 200);
+}
+
+.stato a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.column-one {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.column-two {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.column-three {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.column-four {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.column-one div {
+  width: 126px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.column-two div {
+  margin-right: 20px;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.column-three div {
+  margin-right: 20px;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.column-four div {
+  width: 74px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(200, 200, 200) solid 1px;
+}
+
+.stato a:hover {
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+#bandiere-menu {
+  position: absolute;
+  top: 300px;
+  right: 390px;
+  background-color: white;
+  width: 530px;
+  height: 570px;
+  border: solid rgb(200, 200, 200);
+  visibility: hidden;
+  display: flex;
+}
+
+.language-states {
+  margin-left: 7px;
+}
+
+.asian-states {
+  margin-left: 22px;
+}
+
+.column-one-flag div,
+.column-two-flag div,
+.column-three-flag div {
+  margin-top: 20px;
+  border-bottom: solid rgb(200, 200, 200) 1px;
+  padding-bottom: 20px;
+}
+
+#bandiere-menu a {
+  text-decoration: none;
+}
+
+.column-one-flag {
+  padding-left: 20px;
+  padding-right: 30px;
+  width: 155px;
+}
+
+.column-two-flag {
+  padding-right: 30px;
+  width: 154px;
+}
+
+.column-three-flag {
+  padding-right: 55px;
+  width: 100px;
+}
+
+.line-language a:hover {
+  padding-left: 10px;
+}
+
+@media (max-width: 821px) {
+  .bluePart {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
+  .bluePart button {
+    margin: 0;
+    padding: 14px 30px;
+  }
+  .bluePart p {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .middlePart {
+    display: block;
+  }
+  .leftLinks {
+    width: 70%;
+    margin-left: 3%;
+    height: 60px;
+    line-height: 2;
+    margin-bottom: 15px;
+  }
+  .links-hover {
+    font-size: 16px;
+  }
+  .rightLinks {
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .rightLinks p {
+    margin-left: -12px;
+    margin-bottom: 10px;
+  }
+  .first-footer {
+    display: block;
+  }
+  .eaLogo {
+    width: 47px;
+    height: 47px;
+  }
+  .eaLogo {
+    margin-left: 60px;
+  }
+  .links-first-footer {
+    width: 70%;
+    margin-left: 4%;
+  }
+  .links-wrap {
+    margin-left: 4%;
+  }
+  .last-part {
+    display: block;
+  }
+  .left-footer-part {
+    width: 84%;
+    margin-right: 4%;
+    margin-left: 4%;
+    padding: 0;
+  }
+  .footer-links-title {
+    margin: 0px;
+    font-size: 14px;
+  }
+  .right-footer-part svg {
+    width: 84%;
+    margin-right: 8%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .buttons {
+    display: flex;
+    margin-left: 60px;
+  }
+  .country {
+    width: 329.5px;
+    height: 65.5px;
+  }
+  .language {
+    width: 329.5px;
+    height: 65.5px;
+  }
+  #stati-menu {
+    position: absolute;
+    top: 55px;
+    right: 420px;
+    background-color: white;
+    width: 334px;
+    height: 970px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    overflow: auto;
+  }
+  #bandiere-menu {
+    position: absolute;
+    top: 55px;
+    right: 47px;
+    background-color: white;
+    width: 334px;
+    height: 970px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    overflow: auto;
+  }
+  .column-one-flag div,
+  .column-two-flag div,
+  .column-three-flag div {
+    margin: 0;
+    padding: 0;
+  }
+  .column-one-flag div,
+  .column-two-flag div,
+  .column-three-flag div {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-links-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
+  .right-footer-part {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+  }
+  .hover {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .background img {
+    height: 412.19px;
+  }
+  .bluePart p {
+    display: inline;
+    margin-left: 0px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .hover {
+    position: absolute;
+    top: 10%;
+    right: 9%;
+  }
+  .bluePart {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+  }
+  .bluePart p {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .bluePart button {
+    padding: 15px 100px;
+  }
+  .middlePart {
+    height: 190px;
+    width: 380px;
+  }
+  .leftLinks {
+    width: 330px;
+    margin-left: 8px;
+    line-height: 2;
+  }
+  .rightLinks p {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .rightLinks svg {
+    margin-left: 11px;
+  }
+  .country {
+    margin-bottom: 27px;
+  }
+  .first-footer {
+    height: 280px;
+  }
+  #stati-menu {
+    position: absolute;
+    top: 1020px;
+    right: 17px;
+    background-color: white;
+    width: 324px;
+    height: 970px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    height: 400px;
+  }
+  #bandiere-menu {
+    position: absolute;
+    top: 1100px;
+    right: 17px;
+    background-color: white;
+    width: 324px;
+    height: 1060px;
+    display: block;
+    visibility: hidden;
+    border: solid rgb(200, 200, 200);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 350px;
+  }
+  .country-icons {
+    display: none;
+  }
+  .eaLogo {
+    margin-left: 30px;
+  }
+  .buttons {
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 20vh;
+    flex-direction: column;
+  }
+  .cookie {
+    margin-right: 40px;
+  }
+  .footer-links-title {
+    margin-left: 30px;
+    height: 20vh;
+  }
+  .last-part {
+    height: 30vh;
+    margin-top: 80px;
+  }
+  .right-footer-part {
+    margin-left: 19px;
+  }
+}
+
+/*# sourceMappingURL=footer.scss.map */
