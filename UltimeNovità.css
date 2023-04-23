@@ -108,19 +108,23 @@
   top: 95%;
 }
 
-.content {
+#ultimeNovità-cardContainer {
+  background-color: orange;
+  position: relative;
+}
+#ultimeNovità-cardContainer .content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px 16px;
 }
-.content:not(.visible) {
+#ultimeNovità-cardContainer .content:not(.visible) {
   display: none;
 }
-.content .visible {
+#ultimeNovità-cardContainer .content .visible {
   display: block;
 }
-.content .cardUltimeNovità {
+#ultimeNovità-cardContainer .content .cardUltimeNovità {
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -129,7 +133,7 @@
   background-color: aqua;
 }
 @media (min-width: 778px) {
-  .content {
+  #ultimeNovità-cardContainer .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;

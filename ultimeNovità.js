@@ -1,6 +1,6 @@
 //GESTIONE CARD
 
-const $trigger = document.querySelectorAll(".trigger");
+const $trigger = document.querySelectorAll(".triggerContainer");
 const $content = document.querySelectorAll(".content");
 
 $trigger.forEach(($el) => {
@@ -17,7 +17,7 @@ $trigger.forEach(($el) => {
 
 
 
-//---------------------------GESTIONE MENù------------------------
+//---------------------------GESTIONE SCROLL MENù------------------------
 
 const $prev = document.querySelector("#prev");
 const $next = document.querySelector("#next");
