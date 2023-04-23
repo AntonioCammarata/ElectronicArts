@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* -- colori Elementi -- */
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Electronic Arts Text", "Verdana", "Helvetica", " Arial", "sans-serif";
+}
+
+#ultimeNovità-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+#ultimeNovità-container .ultimeNovità-menuButtons {
+  border: none;
+}
+#ultimeNovità-container .ultimeNovità-menuButtons svg {
+  opacity: 0.5;
+  height: 30px;
+  width: 30px;
+}
+#ultimeNovità-container #prev {
+  position: absolute;
+  left: 0;
+  top: 107px;
+  z-index: 2;
+  background-color: #f3f3f3;
+  height: 49px;
+  box-shadow: 7px -2px 15px 2px #f3f3f3;
+}
+
+#next {
+  position: absolute;
+  right: 0;
+  top: 107px;
+  background-color: #f3f3f3;
+  height: 49px;
+  z-index: 2;
+  box-shadow: -7px 0px 15px 2px #f3f3f3;
+}
+
+#ultimeNovità-title {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  padding: 35px;
+}
+
+#ultimeNovità-cardMenu {
+  height: 50px;
+  border-bottom: 2px solid #e3e3e3;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 25px;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  position: relative;
+}
+#ultimeNovità-cardMenu::-webkit-scrollbar {
+  display: none;
+}
+#ultimeNovità-cardMenu .triggerContainer {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+#ultimeNovità-cardMenu .triggerContainer:hover, #ultimeNovità-cardMenu .triggerContainer:focus {
+  background-color: #dedede;
+  color: rgb(61, 61, 61);
+}
+#ultimeNovità-cardMenu .triggerContainer:hover .triggerButtons__RedBar, #ultimeNovità-cardMenu .triggerContainer:focus .triggerButtons__RedBar {
+  display: block;
+  transition: width 0.1s ease-out;
+}
+#ultimeNovità-cardMenu .triggerContainer .trigger {
+  background: none;
+  padding: 0 15px;
+  border-right: 2px solid #dedede;
+}
+#ultimeNovità-cardMenu .triggerContainer:last-child > .trigger {
+  border-right: none;
+}
+#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
+  width: 80%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  display: none;
+  top: 95%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+}
+.content:not(.visible) {
+  display: none;
+}
+.content .visible {
+  display: block;
+}
+.content .cardUltimeNovità {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: aqua;
+}
+@media (min-width: 778px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=UltimeNovit%C3%A0.css.map */
