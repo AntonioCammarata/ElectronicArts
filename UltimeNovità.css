@@ -81,6 +81,10 @@
   background-color: #dedede;
   color: rgb(61, 61, 61);
 }
+#ultimeNovità-cardMenu .triggerContainer:hover .triggerButtons__RedBar, #ultimeNovità-cardMenu .triggerContainer:focus .triggerButtons__RedBar {
+  display: block;
+  transition: width 0.1s ease-out;
+}
 #ultimeNovità-cardMenu .triggerContainer .trigger {
   background: none;
   padding: 0 15px;
@@ -91,9 +95,11 @@
 }
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
   width: 80%;
+  margin: 0 auto;
   height: 2px;
   background-color: red;
   position: absolute;
+  display: none;
   top: 95%;
 }
 
