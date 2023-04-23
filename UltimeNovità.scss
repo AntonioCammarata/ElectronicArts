@@ -19,24 +19,31 @@
   width: 100%;
   position: relative;
   .ultimeNovità-menuButtons{
-    background:none;
+    
     border: none;
   }
   #prev{
     position: absolute;
     left: 0;
-    top:109px;
+    top:107px;
     z-index: 2;
     background-color: $page-bg;
-    height: 47px;
+    height: 49px;
+    box-shadow: 7px -2px 15px 2px #f3f3f3
+  }
+  
+  
+    
   }
   #next{
     position: absolute;
     right: 0;
-    top:109px;
+    top:107px;
     background-color: $page-bg;
-    height: 47px;
+    height: 49px;
     z-index: 2;
+    box-shadow: -7px 0px 15px 2px #f3f3f3
+    
   }
  
   #ultimeNovità-title{
@@ -50,8 +57,8 @@
   
   #ultimeNovità-cardMenu{
     height: 50px;    
-    border-bottom: 2px solid #e3e3e3;    
-    background-color: bisque;
+    border-bottom: 2px solid #e3e3e3;  
+    background-color: $page-bg;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -60,17 +67,38 @@
     overflow-x: auto;
     position: relative;
     .triggerContainer{
-      border:1px solid red;
-      height: 48px;
+      height: inherit;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
+      position: relative;
+      cursor:pointer;
+      &:hover, &:focus{
+        background-color: #dedede ;
+        color:rgb(61, 61, 61);
+      }
+      
+      
+
       
       .trigger{
-        background-color: orange;
+        background:none;
         padding: 0 15px;
+        border-right: 2px solid #dedede;
         
+      }
+      &:last-child > .trigger{
+        border-right: none;
+      }
+
+      .triggerButtons__RedBar{
+        width: 80%;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        top: 95%;
       }
     }
     
@@ -89,7 +117,7 @@
     }
     
     
-  }
+  
  .content{
   display: flex;
   flex-direction: column;

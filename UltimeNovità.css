@@ -17,35 +17,39 @@
   position: relative;
 }
 #ultimeNovità-container .ultimeNovità-menuButtons {
-  background: none;
   border: none;
 }
 #ultimeNovità-container #prev {
   position: absolute;
   left: 0;
-  top: 109px;
+  top: 107px;
   z-index: 2;
   background-color: #f3f3f3;
-  height: 47px;
+  height: 49px;
+  box-shadow: 7px -2px 15px 2px #f3f3f3;
 }
-#ultimeNovità-container #next {
+
+#next {
   position: absolute;
   right: 0;
-  top: 109px;
+  top: 107px;
   background-color: #f3f3f3;
-  height: 47px;
+  height: 49px;
   z-index: 2;
+  box-shadow: -7px 0px 15px 2px #f3f3f3;
 }
-#ultimeNovità-container #ultimeNovità-title {
+
+#ultimeNovità-title {
   width: 100%;
   font-size: 25px;
   text-align: center;
   padding: 35px;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu {
+
+#ultimeNovità-cardMenu {
   height: 50px;
   border-bottom: 2px solid #e3e3e3;
-  background-color: bisque;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -54,17 +58,34 @@
   overflow-x: auto;
   position: relative;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer {
-  border: 1px solid red;
-  height: 48px;
+#ultimeNovità-cardMenu .triggerContainer {
+  height: inherit;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer .trigger {
-  background-color: orange;
+#ultimeNovità-cardMenu .triggerContainer:hover, #ultimeNovità-cardMenu .triggerContainer:focus {
+  background-color: #dedede;
+  color: rgb(61, 61, 61);
+}
+#ultimeNovità-cardMenu .triggerContainer .trigger {
+  background: none;
   padding: 0 15px;
+  border-right: 2px solid #dedede;
+}
+#ultimeNovità-cardMenu .triggerContainer:last-child > .trigger {
+  border-right: none;
+}
+#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
+  width: 80%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  top: 95%;
 }
 
 .content {
