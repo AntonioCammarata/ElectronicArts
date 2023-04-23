@@ -18,8 +18,8 @@
   align-items: center;
   width: 100%;
   position: relative;
+ 
   .ultimeNovità-menuButtons{
-    
     border: none;
   }
   #prev{
@@ -65,7 +65,11 @@
     padding-left: 25px;
     width: 100%;
     overflow-x: auto;
+    scrollbar-width: none;
     position: relative;
+    &::-webkit-scrollbar{
+      display: none
+    }
     .triggerContainer{
       height: inherit;
       display: flex;

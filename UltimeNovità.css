@@ -56,7 +56,11 @@
   padding-left: 25px;
   width: 100%;
   overflow-x: auto;
+  scrollbar-width: none;
   position: relative;
+}
+#ultimeNovità-cardMenu::-webkit-scrollbar {
+  display: none;
 }
 #ultimeNovità-cardMenu .triggerContainer {
   height: inherit;
