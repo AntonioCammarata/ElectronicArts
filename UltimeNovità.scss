@@ -1,5 +1,3 @@
-
-
 @import "style.scss" ;
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 
@@ -126,7 +124,7 @@
   #ultimeNovità-cardContainer{
     width: 100%;
     min-height: min-content;
-    background-color: orange;
+    background-color: $page-bg;
     position:relative;
     .content{
       display: flex;
@@ -145,7 +143,8 @@
       flex-direction: column;
       align-items: center;
       border: none;
-      background-color:aqua;
+      background-color:$page-bg;
+      box-shadow: 0 3px 10px -2px #7d7d7d
       }
       @media(min-width: 778px) { 
         display: grid;
