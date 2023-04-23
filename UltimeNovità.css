@@ -111,7 +111,7 @@
 #ultimeNovità-cardContainer {
   width: 100%;
   min-height: min-content;
-  background-color: orange;
+  background-color: #f3f3f3;
   position: relative;
 }
 #ultimeNovità-cardContainer .content {
@@ -132,7 +132,8 @@
   flex-direction: column;
   align-items: center;
   border: none;
-  background-color: aqua;
+  background-color: #f3f3f3;
+  box-shadow: 0 3px 10px -2px #7d7d7d;
 }
 @media (min-width: 778px) {
   #ultimeNovità-cardContainer .content {
