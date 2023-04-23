@@ -19,6 +19,11 @@
 #ultimeNovità-container .ultimeNovità-menuButtons {
   border: none;
 }
+#ultimeNovità-container .ultimeNovità-menuButtons svg {
+  opacity: 0.5;
+  height: 30px;
+  width: 30px;
+}
 #ultimeNovità-container #prev {
   position: absolute;
   left: 0;

@@ -21,6 +21,11 @@
  
   .ultimeNovità-menuButtons{
     border: none;
+    svg{
+      opacity: 0.5;
+      height: 30px;
+      width: 30px;
+    }
   }
   #prev{
     position: absolute;
