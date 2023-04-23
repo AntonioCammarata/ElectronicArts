@@ -109,6 +109,8 @@
 }
 
 #ultimeNovità-cardContainer {
+  width: 100%;
+  min-height: min-content;
   background-color: orange;
   position: relative;
 }
