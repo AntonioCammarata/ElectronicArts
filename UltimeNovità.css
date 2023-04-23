@@ -60,7 +60,7 @@
   justify-content: flex-start;
   padding-left: 25px;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   scrollbar-width: none;
   position: relative;
 }

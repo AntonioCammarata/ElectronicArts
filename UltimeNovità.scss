@@ -34,11 +34,10 @@
     z-index: 2;
     background-color: $page-bg;
     height: 49px;
-    box-shadow: 7px -2px 15px 2px #f3f3f3
+    box-shadow: 7px -2px 15px 2px #f3f3f3;
+    // display: none;
   }
-  
-  
-    
+   
   }
   #next{
     position: absolute;
@@ -69,9 +68,10 @@
     justify-content: flex-start;
     padding-left: 25px;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
     scrollbar-width: none;
     position: relative;
+    
     &::-webkit-scrollbar{
       display: none
     }
