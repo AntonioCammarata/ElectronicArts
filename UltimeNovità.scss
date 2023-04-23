@@ -1,6 +1,6 @@
 
 
-@use "style.scss" as s;
+@import "style.scss" ;
 @import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 
 
@@ -25,13 +25,17 @@
   #prev{
     position: absolute;
     left: 0;
-    top:121px;
+    top:109px;
     z-index: 2;
+    background-color: $page-bg;
+    height: 47px;
   }
   #next{
     position: absolute;
     right: 0;
-    top:121px;
+    top:109px;
+    background-color: $page-bg;
+    height: 47px;
     z-index: 2;
   }
  
@@ -47,11 +51,12 @@
   #ultimeNovità-cardMenu{
     height: 50px;    
     border:1px solid red;    
-    background-color: burlywood;
+    background-color: $page-bg;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
+    padding-left: 15px;
     width: 100%;
     overflow-x: auto;
     position: relative;

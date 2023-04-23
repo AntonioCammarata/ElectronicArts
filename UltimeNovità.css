@@ -24,13 +24,17 @@
 #ultimeNovità-container #prev {
   position: absolute;
   left: 0;
-  top: 121px;
+  top: 109px;
   z-index: 2;
+  background-color: #f3f3f3;
+  height: 47px;
 }
 #ultimeNovità-container #next {
   position: absolute;
   right: 0;
-  top: 121px;
+  top: 109px;
+  background-color: #f3f3f3;
+  height: 47px;
   z-index: 2;
 }
 #ultimeNovità-container #ultimeNovità-title {
@@ -43,11 +47,11 @@
 #ultimeNovità-container #ultimeNovità-cardMenu {
   height: 50px;
   border: 1px solid red;
-  background-color: burlywood;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: nowrap;
+  padding-left: 15px;
   width: 100%;
   overflow-x: auto;
   position: relative;
