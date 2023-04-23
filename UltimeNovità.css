@@ -77,13 +77,18 @@
   position: relative;
   cursor: pointer;
 }
-#ultimeNovità-cardMenu .triggerContainer:hover, #ultimeNovità-cardMenu .triggerContainer:focus {
+#ultimeNovità-cardMenu .triggerContainer:hover {
+  background-color: #dedede;
+}
+#ultimeNovità-cardMenu .triggerContainer:focus {
   background-color: #dedede;
   color: rgb(61, 61, 61);
 }
-#ultimeNovità-cardMenu .triggerContainer:hover .triggerButtons__RedBar, #ultimeNovità-cardMenu .triggerContainer:focus .triggerButtons__RedBar {
-  display: block;
+#ultimeNovità-cardMenu .triggerContainer:focus .triggerButtons__RedBar {
+  display: inline-block;
+  width: 80%;
   transition: width 0.1s ease-out;
+  opacity: 1;
 }
 #ultimeNovità-cardMenu .triggerContainer .trigger {
   background: none;
@@ -94,12 +99,12 @@
   border-right: none;
 }
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
-  width: 80%;
+  width: 0px;
   margin: 0 auto;
-  height: 2px;
-  background-color: red;
+  height: 1px;
+  background-color: #ff4747;
   position: absolute;
-  display: none;
+  opacity: 0;
   top: 95%;
 }
 
