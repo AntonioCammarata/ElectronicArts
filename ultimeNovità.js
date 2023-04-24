@@ -1,6 +1,6 @@
 //GESTIONE CARD
 
-const $trigger = document.querySelectorAll(".trigger");
+const $trigger = document.querySelectorAll(".triggerContainer");
 const $content = document.querySelectorAll(".content");
 
 $trigger.forEach(($el) => {
