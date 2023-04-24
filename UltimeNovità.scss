@@ -138,7 +138,16 @@
   flex-direction: column;
   align-items: center;
   border: none;
-  background-color:aqua;
+  background-color: $page-bg;
+  -webkit-box-shadow: 0px 7px 14px 6px rgba(181,181,181,0.76);
+  -moz-box-shadow: 0px 7px 14px 6px rgba(181,181,181,0.76);
+  box-shadow: 0px 7px 14px 6px rgba(181,181,181,0.76);
+  margin-left: 15px;
+   margin-right: 15px ;
+   
+   .card-title{
+    color :rgb(245, 80, 79);
+   }
    @media(min-width: 778px){
     padding: 0px;
     
