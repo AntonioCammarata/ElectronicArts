@@ -76,9 +76,148 @@
   background-color: aqua;
 }
 @media (min-width: 778px) {
+  #ultimeNovità-container .content .cardUltimeNovità {
+    padding: 0px;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/fc-mural-mock-v11.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage2 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage3 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage4 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/image4.png.adapt.crop16x9.431p.png);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage5 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/eacom-general-featured-image-16x9.png.adapt.crop16x9.431p.png);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage6 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/f1-23-new-sportsperson-blog-featured-image-16x9.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage7 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage8 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage9 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage10 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage11 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage12 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage13 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage14 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpgElectronicArts);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage15 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage16 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage17 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #ultimeNovità-container .content .cardUltimeNovità #unImage18 {
+    width: 100%;
+    height: 100px;
+    background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 778px) {
   #ultimeNovità-container .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-image: url();
+  }
+}
+@media (min-width: 1028px) {
+  #ultimeNovità-container .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 }

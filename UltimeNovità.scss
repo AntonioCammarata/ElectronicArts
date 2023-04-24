@@ -73,17 +73,137 @@
       display: block;
     }
     .cardUltimeNovità{
-      padding:16px;
+      padding: 16px;
       display: flex;
   flex-direction: column;
   align-items: center;
   border: none;
   background-color:aqua;
+   @media(min-width: 778px){
+    padding: 0px;
+    
+    #unImage{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/fc-mural-mock-v11.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage2{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage3{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
+      background-position: center;
+      background-size: cover;
+    }#unImage4{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/image4.png.adapt.crop16x9.431p.png);
+      background-position: center;
+      background-size: cover;
+    }#unImage5{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/eacom-general-featured-image-16x9.png.adapt.crop16x9.431p.png);
+      background-position: center;
+      background-size: cover;
+    }#unImage6{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/f1-23-new-sportsperson-blog-featured-image-16x9.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage7{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage8{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage9{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
+      background-position: center;
+      background-size: cover;
+    }#unImage10{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage11{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage12{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage13{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage14{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpgElectronicArts);
+      background-position: center;
+      background-size: cover;
+    }#unImage15{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage16{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage17{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }#unImage18{
+      width: 100%;
+      height: 100px;
+      background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+   }
   }
   @media(min-width: 778px) { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    background-image: url();
+    }
+    @media(min-width: 1028px){
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 }
 }
