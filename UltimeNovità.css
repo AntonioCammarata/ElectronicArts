@@ -10,64 +10,117 @@
 }
 
 #ultimeNovità-container {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   position: relative;
 }
-#ultimeNovità-container #ultimeNovità-title {
+#ultimeNovità-container .ultimeNovità-menuButtons {
+  border: none;
+}
+#ultimeNovità-container .ultimeNovità-menuButtons svg {
+  opacity: 0.5;
+  height: 30px;
+  width: 30px;
+}
+#ultimeNovità-container #prev {
+  position: absolute;
+  left: 0;
+  top: 107px;
+  z-index: 2;
+  background-color: #f3f3f3;
+  height: 49px;
+  box-shadow: 7px -2px 15px 2px #f3f3f3;
+}
+
+#next {
+  position: absolute;
+  right: 0;
+  top: 107px;
+  background-color: #f3f3f3;
+  height: 49px;
+  z-index: 2;
+  box-shadow: -7px 0px 15px 2px #f3f3f3;
+}
+
+#ultimeNovità-title {
   width: 100%;
   font-size: 25px;
   text-align: center;
   padding: 35px;
-  background-color: bisque;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu {
+
+#ultimeNovità-cardMenu {
   height: 50px;
-  border: 1px solid red;
-  background-color: burlywood;
+  border-bottom: 2px solid #e3e3e3;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: nowrap;
+  padding-left: 25px;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
+  scrollbar-width: none;
   position: relative;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu .ultimeNovità-menuButtons {
-  background-color: red;
-  border: none;
-  color: rgba(22, 22, 22, 0.5);
+#ultimeNovità-cardMenu::-webkit-scrollbar {
+  display: none;
 }
-#ultimeNovità-container #ultimeNovità-cardMenu :nth-child(2) {
-  position: absolute;
-  right: 0;
-}
-#ultimeNovità-container #ultimeNovità-cardMenu .trigger {
-  border: none;
-  cursor: pointer;
-  background: none;
-  border: 1px solid transparent;
-  padding: 0 15px;
+#ultimeNovità-cardMenu .triggerContainer {
+  height: inherit;
   display: flex;
-  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
 }
-#ultimeNovità-container .content {
+#ultimeNovità-cardMenu .triggerContainer:hover {
+  background-color: #dedede;
+}
+#ultimeNovità-cardMenu .triggerContainer:focus {
+  background-color: #dedede;
+  color: rgb(61, 61, 61);
+}
+#ultimeNovità-cardMenu .triggerContainer:focus .triggerButtons__RedBar {
+  display: inline-block;
+  width: 80%;
+  transition: width 0.1s ease-out;
+  opacity: 1;
+}
+#ultimeNovità-cardMenu .triggerContainer .trigger {
+  background: none;
+  padding: 0 15px;
+  border-right: 2px solid #dedede;
+}
+#ultimeNovità-cardMenu .triggerContainer:last-child > .trigger {
+  border-right: none;
+}
+#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
+  width: 0px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #ff4747;
+  position: absolute;
+  opacity: 0;
+  top: 95%;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px 16px;
 }
-#ultimeNovità-container .content:not(.visible) {
+.content:not(.visible) {
   display: none;
 }
-#ultimeNovità-container .content .visible {
+.content .visible {
   display: block;
 }
-#ultimeNovità-container .content .cardUltimeNovità {
+.content .cardUltimeNovità {
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -76,129 +129,129 @@
   background-color: aqua;
 }
 @media (min-width: 778px) {
-  #ultimeNovità-container .content .cardUltimeNovità {
+  .content .cardUltimeNovità {
     padding: 0px;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage {
+  .content .cardUltimeNovità #unImage {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/fc-mural-mock-v11.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage2 {
+  .content .cardUltimeNovità #unImage2 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage3 {
+  .content .cardUltimeNovità #unImage3 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage4 {
+  .content .cardUltimeNovità #unImage4 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/image4.png.adapt.crop16x9.431p.png);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage5 {
+  .content .cardUltimeNovità #unImage5 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/eacom-general-featured-image-16x9.png.adapt.crop16x9.431p.png);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage6 {
+  .content .cardUltimeNovità #unImage6 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/f1-23-new-sportsperson-blog-featured-image-16x9.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage7 {
+  .content .cardUltimeNovità #unImage7 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage8 {
+  .content .cardUltimeNovità #unImage8 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage9 {
+  .content .cardUltimeNovità #unImage9 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage10 {
+  .content .cardUltimeNovità #unImage10 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage11 {
+  .content .cardUltimeNovità #unImage11 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage12 {
+  .content .cardUltimeNovità #unImage12 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage13 {
+  .content .cardUltimeNovità #unImage13 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage14 {
+  .content .cardUltimeNovità #unImage14 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpgElectronicArts);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage15 {
+  .content .cardUltimeNovità #unImage15 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage16 {
+  .content .cardUltimeNovità #unImage16 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage17 {
+  .content .cardUltimeNovità #unImage17 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
     background-position: center;
     background-size: cover;
   }
-  #ultimeNovità-container .content .cardUltimeNovità #unImage18 {
+  .content .cardUltimeNovità #unImage18 {
     width: 100%;
     height: 100px;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
@@ -207,7 +260,7 @@
   }
 }
 @media (min-width: 778px) {
-  #ultimeNovità-container .content {
+  .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -215,9 +268,43 @@
   }
 }
 @media (min-width: 1028px) {
-  #ultimeNovità-container .content {
+  .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .content #ultimeNovità-cardContainer {
+    width: 100%;
+    min-height: min-content;
+    background-color: #f3f3f3;
+    position: relative;
+  }
+  .content #ultimeNovità-cardContainer .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;
+  }
+  .content #ultimeNovità-cardContainer .content:not(.visible) {
+    display: none;
+  }
+  .content #ultimeNovità-cardContainer .content .visible {
+    display: block;
+  }
+  .content #ultimeNovità-cardContainer .content .cardUltimeNovità {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: #f3f3f3;
+    box-shadow: 0 3px 10px -2px #7d7d7d;
+  }
+}
+@media (min-width: 1028px) and (min-width: 778px) {
+  .content #ultimeNovità-cardContainer .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }

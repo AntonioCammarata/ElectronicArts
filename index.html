@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="giochiInEvidenza.css" />
-    <link rel="stylesheet" href="giochiInEvidenza.scss">
-    <link rel="stylesheet" href="js.css" />
     <link rel="stylesheet" href="./UltimeNovità.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,15 +15,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
+    
+  
+  <body>
+	 <!-- INIZIO ULTIME NOVITà -->
   <section id="ultimeNovità-container">
 
     <div id="ultimeNovità-title">
       <h3>Ultime novità</h3>
     </div>
 
-    <div id="ultimeNovità-cardMenu">
-      <button class="ultimeNovità-menuButtons">
+    
+      <button class="ultimeNovità-menuButtons" id="prev">
         <svg
           width="24"
           height="24"
@@ -41,7 +43,7 @@
           />
         </svg>
       </button>
-      <button class="ultimeNovità-menuButtons">
+      <button class="ultimeNovità-menuButtons" id ="next">
         <svg
           width="24"
           height="24"
@@ -58,15 +60,39 @@
           />
         </svg>
       </button>
+    
 
-      <button class="trigger" data-id="content-1">Notizie EA</button>
-      <button class="trigger" data-id="content-2">EA Play</button>
-      <button class="trigger" data-id="content-3">FIFA</button>
-      <button class="trigger" data-id="content-4">F1</button>
-      <button class="trigger" data-id="content-5">Apex Legends</button>
-      <button class="trigger" data-id="content-6">The Sims™ 4</button>
-      <button class="trigger" data-id="content-7">Battlefield</button>
-      <button class="trigger" data-id="content-8">Inside EA</button>
+    <div id="ultimeNovità-cardMenu">
+      <div class ="triggerContainer" tabindex="0">
+      <div class="trigger" data-id="content-1">Notizie EA</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+      <div class ="triggerContainer" tabindex="0">
+        <div class="trigger" data-id="content-1">EA Play</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+      <div class ="triggerContainer" tabindex="0">
+        <div class="trigger" data-id="content-1">FIFA</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+      <div class ="triggerContainer" tabindex="0">
+        <div class="trigger" data-id="content-1">F1</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+      <div class ="triggerContainer" tabindex="0">
+        <div class="trigger" data-id="content-1">The Sims™ 4</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+      <div class ="triggerContainer" tabindex="0">
+        <div class="trigger" data-id="content-1">Battlefield</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+      <div class ="triggerContainer" tabindex="0">
+        <div class="trigger" data-id="content-1">Inside EA</div>
+        <div class="triggerButtons__RedBar"></div>
+      </div>
+
+      
     </div>
     <!--NOTIZIE EA ---- NOTIZIE EA ---- NOTIZIE EA ----- NOTIZIE EA -->
     <!--NOTIZIE EA ---- NOTIZIE EA ---- NOTIZIE EA ----- NOTIZIE EA -->
@@ -75,7 +101,7 @@
     <!--NOTIZIE EA ---- NOTIZIE EA ---- NOTIZIE EA ----- NOTIZIE EA -->
 
     <div id="ultimeNovità-cardContainer">
-      <div class="content " id="content-1">
+      <div class="content" id="content-1">
         <div class="cardUltimeNovità">
           <div id="unImage"></div>
           <div class="card-title">
@@ -370,7 +396,7 @@
         <!-- EA-PLAY----EA-PLAY---EA-PLAY---EA-PLAY---EA-PLAY---EA-PLAY -->
         <!-- EA-PLAY----EA-PLAY---EA-PLAY---EA-PLAY---EA-PLAY---EA-PLAY -->
 
-        <div class="content" id="content-2">
+        <div class="content visible" id="content-2">
           <div class="cardUltimeNovità">
             <div class="unImage"></div>
             <div class="card-title">
@@ -461,7 +487,7 @@
         <!-- FIFA---FIFA---- FIFA---- FIFA---- FIFA----- FIFA -->
         <!-- FIFA---FIFA---- FIFA---- FIFA---- FIFA----- FIFA -->
 
-        <div class="content" id="content-3">
+        <div class="content " id="content-3">
           <div class="cardUltimeNovità">
             <div id="unImage13"></div>
             <div class="card-title">
@@ -983,21 +1009,9 @@
             </div>
           </div>
         </div>
-
-        <!-- CHIUSURA DIV  -->
       </div>
     </section>
-
-    <script src="./ultimeNovità.js"></script>
-  </body>
-</html>
-
-<!-- ultime novià card menu    relatve -->
-<!-- btn container    relatve -->
-<!-- prev e next absolute   -->
-<!-- <section id="ultimeNovità-container"> relative height fit content align items no center -->
-<!-- <div id="ultimeNovità-cardContainer">  -->
-<!-- position relative -->
-<!-- <div class="content visible" id="content-1">   -->
-<!-- VISIBLE RELATIVE -->
-<!-- no z index -->
+</body>
+<script src="./ultimeNovità.js"></script>
+  
+    <!-- FINE ULTIME NOVITà -->

@@ -1,6 +1,6 @@
 //GESTIONE CARD
 
-const $trigger = document.querySelectorAll(".trigger");
+const $trigger = document.querySelectorAll(".triggerContainer");
 const $content = document.querySelectorAll(".content");
 
 $trigger.forEach(($el) => {
@@ -14,50 +14,43 @@ $trigger.forEach(($el) => {
   });
 });
 
-//GESTIONE MENù
-/* const $prev = document.querySelector("#prev");
+
+
+
+//---------------------------GESTIONE SCROLL MENù------------------------
+
+const $prev = document.querySelector("#prev");
 const $next = document.querySelector("#next");
 const $slider = document.querySelector("#ultimeNovità-cardMenu");
 const $btnElements = document.querySelector("#buttonContainer");
 
-$prev.addEventListener("click", function scrollingRight() {
-  const animation = $slider.animate(
-    { scrollLeft: ($slider.scrollLeft -= 300) },
-    { duration: 500, easing: "ease-in" }
-  );
-  animation.play();
-}); */
+//scroll to right
+$next.addEventListener("click", () =>{
+  let scrollTarget = $slider.scrollLeft + 100;
+  $slider.style.scrollBehavior = "smooth";
+  $slider.style.transitionDuration = "2000ms";
+  $slider.scrollTo({
+    left: scrollTarget,
+  });
+})
+  
+//scroll to left
+$prev.onclick = () => $slider.scrollLeft -=100
 
-/* $next.addEventListener("click", function scrollingLeft() {
-
-  const animation = $slider.animate(
-    { scrollLeft: ($slider.scrollLeft += 300) },
-    { duration: 5000, easing: "ease-in" }
-  );
-  if($slider.scrollLeft > 1){
-    $prev.style.display = "block"
-  animation.play();
-}});
- */
-/* $slider.addEventListener("scroll", () => {
-  if ($slider.scrollLeft > 1) {
+//check display arrows
+$slider.addEventListener("scroll", () => {
+  if ($slider.scrollLeft === 0) {
+    $prev.style.display = "none";
+  } else {
     $prev.style.display = "block";
-  } else if ($slider.scrollLeft > 200) {
-    $next.style.display = "none";
-    $btnElements.style.display = "none";
   }
-});
- */
-// const div = document.querySelectorAll(".div");
+  //se la posizione dello scroll laterale è maggiore o uguale alla larghezza totale dell'elemento meno la larghezza visibile dell'elemento, nascondo il pulsante "next". Altrimenti, mostro il pulsante "next".
+  if ($slider.scrollLeft >= $slider.scrollWidth - $slider.clientWidth) {
+    $next.style.display = "none";
+  } else {
+    $next.style.display = "block";
+  }
 
-// $trigger.forEach(function (trigger) {
-//   trigger.addEventListener("click", function () {
-//     var id = this.getAttribute("data-id");
-//     var mostra = document.querySelector("#" + id + " > div");
-//     if (mostra.classList.contains("visible")) {
-//       mostra.classList.remove("visible");
-//     } else {
-//       mostra.classList.add("visible");
-//     }
-//   });
-// });
+});
+
+
