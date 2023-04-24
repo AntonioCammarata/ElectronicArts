@@ -1,6 +1,6 @@
 //GESTIONE CARD
 
-const $trigger = document.querySelectorAll(".triggerContainer");
+const $trigger = document.querySelectorAll(".trigger");
 const $content = document.querySelectorAll(".content");
 
 $trigger.forEach(($el) => {
@@ -17,6 +17,7 @@ $trigger.forEach(($el) => {
 
 
 
+
 //---------------------------GESTIONE SCROLL MENù------------------------
 
 const $prev = document.querySelector("#prev");
@@ -28,7 +29,7 @@ const $btnElements = document.querySelector("#buttonContainer");
 $next.addEventListener("click", () =>{
   let scrollTarget = $slider.scrollLeft + 100;
   $slider.style.scrollBehavior = "smooth";
-  $slider.style.transitionDuration = "2000ms";
+  $slider.style.transitionDuration = 2000;
   $slider.scrollTo({
     left: scrollTarget,
   });

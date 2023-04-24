@@ -28,8 +28,7 @@
   position: absolute;
   left: 0;
   top: 107px;
-  z-index: 2;
-  background-color: #f3f3f3;
+  z-index: 12;
   height: 49px;
   box-shadow: 7px -2px 15px 2px #f3f3f3;
 }
@@ -91,6 +90,7 @@
   opacity: 1;
 }
 #ultimeNovità-cardMenu .triggerContainer .trigger {
+  z-index: 9999;
   background: none;
   padding: 0 15px;
   border-right: 2px solid #dedede;
@@ -288,7 +288,7 @@
   .content #ultimeNovità-cardContainer .content:not(.visible) {
     display: none;
   }
-  .content #ultimeNovità-cardContainer .content .visible {
+  .content #ultimeNovità-cardContainer .content.visible {
     display: block;
   }
   .content #ultimeNovità-cardContainer .content .cardUltimeNovità {

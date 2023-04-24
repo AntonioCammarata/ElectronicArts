@@ -21,20 +21,22 @@
  
   .ultimeNovità-menuButtons{
     border: none;
+    
     svg{
-      opacity: 0.5;
+      opacity:0.5;
       height: 30px;
       width: 30px;
+
     }
   }
   #prev{
     position: absolute;
     left: 0;
     top:107px;
-    z-index: 2;
-    background-color: $page-bg;
+    z-index: 12;
     height: 49px;
     box-shadow: 7px -2px 15px 2px #f3f3f3;
+    
     // display: none;
   }
    
@@ -99,6 +101,7 @@
         }
       }
       .trigger{
+        z-index: 9999;
         background:none;
         padding: 0 15px;
         border-right: 2px solid #dedede;
@@ -279,7 +282,7 @@
         &:not(.visible){
           display: none;
         }
-        .visible{
+        &.visible{
           display: block;
         }
         .cardUltimeNovità{
@@ -300,3 +303,4 @@
   }
 }
  }
+
