@@ -32,6 +32,9 @@ $green: #0bf15f;
     box-sizing: border-box;
 }
 
+header {
+    position: relative;
+}
 
 header .navBar01 {
     display: flex;
@@ -118,7 +121,8 @@ header .navBar01 .navBar01Block03 {
     flex-direction: column;
     align-items: center;
     z-index: 100;
-    font-family: "Electronic Arts Text"
+    font-family: "Electronic Arts Text";
+    z-index: 50;
 }
 
 .section01 .contentDivExit {
@@ -145,6 +149,7 @@ header .navBar01 .navBar01Block03 {
     transform: translateY(0px);
     transition: 0.5s;
     z-index: 500;
+    z-index: 5;
 }
 
 .section01 .contentBlock {
@@ -154,6 +159,7 @@ header .navBar01 .navBar01Block03 {
     align-items: center;
     justify-content: center;
     gap: 180px;
+    z-index: 5;
 }
 
 .section01 .contentBlock .block01 {
@@ -853,7 +859,7 @@ header .nav-02 .cotain02-nav-02 {
     position: absolute;
     right: 0;
     bottom: 0;
-    top: 150px;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -861,6 +867,7 @@ header .nav-02 .cotain02-nav-02 {
     text-align: center;
     gap: 30px;
     font-family: "Electronic Arts Text";
+    z-index: -1;
   }
 
   .content .divanimation {
@@ -870,7 +877,6 @@ header .nav-02 .cotain02-nav-02 {
     background-position: center center;
     background-size: cover;
     animation: line 7s infinite ;
-    z-index: -1;
   }
 
   @keyframes line {
@@ -878,7 +884,7 @@ header .nav-02 .cotain02-nav-02 {
     // to{background-position-x:-14527px;}
 
     from{width: 0%;}
-    to{width: 100%;;}
+    to{width: 100%;}
 
 
   }
@@ -916,8 +922,6 @@ header .nav-02 .cotain02-nav-02 {
 
 .background02 {
     height: 100px;
-    position: relative;
-    top: 29px;
     background-image: url('./Images/assetsHaeder/background-image.jpg');
     background-position: center center;
     background-size: cover;
