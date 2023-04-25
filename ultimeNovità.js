@@ -1,7 +1,9 @@
-//GESTIONE CARD
+//-----------------------------GESTIONE CARD------------------------
 
 const $trigger = document.querySelectorAll(".triggerContainer");
 const $content = document.querySelectorAll(".content");
+
+const $redbar = document.querySelectorAll(".triggerButtons__RedBar")
 
 $trigger.forEach(($el) => {
   $el.addEventListener("click", (event) => {
@@ -53,5 +55,9 @@ $slider.addEventListener("scroll", () => {
   }
 
 });
+
+
+//
+//-------------------------------GESTIONE FOCUS TRIGGER--------------
 
 

@@ -87,15 +87,36 @@
       &:hover{
         background-color: #dedede ;
       }
-      &:focus{
-        background-color: #dedede ;
-        color:rgb(61, 61, 61);
+      // &:focus{
+      //   background-color: #dedede ;
+      //   color:rgb(61, 61, 61);
 
+        // .triggerButtons__RedBar{
+        //   display: inline-block;
+        //   width: 80%;
+        //   // transition : width .1s ease-out;
+        //   opacity: 1;
+        // }
         .triggerButtons__RedBar{
           display: inline-block;
           width: 80%;
-          transition : width .1s ease-out;
+          // transition : width .1s ease-out;
           opacity: 1;
+          width: 80%;
+          margin: 0 auto;
+          height: 1px;
+          background-color: $rosa;
+          position: absolute;
+          top: 95%;
+
+          .visible__bar{
+            display: block;
+            
+          }
+
+          &:not(.visible__bar){
+            display: none;
+          }
         }
       }
       .trigger{
@@ -108,19 +129,9 @@
         border-right: none;
       }
 
-      .triggerButtons__RedBar{
-        width: 0px;
-        
-        margin: 0 auto;
-        height: 1px;
-        background-color: $rosa;
-        position: absolute;
-        // display: none;
-        opacity: 0;
-        top: 95%;
-      }
+      
     }
-  }
+  
  .content{
   display: flex;
   flex-direction: column;

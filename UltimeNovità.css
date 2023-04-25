@@ -80,32 +80,30 @@
 #ultimeNovità-cardMenu .triggerContainer:hover {
   background-color: #dedede;
 }
-#ultimeNovità-cardMenu .triggerContainer:focus {
-  background-color: #dedede;
-  color: rgb(61, 61, 61);
-}
-#ultimeNovità-cardMenu .triggerContainer:focus .triggerButtons__RedBar {
+#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
   display: inline-block;
   width: 80%;
-  transition: width 0.1s ease-out;
   opacity: 1;
-}
-#ultimeNovità-cardMenu .triggerContainer .trigger {
-  background: none;
-  padding: 0 15px;
-  border-right: 2px solid #dedede;
-}
-#ultimeNovità-cardMenu .triggerContainer:last-child > .trigger {
-  border-right: none;
-}
-#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
-  width: 0px;
+  width: 80%;
   margin: 0 auto;
   height: 1px;
   background-color: #ff4747;
   position: absolute;
-  opacity: 0;
   top: 95%;
+}
+#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar .visible__bar {
+  display: block;
+}
+#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar:not(.visible__bar) {
+  display: none;
+}
+#ultimeNovità-cardMenu .trigger {
+  background: none;
+  padding: 0 15px;
+  border-right: 2px solid #dedede;
+}
+#ultimeNovità-cardMenu:last-child > .trigger {
+  border-right: none;
 }
 
 .content {
