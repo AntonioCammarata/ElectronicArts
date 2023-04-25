@@ -9,7 +9,6 @@ $trigger.forEach(($el) => {
     $content.forEach(($_content) => $_content.classList.remove("visible"));
     const id = event.target.dataset.id;
     document.getElementById(id).classList.add("visible");
-    console.log(id);
   });
 });
 
@@ -58,7 +57,7 @@ $slider.addEventListener("scroll", () => {
 //-------------------------------GESTIONE FOCUS TRIGGER--------------
 
 const $redbar = document.querySelectorAll(".triggerButtons__RedBar")
-
+const $allCard = document.querySelectorAll(".cardUltimeNovità")
 
 $trigger.forEach(($_el) => {
   $_el.addEventListener("click", event => {
@@ -69,3 +68,8 @@ $trigger.forEach(($_el) => {
     event.currentTarget.classList.add("triggered_bg")
   })
 })
+
+
+//
+//-----------------------------GESTIONE FOCUS TRIGGER TRANSFORM CARD------
+
