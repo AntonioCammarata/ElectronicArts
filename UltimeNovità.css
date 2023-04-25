@@ -25,6 +25,11 @@
   height: 30px;
   width: 30px;
 }
+@media (min-width: 900px) {
+  #ultimeNovità-container .ultimeNovità-menuButtons svg {
+    display: none;
+  }
+}
 #ultimeNovità-container #prev {
   position: absolute;
   left: 0;
@@ -63,6 +68,11 @@
   overflow-x: scroll;
   scrollbar-width: none;
   position: relative;
+}
+@media (min-width: 900px) {
+  #ultimeNovità-cardMenu {
+    justify-content: center;
+  }
 }
 #ultimeNovità-cardMenu::-webkit-scrollbar {
   display: none;

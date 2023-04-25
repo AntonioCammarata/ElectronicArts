@@ -26,7 +26,12 @@
       opacity:0.5;
       height: 30px;
       width: 30px;
+      @media (min-width:900px){
+        display: none;
     }
+    }
+    
+
   }
   #prev{
     position: absolute;
@@ -71,6 +76,9 @@
     overflow-x: scroll;
     scrollbar-width: none;
     position: relative;
+    @media (min-width:900px){
+      justify-content: center;;
+  }
     
     &::-webkit-scrollbar{
       display: none
@@ -133,7 +141,9 @@
 
       
     }
-  
+
+
+    
  .content{
   display: flex;
   flex-direction: column;
