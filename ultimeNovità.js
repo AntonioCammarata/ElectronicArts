@@ -85,16 +85,21 @@ $trigger.forEach(($_el) => {
 
 
 $trigger.forEach(($__el) => {
+  
   $__el.addEventListener("click", event => {
+
     $redbar.forEach(($_bar) => $_bar.classList.remove("visible__bar"))
+
     $trigger.forEach(($_trig) => $_trig.classList.remove("triggered_bg"))
+
     const nth = event.target.dataset.nth
+
     document.getElementById(nth).classList.add("visible__bar")
+
     event.currentTarget.classList.add("triggered_bg")
     
   })
 })
-
 
 
 
