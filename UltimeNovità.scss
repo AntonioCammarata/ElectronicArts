@@ -102,29 +102,18 @@
       }
       
       .triggerButtons__RedBar{
-        display: block;
-        // width:0;
-       
+        display: block;       
         margin: 0 auto;
         height: 2px;
         background-color: $rosa;
         position: absolute;
         bottom:5%;
         width: 0%;
-        
+        transition: width .2s;
 
-
-          &.visible__bar{
-            
+          &.visible__bar{  
             width: 80%;
-            transition: width .2s 
-            
-            
-          }
-
-          &:not(.visible__bar){
-            opacity: 0;
-            
+            transition: width .2s
           }
         }
       }
