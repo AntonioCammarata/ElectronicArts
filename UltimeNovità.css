@@ -102,11 +102,11 @@
   position: absolute;
   bottom: 5%;
   width: 0%;
-  transition: width 0.2s;
+  transition: width 0.1s ease-out;
 }
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar.visible__bar {
   width: 80%;
-  transition: width 0.2s;
+  transition: width 0.1s ease-out;
 }
 #ultimeNovità-cardMenu .trigger {
   background: none;

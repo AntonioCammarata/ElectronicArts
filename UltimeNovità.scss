@@ -109,11 +109,11 @@
         position: absolute;
         bottom:5%;
         width: 0%;
-        transition: width .2s;
+        transition: width .1s ease-out;
 
           &.visible__bar{  
             width: 80%;
-            transition: width .2s
+            transition: width .1s ease-out;
           }
         }
       }
