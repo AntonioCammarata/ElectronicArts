@@ -61,6 +61,16 @@ const $allCard = document.querySelectorAll(".cardUltimeNovità")
 
 $trigger.forEach(($_el) => {
   $_el.addEventListener("click", event => {
+    $allCard.forEach($_card => {
+      $_card.classList.add("startingPointCard");
+
+      setTimeout(() => {
+        $_card.classList.remove("startingPointCard")
+
+      },300);
+
+    });
+    
     $redbar.forEach(($_bar) => $_bar.classList.remove("visible__bar"))
     $trigger.forEach(($_trig) => $_trig.classList.remove("triggered_bg"))
     const nth = event.target.dataset.nth
@@ -70,6 +80,7 @@ $trigger.forEach(($_el) => {
 })
 
 
-//
-//-----------------------------GESTIONE FOCUS TRIGGER TRANSFORM CARD------
+
+
+
 
