@@ -3,7 +3,6 @@
 const $trigger = document.querySelectorAll(".triggerContainer");
 const $content = document.querySelectorAll(".content");
 
-const $redbar = document.querySelectorAll(".triggerButtons__RedBar")
 
 $trigger.forEach(($el) => {
   $el.addEventListener("click", (event) => {
@@ -13,6 +12,7 @@ $trigger.forEach(($el) => {
     const id = event.target.dataset.id;
     // Vado ad aggiungere la classe `visible` al div corretto usando l'id appena preso
     document.getElementById(id).classList.add("visible");
+    console.log(id);
   });
 });
 
@@ -60,4 +60,15 @@ $slider.addEventListener("scroll", () => {
 //
 //-------------------------------GESTIONE FOCUS TRIGGER--------------
 
+const $redbar = document.querySelectorAll(".triggerButtons__RedBar")
 
+
+$trigger.forEach(($_el) => {
+  $_el.addEventListener("click", event => {
+    $redbar.forEach(($_bar) => $_bar.classList.remove("visible__bar"))
+    $trigger.forEach(($_trig) => $_trig.classList.remove("triggered_bg"))
+    const nth = event.target.dataset.nth
+    document.getElementById(nth).classList.add("visible__bar")
+    event.currentTarget.classList.add("triggered_bg")
+  })
+})

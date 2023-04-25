@@ -87,38 +87,40 @@
       &:hover{
         background-color: #dedede ;
       }
+
+      &.triggered_bg{
+        background-color: #dedede;
+      }
       // &:focus{
       //   background-color: #dedede ;
       //   color:rgb(61, 61, 61);
 
-        // .triggerButtons__RedBar{
-        //   display: inline-block;
-        //   width: 80%;
-        //   // transition : width .1s ease-out;
-        //   opacity: 1;
-        // }
-        .triggerButtons__RedBar{
-          display: inline-block;
-          width: 80%;
-          // transition : width .1s ease-out;
-          opacity: 1;
-          width: 80%;
-          margin: 0 auto;
-          height: 1px;
-          background-color: $rosa;
-          position: absolute;
-          top: 95%;
 
-          .visible__bar{
+      .triggerButtons__RedBar{
+        display: block;
+        width:0;
+        transition : width .3s ease-out;
+        opacity: 1;
+        margin: 0 auto;
+        height: 2px;
+        background-color: $rosa;
+        position: absolute;
+        bottom:5%;
+
+          &.visible__bar{
             display: block;
+            width: 80%;
+            transition: width 0.3 ease-out
             
           }
 
           &:not(.visible__bar){
             display: none;
+            
           }
         }
       }
+
       .trigger{
         background:none;
         padding: 0 15px;
