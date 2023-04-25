@@ -59,25 +59,33 @@ $slider.addEventListener("scroll", () => {
 const $redbar = document.querySelectorAll(".triggerButtons__RedBar")
 const $allCard = document.querySelectorAll(".cardUltimeNovità")
 
+
 $trigger.forEach(($_el) => {
+
   $_el.addEventListener("click", event => {
-    $allCard.forEach($_card => {
-      $_card.classList.add("startingPointCard");
 
+    $allCard.forEach($__card => {
+      
+      $__card.classList.add("card-up")
+      
       setTimeout(() => {
-        $_card.classList.remove("startingPointCard")
 
-      },300);
-
-    });
+        $__card.classList.remove("card-up")
+        
+      }, 10);
     
-    $redbar.forEach(($_bar) => $_bar.classList.remove("visible__bar"))
-    $trigger.forEach(($_trig) => $_trig.classList.remove("triggered_bg"))
-    const nth = event.target.dataset.nth
-    document.getElementById(nth).classList.add("visible__bar")
-    event.currentTarget.classList.add("triggered_bg")
+
+
+      $redbar.forEach(($_bar) => $_bar.classList.remove("visible__bar"))
+      $trigger.forEach(($_trig) => $_trig.classList.remove("triggered_bg"))
+      const nth = event.target.dataset.nth
+      document.getElementById(nth).classList.add("visible__bar")
+      event.currentTarget.classList.add("triggered_bg")
+    })
   })
-})
+});
+
+
 
 
 
