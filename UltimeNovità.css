@@ -96,9 +96,6 @@
 }
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
   display: block;
-  width: 0;
-  transition: width 0.3s ease-out;
-  opacity: 1;
   margin: 0 auto;
   height: 2px;
   background-color: #ff4747;
@@ -108,7 +105,7 @@
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar.visible__bar {
   display: block;
   width: 80%;
-  transition: width 0.3 ease-out;
+  transition: all 0.3 ease-out;
 }
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar:not(.visible__bar) {
   display: none;
