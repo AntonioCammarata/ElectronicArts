@@ -153,7 +153,7 @@
 @media (min-width: 778px) {
   .content .cardUltimeNovità .par {
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 .content .cardUltimeNovità .card-title {
@@ -500,12 +500,11 @@
     background-size: cover;
   }
 }
-@media (min-width: 778px) {
+@media (min-width: 768px) {
   .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background-image: url();
   }
 }
 @media (min-width: 1028px) {
@@ -542,7 +541,7 @@
     box-shadow: 0 3px 10px -2px #7d7d7d;
   }
 }
-@media (min-width: 1028px) and (min-width: 778px) {
+@media (min-width: 1028px) and (min-width: 768px) {
   .content #ultimeNovità-cardContainer .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

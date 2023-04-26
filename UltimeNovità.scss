@@ -167,7 +167,7 @@
       display: none;
       @media(min-width: 778px){
         display: block;
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
     .card-title{
@@ -468,11 +468,10 @@
 
    }
   }
-  @media(min-width: 778px) { 
+  @media(min-width: 768px) { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background-image: url();
     }
     @media(min-width: 1028px){
       display: grid;
@@ -505,7 +504,7 @@
       background-color:$page-bg;
       box-shadow: 0 3px 10px -2px #7d7d7d
       }
-      @media(min-width: 778px) { 
+      @media(min-width: 768px) { 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
