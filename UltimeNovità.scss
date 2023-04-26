@@ -92,6 +92,7 @@
       align-items: center;
       flex-shrink: 0;
       position: relative;
+      color: #161616;
       cursor:pointer;
       &:hover{
         background-color: #dedede ;
@@ -99,6 +100,7 @@
 
       &.triggered_bg{
         background-color: #dedede;
+        color: #646464;
       }
       
       .triggerButtons__RedBar{

@@ -86,6 +86,7 @@
   align-items: center;
   flex-shrink: 0;
   position: relative;
+  color: #161616;
   cursor: pointer;
 }
 #ultimeNovità-cardMenu .triggerContainer:hover {
@@ -93,6 +94,7 @@
 }
 #ultimeNovità-cardMenu .triggerContainer.triggered_bg {
   background-color: #dedede;
+  color: #646464;
 }
 #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
   display: block;
