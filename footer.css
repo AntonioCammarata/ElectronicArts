@@ -49,10 +49,10 @@ footer {
 .image {
   position: relative;
 }
-.background{
+.background {
   background-color: #6fb0d6;
 }
-.background img{
+.background img {
   width: 100%;
   height: 100%;
 }
@@ -210,7 +210,7 @@ footer {
 }
 #stati-menu {
   position: absolute;
-  top: 320px;
+  top: 3050px;
   right: 590px;
   background-color: white;
   width: 590px;
@@ -286,7 +286,7 @@ footer {
 
 #bandiere-menu {
   position: absolute;
-  top: 300px;
+  top: 3030px;
   right: 390px;
   background-color: white;
   width: 530px;
@@ -481,8 +481,11 @@ footer {
     margin-left: 0px;
     font-size: 2rem;
   }
+  #links-a-only {
+    padding: 3px;
+  }
 }
-@media (max-width: 376px) {
+@media (max-width: 414px) {
   .hover {
     position: absolute;
     top: 10%;
@@ -491,7 +494,7 @@ footer {
   .bluePart {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 21vh;
   }
   .bluePart p {
     margin-left: 10px;
@@ -511,6 +514,9 @@ footer {
     margin-left: 8px;
     line-height: 2;
   }
+  #links-a-only {
+    padding: 5px;
+  }
   .rightLinks p {
     margin-left: 10px;
     margin-top: 40px;
@@ -526,8 +532,8 @@ footer {
   }
   #stati-menu {
     position: absolute;
-    top: 1020px;
-    right: 17px;
+    top: 4850px;
+    right: 30px;
     background-color: white;
     width: 324px;
     height: 970px;
@@ -536,11 +542,12 @@ footer {
     border: solid rgb(200, 200, 200);
     border-radius: 5px;
     height: 400px;
+    text-align: start;
   }
   #bandiere-menu {
     position: absolute;
-    top: 1100px;
-    right: 17px;
+    top: 4990px;
+    right: 30px;
     background-color: white;
     width: 324px;
     height: 1060px;
@@ -550,6 +557,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     height: 350px;
+    text-align: start;
   }
   .country-icons {
     display: none;
