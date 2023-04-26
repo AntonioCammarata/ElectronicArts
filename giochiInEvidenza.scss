@@ -155,7 +155,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
+.container-last-games{
+  height: 200px;
+}
  }
  @media screen and (min-width:1300px) {
   .container-ea-game{
