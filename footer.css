@@ -1,35 +1,32 @@
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+
 @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
-      format("svg");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
 }
 header {
   overflow-x: hidden;
 }
+
 .image {
   overflow: hidden;
 }
+
 .background img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 footer {
   overflow-x: hidden;
 }
+
 .rightLinks svg {
   width: 22px;
   height: 22px;
@@ -37,35 +34,43 @@ footer {
   margin-left: 7px;
   margin-top: 10px;
 }
+
 .rightLinks svg:hover {
   transform: scale(1.4);
   transition: 0.3s;
 }
+
 .rightLinks p a {
   text-decoration: none;
   color: black;
   font-family: "Electronic Arts Text";
 }
+
 .image {
   position: relative;
 }
-.background{
+
+.background {
   background-color: #6fb0d6;
 }
-.background img{
+
+.background img {
   width: 100%;
   height: 100%;
 }
+
 .hover {
   position: absolute;
   top: 35%;
   left: 25%;
 }
+
 .hover p {
   color: white;
   font-size: 1.3rem;
   font-family: "Electronic Arts Text";
 }
+
 .hover button {
   padding: 20px;
   background-color: transparent;
@@ -75,11 +80,13 @@ footer {
   margin-top: 20px;
   font-family: "Electronic Arts Text";
 }
+
 .hover button:hover {
   transition: 0.3s;
   transform: 0.3s;
   padding: 23px 23px;
 }
+
 .bluePart {
   height: 10vh;
   background-color: #6fb0d6;
@@ -88,11 +95,13 @@ footer {
   justify-content: center;
   gap: 10px;
 }
+
 .bluePart p {
   font-size: 1.8rem;
   font-weight: bold;
   font-family: "Electronic Arts Text";
 }
+
 .bluePart button {
   border: 2px solid black;
   background-color: #6fb0d6;
@@ -100,11 +109,13 @@ footer {
   padding: 20px 35px;
   font-family: "Electronic Arts Text";
 }
+
 .bluePart button:hover {
   transition: 0.3s;
   transform: 0.3s;
   padding: 25px 40px;
 }
+
 .middlePart {
   height: 20vh;
   display: flex;
@@ -112,25 +123,30 @@ footer {
   background-color: rgb(234, 234, 234);
   padding-top: 3%;
 }
+
 .leftLinks {
   margin-left: 25px;
   margin-right: 25px;
   font-size: 16px;
 }
+
 .leftLinks a {
   text-decoration: none;
   color: black;
   padding-left: 40px;
 }
+
 .leftLinks a:hover {
   color: red;
   transition: 0.3s;
   transform: 0.3s;
 }
+
 .rightLinks {
   margin-left: 80px;
   height: 55px;
 }
+
 .rightLinks p {
   font-size: 14px;
   padding-bottom: 10px;
@@ -138,16 +154,19 @@ footer {
   width: 195px;
   font-family: "Electronic Arts Text";
 }
+
 .first-footer {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
+
 .eaLogo {
   margin-left: 25px;
   width: 64px;
   height: 64px;
 }
+
 .links-wrap {
   text-decoration: none;
   color: black;
@@ -155,6 +174,7 @@ footer {
   height: 30px;
   padding: 5px;
 }
+
 .links-first-footer {
   display: flex;
   flex-wrap: wrap;
@@ -165,11 +185,13 @@ footer {
   margin-left: 45px;
   font-family: "Electronic Arts Text";
 }
+
 .buttons {
   margin-top: 20px;
   margin-left: 180px;
   font-family: "Electronic Arts Text";
 }
+
 .country {
   width: 160px;
   height: 60px;
@@ -178,6 +200,7 @@ footer {
   border-radius: 1px;
   font-family: "Electronic Arts Text";
 }
+
 .language {
   width: 160px;
   height: 60px;
@@ -186,14 +209,17 @@ footer {
   border-radius: 1px;
   font-family: "Electronic Arts Text";
 }
+
 .last-part {
   display: flex;
   margin-bottom: 3rem;
   margin-top: 1.5rem;
 }
+
 .footer-links-title {
   margin-left: 500px;
 }
+
 .cookie {
   text-decoration: none;
   font-size: 15px;
@@ -201,6 +227,7 @@ footer {
   font-family: "Electronic Arts Text";
   color: black;
 }
+
 .right-footer-part {
   margin-top: 20px;
   width: 570px;
@@ -208,6 +235,7 @@ footer {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 #stati-menu {
   position: absolute;
   top: 320px;
@@ -279,6 +307,7 @@ footer {
   align-items: center;
   border-bottom: rgb(200, 200, 200) solid 1px;
 }
+
 .stato a:hover {
   margin-left: 15px;
   transition: 0.3s;
@@ -335,6 +364,7 @@ footer {
 .line-language a:hover {
   padding-left: 10px;
 }
+
 @media (max-width: 821px) {
   .bluePart {
     display: flex;
@@ -501,7 +531,6 @@ footer {
   .bluePart button {
     padding: 15px 100px;
   }
-
   .middlePart {
     height: 190px;
     width: 380px;
@@ -579,3 +608,4 @@ footer {
     margin-left: 19px;
   }
 }
+/*# sourceMappingURL=footer.css.map */

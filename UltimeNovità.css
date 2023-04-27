@@ -515,6 +515,7 @@
   }
   .content #ultimeNovità-cardContainer {
     width: 100%;
+    min-height: -moz-min-content;
     min-height: min-content;
     background-color: #f3f3f3;
     position: relative;
@@ -547,6 +548,4 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-}
-
-/*# sourceMappingURL=UltimeNovit%C3%A0.css.map */
+}/*# sourceMappingURL=UltimeNovità.css.map */
