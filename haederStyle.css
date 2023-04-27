@@ -917,9 +917,22 @@ header .nav-02 .cotain02-nav-02 {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 1281px) {
+  header {
+    height: 930px;
+    overflow: hidden;
+  }
+  .background02 {
+    position: absolute;
+    top: 52pc;
+    width: 100%;
+    font-size: 1.1em;
+  }
+}
 @media screen and (max-width: 1035px) {
   header {
-    height: 670px;
+    height: 665px;
+    overflow: hidden;
   }
   .dropbtn {
     display: none;
@@ -941,10 +954,9 @@ header .nav-02 .cotain02-nav-02 {
   }
   #myVideo {
     width: 100%;
-    height: 900px;
-    z-index: -1;
+    height: 800px;
     position: absolute;
-    top: -150px;
+    top: -5pc;
   }
   .content859 {
     position: absolute;
@@ -963,12 +975,6 @@ header .nav-02 .cotain02-nav-02 {
   .content859 p {
     font-size: 1em;
   }
-  .background02 {
-    height: 150px;
-    position: absolute;
-    top: 460px;
-    width: 100%;
-  }
   .divbackground02Content {
     display: flex;
     align-items: center;
@@ -982,10 +988,11 @@ header .nav-02 .cotain02-nav-02 {
   }
   .background02 {
     position: absolute;
-    top: -320px;
+    top: 32pc;
+    height: 150px;
   }
   .divBlock01 h3 {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
   }
   .divBlockContent01 img {
@@ -1198,7 +1205,7 @@ header .nav-02 .cotain02-nav-02 {
 }
 @media screen and (max-width: 560px) {
   header {
-    height: 480px;
+    position: relative;
   }
   .box-02 {
     width: 9em;
@@ -1209,10 +1216,14 @@ header .nav-02 .cotain02-nav-02 {
     height: 20px;
     width: 20px;
   }
+  #myVideo {
+    position: absolute;
+    bottom: -400px;
+  }
   .background02 {
     height: 100px;
     position: absolute;
-    top: -500px;
+    bottom: -700px;
   }
   .divBlock01 h3 {
     font-size: 0.9em;
@@ -1267,7 +1278,7 @@ header .nav-02 .cotain02-nav-02 {
 }
 @media screen and (max-width: 423px) {
   header {
-    height: 450px;
+    overflow: hidden;
   }
   .box-02 {
     width: 8em;
@@ -1286,10 +1297,9 @@ header .nav-02 .cotain02-nav-02 {
   }
   #myVideo {
     width: 100%;
-    height: 700px;
-    z-index: -1;
+    height: 300px;
     position: absolute;
-    top: -180px;
+    top: -300pc;
   }
   .content859 {
     width: 100%;
@@ -1305,7 +1315,7 @@ header .nav-02 .cotain02-nav-02 {
     font-size: 1em;
   }
   .content859 p {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   #myBtn {
     width: 80px;
@@ -1371,7 +1381,7 @@ header .nav-02 .cotain02-nav-02 {
     height: 700px;
     z-index: -1;
     position: absolute;
-    top: -180px;
+    top: -280px;
   }
   .content859 {
     width: 100%;
