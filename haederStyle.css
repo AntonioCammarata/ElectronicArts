@@ -769,6 +769,10 @@ header .nav-02 .cotain02-nav-02 {
 }
 
 /* --- BACKGROUND VIDEO --- */
+.contentBackGroundHeader {
+  position: relative;
+}
+
 #myVideo {
   position: absolute;
   right: 0;
@@ -914,6 +918,9 @@ header .nav-02 .cotain02-nav-02 {
 }
 
 @media screen and (max-width: 1035px) {
+  header {
+    height: 670px;
+  }
   .dropbtn {
     display: none;
   }
@@ -973,6 +980,10 @@ header .nav-02 .cotain02-nav-02 {
     height: 40px;
     font-size: 0.9em;
   }
+  .background02 {
+    position: absolute;
+    top: -320px;
+  }
   .divBlock01 h3 {
     font-size: 1em;
     text-align: center;
@@ -991,7 +1002,37 @@ header .nav-02 .cotain02-nav-02 {
     font-size: 0.9em;
   }
 }
+@media screen and (max-width: 915px) {
+  header {
+    height: 660px;
+  }
+  .background02 {
+    position: absolute;
+    top: -24pc;
+  }
+}
+@media screen and (max-width: 825px) {
+  header {
+    height: 680px;
+  }
+  .background02 {
+    position: absolute;
+    top: -23pc;
+  }
+}
+@media screen and (max-width: 770px) {
+  header {
+    height: 660px;
+  }
+  .background02 {
+    position: absolute;
+    top: -24pc;
+  }
+}
 @media screen and (max-width: 690px) {
+  header {
+    height: 590px;
+  }
   #myVideo {
     position: absolute;
     top: -170px;
@@ -1028,6 +1069,10 @@ header .nav-02 .cotain02-nav-02 {
     width: 110px;
     height: 35px;
     font-size: 0.8em;
+  }
+  .background02 {
+    position: absolute;
+    top: -25pc;
   }
   .divBlock01 h3 {
     font-size: 0.9em;
@@ -1152,6 +1197,9 @@ header .nav-02 .cotain02-nav-02 {
   }
 }
 @media screen and (max-width: 560px) {
+  header {
+    height: 480px;
+  }
   .box-02 {
     width: 9em;
     position: relative;
@@ -1161,8 +1209,21 @@ header .nav-02 .cotain02-nav-02 {
     height: 20px;
     width: 20px;
   }
+  .background02 {
+    height: 100px;
+    position: absolute;
+    top: -500px;
+  }
+  .divBlock01 h3 {
+    font-size: 0.9em;
+    position: relative;
+    bottom: -15px;
+  }
 }
 @media screen and (max-width: 508px) {
+  header {
+    height: 540px;
+  }
   .divContent02 {
     flex-direction: column;
     width: 350px;
@@ -1177,8 +1238,37 @@ header .nav-02 .cotain02-nav-02 {
   .divContent01 p {
     font-size: 0.6em;
   }
+  .background02 {
+    height: 130px;
+    position: absolute;
+    top: -520px;
+  }
+  .divBlock01 h3 {
+    font-size: 0.9em;
+    position: relative;
+    top: 10px;
+  }
+  .divBlockContent01 img {
+    width: 110px;
+  }
+  .divBlockContent01 img:hover {
+    width: 120px;
+  }
+  .background02 .divbackground02Content .divBlock02 .btnBlock02 {
+    width: 110px;
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .background02 .divbackground02Content .divBlock02 .btnBlock02:hover {
+    width: 120px;
+    height: 45px;
+    font-size: 0.9em;
+  }
 }
 @media screen and (max-width: 423px) {
+  header {
+    height: 450px;
+  }
   .box-02 {
     width: 8em;
     position: relative;
@@ -1205,7 +1295,7 @@ header .nav-02 .cotain02-nav-02 {
     width: 100%;
     height: 600px;
     position: absolute;
-    top: -125px;
+    top: -105px;
     gap: 8px;
   }
   .content859 .divanimation {
@@ -1226,7 +1316,7 @@ header .nav-02 .cotain02-nav-02 {
   .background02 {
     height: 180px;
     position: absolute;
-    top: 251px;
+    top: -620px;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -1242,7 +1332,7 @@ header .nav-02 .cotain02-nav-02 {
   .divBlock01 h3 {
     font-size: 0.9em;
     position: relative;
-    bottom: 23px;
+    top: -25px;
   }
   .divBlockContent01 img {
     width: 110px;
@@ -1262,6 +1352,9 @@ header .nav-02 .cotain02-nav-02 {
   }
 }
 @media screen and (max-width: 360px) {
+  header {
+    height: 450px;
+  }
   .box-02 {
     width: 8em;
     position: relative;
@@ -1305,7 +1398,7 @@ header .nav-02 .cotain02-nav-02 {
   .background02 {
     height: 180px;
     position: absolute;
-    top: 251px;
+    top: -630px;
     width: 100%;
     padding: 20px;
     text-align: center;
