@@ -129,7 +129,6 @@
   .content {
     padding: 24px 16px;
     margin: 40px 65px;
-    background-color: red;
   }
 }
 .content:not(.visible) {
@@ -169,6 +168,14 @@
     padding: 0px;
     height: 27rem;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .content .cardUltimeNovità {
+    height: 30rem;
+    width: 22rem;
+  }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage {
     width: 100%;
     height: 12rem;
@@ -176,6 +183,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage2 {
     width: 100%;
     height: 12rem;
@@ -183,6 +192,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage3 {
     width: 100%;
     height: 12rem;
@@ -190,6 +201,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage4 {
     width: 100%;
     height: 12rem;
@@ -197,6 +210,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage5 {
     width: 100%;
     height: 12rem;
@@ -204,6 +219,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage6 {
     width: 100%;
     height: 12rem;
@@ -211,6 +228,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage7 {
     width: 100%;
     height: 12rem;
@@ -218,6 +237,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage8 {
     width: 100%;
     height: 12rem;
@@ -225,6 +246,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage9 {
     width: 100%;
     height: 12rem;
@@ -232,6 +255,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage10 {
     width: 100%;
     height: 12rem;
@@ -239,6 +264,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage11 {
     width: 100%;
     height: 12rem;
@@ -246,6 +273,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage12 {
     width: 100%;
     height: 12rem;
@@ -253,6 +282,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage13 {
     width: 100%;
     height: 12rem;
@@ -260,6 +291,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage14 {
     width: 100%;
     height: 12rem;
@@ -267,6 +300,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage15 {
     width: 100%;
     height: 12rem;
@@ -274,6 +309,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage16 {
     width: 100%;
     height: 12rem;
@@ -281,6 +318,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage17 {
     width: 100%;
     height: 12rem;
@@ -288,6 +327,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage18 {
     width: 100%;
     height: 12rem;
@@ -295,6 +336,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage19 {
     width: 100%;
     height: 12rem;
@@ -302,6 +345,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage20 {
     width: 100%;
     height: 12rem;
@@ -309,6 +354,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage21 {
     width: 100%;
     height: 12rem;
@@ -316,6 +363,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage22 {
     width: 100%;
     height: 12rem;
@@ -323,6 +372,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage23 {
     width: 100%;
     height: 12rem;
@@ -330,6 +381,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage24 {
     width: 100%;
     height: 12rem;
@@ -337,6 +390,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage25 {
     width: 100%;
     height: 12rem;
@@ -344,6 +399,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage26 {
     width: 100%;
     height: 12rem;
@@ -351,6 +408,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage27 {
     width: 100%;
     height: 12rem;
@@ -358,6 +417,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage28 {
     width: 100%;
     height: 12rem;
@@ -365,6 +426,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage29 {
     width: 100%;
     height: 12rem;
@@ -372,6 +435,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage30 {
     width: 100%;
     height: 12rem;
@@ -379,6 +444,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage31 {
     width: 100%;
     height: 12rem;
@@ -386,6 +453,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage32 {
     width: 100%;
     height: 12rem;
@@ -393,6 +462,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage33 {
     width: 100%;
     height: 12rem;
@@ -400,6 +471,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage34 {
     width: 100%;
     height: 12rem;
@@ -407,6 +480,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage35 {
     width: 100%;
     height: 12rem;
@@ -414,6 +489,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage36 {
     width: 100%;
     height: 12rem;
@@ -421,6 +498,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage37 {
     width: 100%;
     height: 12rem;
@@ -428,6 +507,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage38 {
     width: 100%;
     height: 12rem;
@@ -435,6 +516,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage39 {
     width: 100%;
     height: 12rem;
@@ -442,6 +525,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage40 {
     width: 100%;
     height: 12rem;
@@ -449,6 +534,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage41 {
     width: 100%;
     height: 12rem;
@@ -456,6 +543,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage42 {
     width: 100%;
     height: 12rem;
@@ -463,6 +552,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage43 {
     width: 100%;
     height: 12rem;
@@ -470,6 +561,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage44 {
     width: 100%;
     height: 12rem;
@@ -477,6 +570,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage45 {
     width: 100%;
     height: 12rem;
@@ -484,6 +579,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage46 {
     width: 100%;
     height: 12rem;
@@ -491,6 +588,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage47 {
     width: 100%;
     height: 12rem;
@@ -498,6 +597,8 @@
     background-position: center;
     background-size: cover;
   }
+}
+@media (min-width: 768px) {
   .content .cardUltimeNovità #unImage48 {
     width: 100%;
     height: 12rem;
@@ -513,11 +614,12 @@
     gap: 30px;
   }
 }
-@media (min-width: 1028px) {
+@media (min-width: 1024px) {
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 2.5rem 4rem;
   }
   .content #ultimeNovità-cardContainer {
     width: 100%;
@@ -541,7 +643,7 @@
     box-shadow: 0 3px 10px -2px #7d7d7d;
   }
 }
-@media (min-width: 1028px) and (min-width: 768px) {
+@media (min-width: 1024px) and (min-width: 768px) {
   .content #ultimeNovità-cardContainer .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
