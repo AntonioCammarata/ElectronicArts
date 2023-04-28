@@ -189,6 +189,7 @@
 
     @media(min-width: 1024px) {
       height: 30rem;
+      max-width: 350px;
     }
 
       #unImage {
@@ -538,7 +539,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
 
     #ultimeNovità-cardContainer {
       width: 100%;
