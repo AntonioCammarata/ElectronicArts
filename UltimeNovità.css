@@ -17,11 +17,6 @@
   width: 100%;
   position: relative;
 }
-@media (min-width: 768px) {
-  #ultimeNovità-container {
-    height: 150vh;
-  }
-}
 #ultimeNovità-container .ultimeNovità-menuButtons {
   border: none;
   background-color: #f3f3f3;
@@ -129,9 +124,13 @@
   flex-direction: column;
   gap: 16px;
   padding: 24px 16px;
-  margin: 40px 65px;
-  height: auto;
-  background-color: red;
+}
+@media (min-width: 768px) {
+  .content {
+    padding: 24px 16px;
+    margin: 40px 65px;
+    background-color: red;
+  }
 }
 .content:not(.visible) {
   display: none;
@@ -168,6 +167,7 @@
 @media (min-width: 768px) {
   .content .cardUltimeNovità {
     padding: 0px;
+    height: 27rem;
   }
   .content .cardUltimeNovità #unImage {
     width: 100%;
@@ -524,12 +524,6 @@
     min-height: min-content;
     background-color: #f3f3f3;
     position: relative;
-  }
-  .content #ultimeNovità-cardContainer .content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px 16px;
   }
   .content #ultimeNovità-cardContainer .content:not(.visible) {
     display: none;

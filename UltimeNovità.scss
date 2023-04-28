@@ -21,7 +21,7 @@
   // height: 100vh;
   // background-color: red;
   @media (min-width: 768px){
-    height: 150vh;
+    // height: 150vh;
     // background-color: red;
     // background-color: red;
   }
@@ -146,9 +146,11 @@
   flex-direction: column;
   gap: 16px;
   padding: 24px 16px;
+  @media (min-width:768px){
+    padding: 24px 16px;
   margin:40px 65px;
-  height: auto;
   background-color: red;
+  }
     &:not(.visible){
       display: none;
     }
@@ -185,6 +187,7 @@
     }
     @media(min-width: 768px){
       padding: 0px;
+      height: 27rem;
     
     #unImage{
       width: 100%;
@@ -495,10 +498,7 @@
     background-color: $page-bg;
     position:relative;
     .content{
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 24px 16px;
+      
         &:not(.visible){
           display: none;
         }
