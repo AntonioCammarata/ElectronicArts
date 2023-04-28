@@ -17,6 +17,12 @@
   width: 100%;
   position: relative;
 }
+@media (min-width: 768px) {
+  #ultimeNovità-container {
+    height: 200vh;
+    background-color: red;
+  }
+}
 #ultimeNovità-container .ultimeNovità-menuButtons {
   border: none;
   background-color: #f3f3f3;
@@ -150,7 +156,7 @@
 .content .cardUltimeNovità .par {
   display: none;
 }
-@media (min-width: 778px) {
+@media (min-width: 768px) {
   .content .cardUltimeNovità .par {
     display: block;
     font-size: 1rem;
@@ -159,7 +165,7 @@
 .content .cardUltimeNovità .card-title {
   color: rgb(245, 80, 79);
 }
-@media (min-width: 778px) {
+@media (min-width: 768px) {
   .content .cardUltimeNovità {
     padding: 0px;
   }

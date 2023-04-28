@@ -13,12 +13,17 @@
 
 #ultimeNovità-container{
   min-width: 259px;
-  // border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   position: relative;
+  // height: 100vh;
+  // background-color: red;
+  @media (min-width: 768px){
+    height: 200vh;
+    background-color: red;
+  }
  
   .ultimeNovità-menuButtons{
     border: none;
@@ -165,7 +170,7 @@
  
     .par{
       display: none;
-      @media(min-width: 778px){
+      @media(min-width: 768px){
         display: block;
         font-size: 1rem;
       }
@@ -173,7 +178,7 @@
     .card-title{
     color :rgb(245, 80, 79);
     }
-    @media(min-width: 778px){
+    @media(min-width: 768px){
       padding: 0px;
     
     #unImage{
