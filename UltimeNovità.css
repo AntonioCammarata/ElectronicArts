@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-color: #f3f3f3;
 }
@@ -75,6 +75,12 @@
 @media (min-width: 900px) {
   #ultimeNovità-cardMenu {
     justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  #ultimeNovità-cardMenu {
+    justify-content: flex-start;
+    padding-left: 15%;
   }
 }
 #ultimeNovità-cardMenu::-webkit-scrollbar {
@@ -174,7 +180,6 @@
 @media (min-width: 768px) and (min-width: 1024px) {
   .content .cardUltimeNovità {
     height: 30rem;
-    width: 22rem;
   }
 }
 @media (min-width: 768px) {
