@@ -40,6 +40,11 @@
   height: 49px;
   box-shadow: 7px -2px 15px 2px #f3f3f3;
 }
+@media (min-width: 768px) {
+  #ultimeNovità-container #prev {
+    display: none;
+  }
+}
 
 #next {
   position: absolute;
@@ -72,9 +77,11 @@
   scrollbar-width: none;
   position: relative;
 }
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   #ultimeNovità-cardMenu {
     justify-content: center;
+    justify-content: flex-start;
+    padding-left: 10%;
   }
 }
 @media (min-width: 1024px) {
@@ -136,7 +143,7 @@
 @media (min-width: 768px) {
   .content {
     padding: 24px 16px;
-    margin: 40px 65px;
+    margin: 2.5rem 4rem;
   }
 }
 .content:not(.visible) {

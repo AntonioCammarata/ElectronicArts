@@ -44,6 +44,9 @@
     z-index: 12;
     height: 49px;
     box-shadow: 7px -2px 15px 2px #f3f3f3;
+    @media (min-width:768px) {
+      display: none
+    }
   }
 }
 #next {
@@ -77,8 +80,10 @@
   overflow-x: scroll;
   scrollbar-width: none;
   position: relative;
-  @media (min-width: 900px) {
+  @media (min-width: 768px) {
     justify-content: center;
+    justify-content: flex-start;
+    padding-left: 10%;
   }
 
   @media (min-width:1024px){
@@ -143,7 +148,7 @@
   padding: 24px 16px;
   @media (min-width: 768px) {
     padding: 24px 16px;
-    margin: 40px 65px;
+    margin: 2.5rem 4rem;
   }
   &:not(.visible) {
     display: none;
