@@ -17,7 +17,7 @@
   width: 100%;
   position: relative;
   // height: 100vh;
-  // background-color: red;
+  background-color: $page-bg;
   @media (min-width: 768px) {
     // height: 150vh;
     // background-color: red;
@@ -60,6 +60,7 @@
   font-size: 25px;
   text-align: center;
   padding: 35px;
+  background-color: $page-bg;
   // background-color: bisque;
 }
 
@@ -149,7 +150,7 @@
     flex-direction: column;
     align-items: center;
     border: none;
-    background-color: $page-bg;
+    background-color: $white;
     // margin-left: 15px;
     // margin-right: 15px ;
     box-shadow: 0px 5px 11px 2px rgba(181, 181, 181, 0.76);
@@ -526,7 +527,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 2.5rem 4rem;
+    padding: 1rem 4rem;
 
     #ultimeNovità-cardContainer {
       width: 100%;
@@ -546,7 +547,7 @@
           flex-direction: column;
           align-items: center;
           border: none;
-          background-color: $page-bg;
+          
           box-shadow: 0 3px 10px -2px #7d7d7d;
         }
         @media (min-width: 768px) {
