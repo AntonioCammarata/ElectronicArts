@@ -179,6 +179,13 @@
   }
 }
 @media (max-width: 768px) {
+  .content .cardUltimeNovità .cards_texts_container .title_subtitle_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
   .content .cardUltimeNovità h3 {
     text-align: center;
     margin-top: 5px;
@@ -210,6 +217,11 @@
 .content .cardUltimeNovità .cardsub-title {
   font-size: 14px;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .content .cardUltimeNovità .cardsub-title {
+    margin-top: 5px;
+  }
 }
 @media (min-width: 768px) {
   .content .cardUltimeNovità {
