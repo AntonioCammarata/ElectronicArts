@@ -167,6 +167,9 @@
   flex-direction: column;
   justify-content: center;
 }
+.content .cardUltimeNovità .cards_texts_container .par {
+  margin-top: 10px;
+}
 @media (max-width: 768px) {
   .content .cardUltimeNovità .cards_texts_container {
     align-items: center;
@@ -193,7 +196,7 @@
 }
 @media (min-width: 768px) {
   .content .cardUltimeNovità h3 {
-    margin-top: 1rem;
+    margin-top: 10px;
   }
 }
 .content .cardUltimeNovità.card-up {

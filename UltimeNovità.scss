@@ -171,6 +171,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      .par{
+        margin-top: 10px;
+      }
       
       @media(max-width:768px){
         
@@ -201,7 +205,7 @@
      }
       @media(min-width:768px){
         h3{
-          margin-top:1rem
+          margin-top:10px
         }
       }
     
