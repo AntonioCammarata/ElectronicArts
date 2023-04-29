@@ -76,6 +76,7 @@
   overflow-x: scroll;
   scrollbar-width: none;
   position: relative;
+  scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
   #ultimeNovità-cardMenu {
@@ -164,18 +165,28 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .content .cardUltimeNovità .cards_texts_container {
+    align-items: center;
+  }
+}
 @media (min-width: 768px) {
-  .content .cardUltimeNovità .cards_texts_container .cardsub-title {
-    display: inline;
+  .content .cardUltimeNovità .cards_texts_container .title_subtitle_container {
+    display: flex;
+    gap: 20px;
   }
 }
 @media (max-width: 768px) {
   .content .cardUltimeNovità h3 {
     text-align: center;
     margin-top: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .content .cardUltimeNovità h3 {
+    margin-top: 1rem;
   }
 }
 .content .cardUltimeNovità.card-up {
