@@ -40,7 +40,7 @@
   #prev {
     position: absolute;
     left: 0;
-    top: 107px;
+    top: 113px;
     z-index: 12;
     height: 49px;
     box-shadow: 7px -2px 15px 2px #f3f3f3;
@@ -52,7 +52,7 @@
 #next {
   position: absolute;
   right: 0;
-  top: 107px;
+  top: 113px;
   background-color: $page-bg;
   height: 49px;
   z-index: 12;
@@ -171,6 +171,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @media(min-width: 768px){
+        .cardsub-title{
+          display: inline;
+        }
+      }
 
       
     }
