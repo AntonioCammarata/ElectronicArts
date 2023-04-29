@@ -170,6 +170,7 @@
 @media (max-width: 768px) {
   .content .cardUltimeNovità h3 {
     text-align: center;
+    margin-top: 5px;
   }
 }
 .content .cardUltimeNovità.card-up {
@@ -187,6 +188,12 @@
 }
 .content .cardUltimeNovità .card-title {
   color: rgb(245, 80, 79);
+  font-size: 14px;
+  font-weight: bold;
+}
+.content .cardUltimeNovità .cardsub-title {
+  font-size: 14px;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .content .cardUltimeNovità {
