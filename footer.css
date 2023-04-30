@@ -49,10 +49,10 @@ footer {
 .image {
   position: relative;
 }
-.background{
+.background {
   background-color: #6fb0d6;
 }
-.background img{
+.background img {
   width: 100%;
   height: 100%;
 }
@@ -100,11 +100,7 @@ footer {
   padding: 20px 35px;
   font-family: "Electronic Arts Text";
 }
-.bluePart button:hover {
-  transition: 0.3s;
-  transform: 0.3s;
-  padding: 25px 40px;
-}
+
 .middlePart {
   height: 20vh;
   display: flex;
@@ -177,6 +173,7 @@ footer {
   border-color: rgb(163, 155, 155);
   border-radius: 1px;
   font-family: "Electronic Arts Text";
+  text-align: initial;
 }
 .language {
   width: 160px;
@@ -185,6 +182,27 @@ footer {
   border-color: rgb(167, 164, 164);
   border-radius: 1px;
   font-family: "Electronic Arts Text";
+  text-align: initial;
+}
+.country-title {
+  margin-left: 10px;
+}
+.country span {
+  margin-left: 10px;
+}
+.country span img {
+  margin-left: 70px;
+  margin-top: 6px;
+}
+.language-title {
+  margin-left: 10px;
+}
+.language span {
+  margin-left: 10px;
+}
+.language span img {
+  margin-left: 70px;
+  margin-top: 6px;
 }
 .last-part {
   display: flex;
@@ -210,7 +228,7 @@ footer {
 }
 #stati-menu {
   position: absolute;
-  top: 320px;
+  top: 3050px;
   right: 590px;
   background-color: white;
   width: 590px;
@@ -286,14 +304,22 @@ footer {
 
 #bandiere-menu {
   position: absolute;
-  top: 300px;
+  top: 3030px;
   right: 390px;
   background-color: white;
-  width: 530px;
-  height: 570px;
+  width: 550px;
+  height: 530px;
   border: solid rgb(200, 200, 200);
   visibility: hidden;
   display: flex;
+  justify-content: space-around;
+}
+
+.column-one div a,
+.column-two div a,
+.column-three div a,
+.column-four div a {
+  color: black;
 }
 
 .language-states {
@@ -309,27 +335,47 @@ footer {
 .column-three-flag div {
   margin-top: 20px;
   border-bottom: solid rgb(200, 200, 200) 1px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
-
+.column-two-flag div {
+  margin-top: 20px;
+}
+.column-three-flag div {
+  margin-top: 15px;
+}
 #bandiere-menu a {
   text-decoration: none;
 }
 
+.column-one-flag div a,
+.column-two-flag div a,
+.column-three-flag div a {
+  color: black;
+}
+
 .column-one-flag {
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 0px;
   width: 155px;
+}
+.country img {
+  width: 15px;
+}
+.language img {
+  width: 15px;
 }
 
 .column-two-flag {
-  padding-right: 30px;
+  padding-right: 0px;
   width: 154px;
+  align-items: center;
+  padding-left: 50px;
 }
 
 .column-three-flag {
-  padding-right: 55px;
+  padding-right: 0px;
   width: 100px;
+  padding-left: 20px;
 }
 
 .line-language a:hover {
@@ -481,8 +527,17 @@ footer {
     margin-left: 0px;
     font-size: 2rem;
   }
+  #links-a-only {
+    padding: 3px;
+  }
+  .country span img {
+    margin-left: 220px;
+  }
+  .language span img {
+    margin-left: 220px;
+  }
 }
-@media (max-width: 376px) {
+@media (max-width: 414px) {
   .hover {
     position: absolute;
     top: 10%;
@@ -491,7 +546,7 @@ footer {
   .bluePart {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 21vh;
   }
   .bluePart p {
     margin-left: 10px;
@@ -504,12 +559,15 @@ footer {
 
   .middlePart {
     height: 190px;
-    width: 380px;
+    width: 390px;
   }
   .leftLinks {
     width: 330px;
     margin-left: 8px;
     line-height: 2;
+  }
+  #links-a-only {
+    padding: 5px;
   }
   .rightLinks p {
     margin-left: 10px;
@@ -526,8 +584,8 @@ footer {
   }
   #stati-menu {
     position: absolute;
-    top: 1020px;
-    right: 17px;
+    top: 4850px;
+    right: 30px;
     background-color: white;
     width: 324px;
     height: 970px;
@@ -536,11 +594,12 @@ footer {
     border: solid rgb(200, 200, 200);
     border-radius: 5px;
     height: 400px;
+    text-align: start;
   }
   #bandiere-menu {
     position: absolute;
-    top: 1100px;
-    right: 17px;
+    top: 4990px;
+    right: 30px;
     background-color: white;
     width: 324px;
     height: 1060px;
@@ -550,6 +609,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     height: 350px;
+    text-align: start;
   }
   .country-icons {
     display: none;
@@ -577,5 +637,11 @@ footer {
   }
   .right-footer-part {
     margin-left: 19px;
+  }
+  .country span img {
+    margin-left: 240px;
+  }
+  .language span img {
+    margin-left: 240px;
   }
 }
