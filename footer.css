@@ -1,32 +1,35 @@
-@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff") format("woff"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text") format("svg");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
 }
 header {
   overflow-x: hidden;
 }
-
 .image {
   overflow: hidden;
 }
-
 .background img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 footer {
   overflow-x: hidden;
 }
-
 .rightLinks svg {
   width: 22px;
   height: 22px;
@@ -34,43 +37,35 @@ footer {
   margin-left: 7px;
   margin-top: 10px;
 }
-
 .rightLinks svg:hover {
   transform: scale(1.4);
   transition: 0.3s;
 }
-
 .rightLinks p a {
   text-decoration: none;
   color: black;
   font-family: "Electronic Arts Text";
 }
-
 .image {
   position: relative;
 }
-
 .background {
   background-color: #6fb0d6;
 }
-
 .background img {
   width: 100%;
   height: 100%;
 }
-
 .hover {
   position: absolute;
   top: 35%;
   left: 25%;
 }
-
 .hover p {
   color: white;
   font-size: 1.3rem;
   font-family: "Electronic Arts Text";
 }
-
 .hover button {
   padding: 20px;
   background-color: transparent;
@@ -80,13 +75,11 @@ footer {
   margin-top: 20px;
   font-family: "Electronic Arts Text";
 }
-
 .hover button:hover {
   transition: 0.3s;
   transform: 0.3s;
   padding: 23px 23px;
 }
-
 .bluePart {
   height: 10vh;
   background-color: #6fb0d6;
@@ -95,25 +88,17 @@ footer {
   justify-content: center;
   gap: 10px;
 }
-
 .bluePart p {
   font-size: 1.8rem;
   font-weight: bold;
   font-family: "Electronic Arts Text";
 }
-
 .bluePart button {
   border: 2px solid black;
   background-color: #6fb0d6;
   margin-left: 310px;
   padding: 20px 35px;
   font-family: "Electronic Arts Text";
-}
-
-.bluePart button:hover {
-  transition: 0.3s;
-  transform: 0.3s;
-  padding: 25px 40px;
 }
 
 .middlePart {
@@ -123,30 +108,25 @@ footer {
   background-color: rgb(234, 234, 234);
   padding-top: 3%;
 }
-
 .leftLinks {
   margin-left: 25px;
   margin-right: 25px;
   font-size: 16px;
 }
-
 .leftLinks a {
   text-decoration: none;
   color: black;
   padding-left: 40px;
 }
-
 .leftLinks a:hover {
   color: red;
   transition: 0.3s;
   transform: 0.3s;
 }
-
 .rightLinks {
   margin-left: 80px;
   height: 55px;
 }
-
 .rightLinks p {
   font-size: 14px;
   padding-bottom: 10px;
@@ -154,19 +134,16 @@ footer {
   width: 195px;
   font-family: "Electronic Arts Text";
 }
-
 .first-footer {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
-
 .eaLogo {
   margin-left: 25px;
   width: 64px;
   height: 64px;
 }
-
 .links-wrap {
   text-decoration: none;
   color: black;
@@ -174,7 +151,6 @@ footer {
   height: 30px;
   padding: 5px;
 }
-
 .links-first-footer {
   display: flex;
   flex-wrap: wrap;
@@ -185,13 +161,11 @@ footer {
   margin-left: 45px;
   font-family: "Electronic Arts Text";
 }
-
 .buttons {
   margin-top: 20px;
   margin-left: 180px;
   font-family: "Electronic Arts Text";
 }
-
 .country {
   width: 160px;
   height: 60px;
@@ -199,8 +173,8 @@ footer {
   border-color: rgb(163, 155, 155);
   border-radius: 1px;
   font-family: "Electronic Arts Text";
+  text-align: initial;
 }
-
 .language {
   width: 160px;
   height: 60px;
@@ -208,18 +182,36 @@ footer {
   border-color: rgb(167, 164, 164);
   border-radius: 1px;
   font-family: "Electronic Arts Text";
+  text-align: initial;
 }
-
+.country-title {
+  margin-left: 10px;
+}
+.country span {
+  margin-left: 10px;
+}
+.country span img {
+  margin-left: 70px;
+  margin-top: 6px;
+}
+.language-title {
+  margin-left: 10px;
+}
+.language span {
+  margin-left: 10px;
+}
+.language span img {
+  margin-left: 70px;
+  margin-top: 6px;
+}
 .last-part {
   display: flex;
   margin-bottom: 3rem;
   margin-top: 1.5rem;
 }
-
 .footer-links-title {
   margin-left: 500px;
 }
-
 .cookie {
   text-decoration: none;
   font-size: 15px;
@@ -227,7 +219,6 @@ footer {
   font-family: "Electronic Arts Text";
   color: black;
 }
-
 .right-footer-part {
   margin-top: 20px;
   width: 570px;
@@ -235,10 +226,9 @@ footer {
   justify-content: flex-end;
   align-items: flex-end;
 }
-
 #stati-menu {
   position: absolute;
-  top: 320px;
+  top: 3050px;
   right: 590px;
   background-color: white;
   width: 590px;
@@ -307,7 +297,6 @@ footer {
   align-items: center;
   border-bottom: rgb(200, 200, 200) solid 1px;
 }
-
 .stato a:hover {
   margin-left: 15px;
   transition: 0.3s;
@@ -315,14 +304,22 @@ footer {
 
 #bandiere-menu {
   position: absolute;
-  top: 300px;
+  top: 3030px;
   right: 390px;
   background-color: white;
-  width: 530px;
-  height: 570px;
+  width: 550px;
+  height: 530px;
   border: solid rgb(200, 200, 200);
   visibility: hidden;
   display: flex;
+  justify-content: space-around;
+}
+
+.column-one div a,
+.column-two div a,
+.column-three div a,
+.column-four div a {
+  color: black;
 }
 
 .language-states {
@@ -338,33 +335,52 @@ footer {
 .column-three-flag div {
   margin-top: 20px;
   border-bottom: solid rgb(200, 200, 200) 1px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
-
+.column-two-flag div {
+  margin-top: 20px;
+}
+.column-three-flag div {
+  margin-top: 15px;
+}
 #bandiere-menu a {
   text-decoration: none;
 }
 
+.column-one-flag div a,
+.column-two-flag div a,
+.column-three-flag div a {
+  color: black;
+}
+
 .column-one-flag {
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 0px;
   width: 155px;
+}
+.country img {
+  width: 15px;
+}
+.language img {
+  width: 15px;
 }
 
 .column-two-flag {
-  padding-right: 30px;
+  padding-right: 0px;
   width: 154px;
+  align-items: center;
+  padding-left: 50px;
 }
 
 .column-three-flag {
-  padding-right: 55px;
+  padding-right: 0px;
   width: 100px;
+  padding-left: 20px;
 }
 
 .line-language a:hover {
   padding-left: 10px;
 }
-
 @media (max-width: 821px) {
   .bluePart {
     display: flex;
@@ -511,8 +527,17 @@ footer {
     margin-left: 0px;
     font-size: 2rem;
   }
+  #links-a-only {
+    padding: 3px;
+  }
+  .country span img {
+    margin-left: 220px;
+  }
+  .language span img {
+    margin-left: 220px;
+  }
 }
-@media (max-width: 376px) {
+@media (max-width: 414px) {
   .hover {
     position: absolute;
     top: 10%;
@@ -521,7 +546,7 @@ footer {
   .bluePart {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 21vh;
   }
   .bluePart p {
     margin-left: 10px;
@@ -531,14 +556,18 @@ footer {
   .bluePart button {
     padding: 15px 100px;
   }
+
   .middlePart {
     height: 190px;
-    width: 380px;
+    width: 390px;
   }
   .leftLinks {
     width: 330px;
     margin-left: 8px;
     line-height: 2;
+  }
+  #links-a-only {
+    padding: 5px;
   }
   .rightLinks p {
     margin-left: 10px;
@@ -555,8 +584,8 @@ footer {
   }
   #stati-menu {
     position: absolute;
-    top: 1020px;
-    right: 17px;
+    top: 4850px;
+    right: 30px;
     background-color: white;
     width: 324px;
     height: 970px;
@@ -565,11 +594,12 @@ footer {
     border: solid rgb(200, 200, 200);
     border-radius: 5px;
     height: 400px;
+    text-align: start;
   }
   #bandiere-menu {
     position: absolute;
-    top: 1100px;
-    right: 17px;
+    top: 4990px;
+    right: 30px;
     background-color: white;
     width: 324px;
     height: 1060px;
@@ -579,6 +609,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     height: 350px;
+    text-align: start;
   }
   .country-icons {
     display: none;
@@ -607,5 +638,10 @@ footer {
   .right-footer-part {
     margin-left: 19px;
   }
+  .country span img {
+    margin-left: 240px;
+  }
+  .language span img {
+    margin-left: 240px;
+  }
 }
-/*# sourceMappingURL=footer.css.map */
