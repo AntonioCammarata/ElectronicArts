@@ -700,6 +700,12 @@
   margin-bottom: 16px;
   width: 100%;
 }
+@media (min-width: 639px) {
+  #ultimeNovità-container #readMore_button_container {
+    align-items: flex-start;
+    height: 6rem;
+  }
+}
 #ultimeNovità-container #readMore_button_container #readMore_cards {
   height: 50px;
   width: 100%;
@@ -707,6 +713,15 @@
   font-size: 1rem;
   border: 2px solid black;
   border-radius: 3px;
+  transition: transform 0.2s ease-in-out;
+}
+#ultimeNovità-container #readMore_button_container #readMore_cards:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 639px) {
+  #ultimeNovità-container #readMore_button_container #readMore_cards {
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=UltimeNovit%C3%A0.css.map */

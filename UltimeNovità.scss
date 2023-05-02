@@ -615,6 +615,14 @@
     height: 7rem;
     margin-bottom:16px;
     width: 100%;
+
+
+    @media(min-width:639px){
+      align-items: flex-start;
+      height: 6rem;
+    }
+
+
     #readMore_cards{
       height: 50px;
       width: 100%;
@@ -622,6 +630,19 @@
       font-size: 1rem;
       border:2px solid black;
       border-radius: 3px;
+      transition: transform 0.2s ease-in-out;
+      // padding: 12px 24px;
+     
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      
+      @media(min-width:639px){
+        width: 150px;
+        
+      }
     }
   }
 }
