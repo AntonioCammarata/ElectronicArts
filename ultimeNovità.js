@@ -100,6 +100,13 @@ $trigger.forEach(($__el) => {
   })
 })
 
+//----------------------GESTIONE MOUSE HOVER------------------
 
 
-
+$allCard.forEach(($_card) => {
+  $_card.addEventListener("mouseover", () => {
+    $_card.classList.add('card-up')
+  }, $_card.addEventListener("mouseout", () => {
+    $_card.classList.remove("card-up")
+  }))
+})
