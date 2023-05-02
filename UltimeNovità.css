@@ -73,7 +73,6 @@
   overflow-x: scroll;
   scrollbar-width: none;
   position: relative;
-  scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
   #ultimeNovità-container #ultimeNovità-cardMenu {
@@ -714,6 +713,7 @@
   border: 2px solid black;
   border-radius: 3px;
   transition: transform 0.2s ease-in-out;
+  padding: 12px 24px;
 }
 #ultimeNovità-container #readMore_button_container #readMore_cards:hover {
   transform: scale(1.1);

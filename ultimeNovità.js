@@ -21,7 +21,7 @@ $trigger.forEach(($el) => {
 const $prev = document.querySelector("#prev");
 const $next = document.querySelector("#next");
 const $slider = document.querySelector("#ultimeNovità-cardMenu");
-const $btnElements = document.querySelector("#buttonContainer");
+// const $btnElements = document.querySelector("#buttonContainer");
 
 //scroll to right
 $next.addEventListener("click", () =>{

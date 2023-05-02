@@ -79,7 +79,7 @@
     overflow-x: scroll;
     scrollbar-width: none;
     position: relative;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     @media (min-width: 768px) {
       justify-content: center;
       justify-content: flex-start;
@@ -631,7 +631,7 @@
       border:2px solid black;
       border-radius: 3px;
       transition: transform 0.2s ease-in-out;
-      // padding: 12px 24px;
+      padding: 12px 24px;
      
       
       &:hover {
