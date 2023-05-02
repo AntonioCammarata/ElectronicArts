@@ -45,8 +45,7 @@
     display: none;
   }
 }
-
-#next {
+#ultimeNovità-container #next {
   position: absolute;
   right: 0;
   top: 113px;
@@ -55,16 +54,14 @@
   z-index: 12;
   box-shadow: -7px 0px 15px 2px #f3f3f3;
 }
-
-#ultimeNovità-title {
+#ultimeNovità-container #ultimeNovità-title {
   width: 100%;
   font-size: 1.8rem;
   text-align: center;
   padding: 35px;
   background-color: #f3f3f3;
 }
-
-#ultimeNovità-cardMenu {
+#ultimeNovità-container #ultimeNovità-cardMenu {
   height: 50px;
   border-bottom: 2px solid #e3e3e3;
   background-color: #f3f3f3;
@@ -79,22 +76,22 @@
   scroll-behavior: smooth;
 }
 @media (min-width: 768px) {
-  #ultimeNovità-cardMenu {
+  #ultimeNovità-container #ultimeNovità-cardMenu {
     justify-content: center;
     justify-content: flex-start;
     padding-left: 10%;
   }
 }
 @media (min-width: 1024px) {
-  #ultimeNovità-cardMenu {
+  #ultimeNovità-container #ultimeNovità-cardMenu {
     justify-content: flex-start;
     padding-left: 15%;
   }
 }
-#ultimeNovità-cardMenu::-webkit-scrollbar {
+#ultimeNovità-container #ultimeNovità-cardMenu::-webkit-scrollbar {
   display: none;
 }
-#ultimeNovità-cardMenu .triggerContainer {
+#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer {
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -105,14 +102,14 @@
   color: #161616;
   cursor: pointer;
 }
-#ultimeNovità-cardMenu .triggerContainer:hover {
+#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer:hover {
   background-color: #dedede;
 }
-#ultimeNovità-cardMenu .triggerContainer.triggered_bg {
+#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer.triggered_bg {
   background-color: #dedede;
   color: #646464;
 }
-#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
+#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar {
   display: block;
   margin: 0 auto;
   height: 2px;
@@ -122,38 +119,37 @@
   width: 0%;
   transition: width 0.1s ease-out;
 }
-#ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar.visible__bar {
+#ultimeNovità-container #ultimeNovità-cardMenu .triggerContainer .triggerButtons__RedBar.visible__bar {
   width: 80%;
   transition: width 0.1s ease-out;
 }
-#ultimeNovità-cardMenu .trigger {
+#ultimeNovità-container #ultimeNovità-cardMenu .trigger {
   background: none;
   padding: 0 15px;
   border-right: 2px solid #dedede;
 }
-#ultimeNovità-cardMenu:last-child > .trigger {
+#ultimeNovità-container #ultimeNovità-cardMenu:last-child > .trigger {
   border-right: none;
 }
-
-.content {
+#ultimeNovità-container .content {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 16px;
+  padding: 24px 24px;
 }
 @media (min-width: 768px) {
-  .content {
+  #ultimeNovità-container .content {
     padding: 24px 16px;
     margin: 2.5rem 4rem;
   }
 }
-.content:not(.visible) {
+#ultimeNovità-container .content:not(.visible) {
   display: none;
 }
-.content .visible {
+#ultimeNovità-container .content .visible {
   display: block;
 }
-.content .cardUltimeNovità {
+#ultimeNovità-container .content .cardUltimeNovità {
   flex-direction: column;
   align-items: center;
   border: none;
@@ -161,84 +157,84 @@
   box-shadow: 0px 5px 11px 2px rgba(181, 181, 181, 0.76);
   transition: all 0.3s ease-in-out;
 }
-.content .cardUltimeNovità .cards_texts_container {
+#ultimeNovità-container .content .cardUltimeNovità .cards_texts_container {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.content .cardUltimeNovità .cards_texts_container .par {
+#ultimeNovità-container .content .cardUltimeNovità .cards_texts_container .par {
   margin-top: 10px;
 }
 @media (max-width: 768px) {
-  .content .cardUltimeNovità .cards_texts_container {
+  #ultimeNovità-container .content .cardUltimeNovità .cards_texts_container {
     align-items: center;
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità .cards_texts_container .title_subtitle_container {
+  #ultimeNovità-container .content .cardUltimeNovità .cards_texts_container .title_subtitle_container {
     display: flex;
     gap: 20px;
   }
 }
 @media (max-width: 768px) {
-  .content .cardUltimeNovità .cards_texts_container .title_subtitle_container {
+  #ultimeNovità-container .content .cardUltimeNovità .cards_texts_container .title_subtitle_container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 @media (max-width: 768px) {
-  .content .cardUltimeNovità h3 {
+  #ultimeNovità-container .content .cardUltimeNovità h3 {
     text-align: center;
     margin-top: 5px;
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità h3 {
+  #ultimeNovità-container .content .cardUltimeNovità h3 {
     margin-top: 10px;
   }
 }
-.content .cardUltimeNovità.card-up {
+#ultimeNovità-container .content .cardUltimeNovità.card-up {
   box-shadow: 0px 25px 30px 1px rgba(120, 120, 120, 0.76);
   transform: translateY(-10px);
 }
-.content .cardUltimeNovità .par {
+#ultimeNovità-container .content .cardUltimeNovità .par {
   display: none;
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità .par {
+  #ultimeNovità-container .content .cardUltimeNovità .par {
     display: block;
     font-size: 1rem;
   }
 }
-.content .cardUltimeNovità .card-title {
+#ultimeNovità-container .content .cardUltimeNovità .card-title {
   color: rgb(245, 80, 79);
   font-size: 12px;
   font-weight: bold;
 }
-.content .cardUltimeNovità .cardsub-title {
+#ultimeNovità-container .content .cardUltimeNovità .cardsub-title {
   font-size: 14px;
   font-weight: bold;
 }
 @media (max-width: 768px) {
-  .content .cardUltimeNovità .cardsub-title {
+  #ultimeNovità-container .content .cardUltimeNovità .cardsub-title {
     margin-top: 5px;
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità {
+  #ultimeNovità-container .content .cardUltimeNovità {
     padding: 0px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
-  .content .cardUltimeNovità {
+  #ultimeNovità-container .content .cardUltimeNovità {
     height: 30rem;
     max-width: 350px;
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/fc-mural-mock-v11.jpg.adapt.crop16x9.431p.jpg);
@@ -247,7 +243,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage2 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage2 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
@@ -256,7 +252,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage3 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage3 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
@@ -265,7 +261,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage4 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage4 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image4.png.adapt.crop16x9.431p.png);
@@ -274,7 +270,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage5 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage5 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image5.jpg);
@@ -283,7 +279,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage6 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage6 {
     width: 100%;
     height: 12rem;
     background-image: url(image-uN/image6.png);
@@ -292,7 +288,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage7 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage7 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
@@ -301,7 +297,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage8 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage8 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
@@ -310,7 +306,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage9 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage9 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
@@ -319,7 +315,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage10 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage10 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
@@ -328,7 +324,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage11 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage11 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
@@ -337,7 +333,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage12 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage12 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
@@ -346,7 +342,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage13 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage13 {
     width: 100%;
     height: 12rem;
     background-image: url(image-uN/image13.jpg);
@@ -355,7 +351,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage14 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage14 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpg);
@@ -364,7 +360,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage15 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage15 {
     width: 100%;
     height: 12rem;
     background-image: url(image-uN/image15.jpg);
@@ -373,7 +369,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage16 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage16 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/wc-predictor-trophy-image-16x9-carousel-1-1.png.adapt.crop16x9.431p.png);
@@ -382,7 +378,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage17 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage17 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image17.jpg);
@@ -391,7 +387,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage18 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage18 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/main.jpg.adapt.crop16x9.431p.jpg);
@@ -400,7 +396,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage19 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage19 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image18.jpg);
@@ -409,7 +405,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage20 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage20 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image19.jpg);
@@ -418,7 +414,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage21 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage21 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image1.jpg);
@@ -427,7 +423,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage22 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage22 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image21.png);
@@ -436,7 +432,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage23 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage23 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image23.jpg);
@@ -445,7 +441,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage24 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage24 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/main.jpg.adapt.crop16x9.431p.jpg);
@@ -454,7 +450,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage25 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage25 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image25.jpg);
@@ -463,7 +459,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage26 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage26 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image26.jpg);
@@ -472,7 +468,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage27 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage27 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image27.jpg);
@@ -481,7 +477,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage28 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage28 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image28.jpg);
@@ -490,7 +486,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage29 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage29 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image29.jpg);
@@ -499,7 +495,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage30 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage30 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image30.jpg);
@@ -508,7 +504,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage31 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage31 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image31.jpg);
@@ -517,7 +513,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage32 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage32 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image32.png);
@@ -526,7 +522,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage33 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage33 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image33.png);
@@ -535,7 +531,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage34 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage34 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image34.jpg);
@@ -544,7 +540,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage35 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage35 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image35.jpg);
@@ -553,7 +549,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage36 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage36 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image36.png);
@@ -562,7 +558,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage37 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage37 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image37.jpg);
@@ -571,7 +567,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage38 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage38 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image38.jpg);
@@ -580,7 +576,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage39 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage39 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image39.jpg);
@@ -589,7 +585,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage40 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage40 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image40.jpg);
@@ -598,7 +594,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage41 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage41 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image41.jpg);
@@ -607,7 +603,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage42 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage42 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image42.jpg);
@@ -616,7 +612,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage43 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage43 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image43.png);
@@ -625,7 +621,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage44 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage44 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image44.png);
@@ -634,7 +630,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage45 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage45 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image45.png);
@@ -643,7 +639,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage46 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage46 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image46.jpg);
@@ -652,7 +648,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage47 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage47 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image47.png);
@@ -661,7 +657,7 @@
   }
 }
 @media (min-width: 768px) {
-  .content .cardUltimeNovità #unImage48 {
+  #ultimeNovità-container .content .cardUltimeNovità #unImage48 {
     width: 100%;
     height: 12rem;
     background-image: url(./image-uN/image48.jpg);
@@ -670,31 +666,47 @@
   }
 }
 @media (min-width: 768px) {
-  .content {
+  #ultimeNovità-container .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
 @media (min-width: 1024px) {
-  .content {
+  #ultimeNovità-container .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 1rem 3rem;
   }
-  .content #ultimeNovità-cardContainer {
+  #ultimeNovità-container .content #ultimeNovità-cardContainer {
     width: 100%;
     min-height: min-content;
     background-color: #f3f3f3;
     position: relative;
   }
-  .content #ultimeNovità-cardContainer .content:not(.visible) {
+  #ultimeNovità-container .content #ultimeNovità-cardContainer .content:not(.visible) {
     display: none;
   }
-  .content #ultimeNovità-cardContainer .content.visible {
+  #ultimeNovità-container .content #ultimeNovità-cardContainer .content.visible {
     display: block;
   }
+}
+#ultimeNovità-container #readMore_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  margin-bottom: 16px;
+  width: 100%;
+}
+#ultimeNovità-container #readMore_button_container #readMore_cards {
+  height: 50px;
+  width: 100%;
+  margin: 0 24px;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=UltimeNovit%C3%A0.css.map */

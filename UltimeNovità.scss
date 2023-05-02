@@ -48,567 +48,580 @@
       display: none;
     }
   }
-}
-#next {
-  position: absolute;
-  right: 0;
-  top: 113px;
-  background-color: $page-bg;
-  height: 49px;
-  z-index: 12;
-  box-shadow: -7px 0px 15px 2px #f3f3f3;
-}
 
-#ultimeNovità-title {
-  width: 100%;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 35px;
-  background-color: $page-bg;
-}
-
-#ultimeNovità-cardMenu {
-  height: 50px;
-  border-bottom: 2px solid #e3e3e3;
-  background-color: $page-bg;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 40px;
-  width: 100%;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  position: relative;
-  scroll-behavior: smooth;
-  @media (min-width: 768px) {
-    justify-content: center;
-    justify-content: flex-start;
-    padding-left: 10%;
+  #next {
+    position: absolute;
+    right: 0;
+    top: 113px;
+    background-color: $page-bg;
+    height: 49px;
+    z-index: 12;
+    box-shadow: -7px 0px 15px 2px #f3f3f3;
   }
 
-  @media (min-width: 1024px) {
-    justify-content: flex-start;
-    padding-left: 15%;
+  #ultimeNovità-title {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 35px;
+    background-color: $page-bg;
   }
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  .triggerContainer {
-    height: inherit;
+  #ultimeNovità-cardMenu {
+    height: 50px;
+    border-bottom: 2px solid #e3e3e3;
+    background-color: $page-bg;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    justify-content: flex-start;
+    padding-left: 40px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
     position: relative;
-    color: #161616;
-    cursor: pointer;
-    &:hover {
-      background-color: #dedede;
+    scroll-behavior: smooth;
+    @media (min-width: 768px) {
+      justify-content: center;
+      justify-content: flex-start;
+      padding-left: 10%;
     }
 
-    &.triggered_bg {
-      background-color: #dedede;
-      color: #646464;
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+      padding-left: 15%;
     }
 
-    .triggerButtons__RedBar {
-      display: block;
-      margin: 0 auto;
-      height: 2px;
-      background-color: $rosa;
-      position: absolute;
-      bottom: 5%;
-      width: 0%;
-      transition: width 0.1s ease-out;
-
-      &.visible__bar {
-        width: 80%;
-        transition: width 0.1s ease-out;
-      }
+    &::-webkit-scrollbar {
+      display: none;
     }
-  }
-
-  .trigger {
-    background: none;
-    padding: 0 15px;
-    border-right: 2px solid #dedede;
-  }
-  &:last-child > .trigger {
-    border-right: none;
-  }
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px 16px;
-  @media (min-width: 768px) {
-    padding: 24px 16px;
-    margin: 2.5rem 4rem;
-  }
-  &:not(.visible) {
-    display: none;
-  }
-  .visible {
-    display: block;
-  }
-  .cardUltimeNovità {
-    // padding: 16px;
-    // display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    background-color: $white;
-    // margin-left: 15px;
-    // margin-right: 15px ;
-    box-shadow: 0px 5px 11px 2px rgba(181, 181, 181, 0.76);
-    transition: all 0.3s ease-in-out;
-    .cards_texts_container{
-      padding:20px;
+    .triggerContainer {
+      height: inherit;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      .par{
-        margin-top: 10px;
+      align-items: center;
+      flex-shrink: 0;
+      position: relative;
+      color: #161616;
+      cursor: pointer;
+      &:hover {
+        background-color: #dedede;
       }
-      
-      @media(max-width:768px){
-        
-        align-items: center;
+
+      &.triggered_bg {
+        background-color: #dedede;
+        color: #646464;
       }
 
-      @media(min-width:768px){
-        .title_subtitle_container{
-          display: flex;
-          gap: 20px;
-          
+      .triggerButtons__RedBar {
+        display: block;
+        margin: 0 auto;
+        height: 2px;
+        background-color: $rosa;
+        position: absolute;
+        bottom: 5%;
+        width: 0%;
+        transition: width 0.1s ease-out;
+
+        &.visible__bar {
+          width: 80%;
+          transition: width 0.1s ease-out;
         }
       }
-      @media(max-width:768px){
-        .title_subtitle_container{
-          display: flex;
-          flex-direction: column;
+    }
+
+    .trigger {
+      background: none;
+      padding: 0 15px;
+      border-right: 2px solid #dedede;
+    }
+    &:last-child > .trigger {
+      border-right: none;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 24px;
+    @media (min-width: 768px) {
+      padding: 24px 16px;
+      margin: 2.5rem 4rem;
+    }
+    &:not(.visible) {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
+    .cardUltimeNovità {
+      // padding: 16px;
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+      background-color: $white;
+      // margin-left: 15px;
+      // margin-right: 15px ;
+      box-shadow: 0px 5px 11px 2px rgba(181, 181, 181, 0.76);
+      transition: all 0.3s ease-in-out;
+      .cards_texts_container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .par {
+          margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
           align-items: center;
         }
-      }
-    }
-    
-     @media (max-width:768px){
-       h3{
-         text-align: center;
-         margin-top: 5px;
-        }
-     }
-      @media(min-width:768px){
-        h3{
-          margin-top:10px
-        }
-      }
-    
 
-    &.card-up {
-      box-shadow: 0px 25px 30px 1px rgba(120, 120, 120, 0.76);
-      transform: translateY(-10px);
-    }
-    
-    .par {
-      display: none;
+        @media (min-width: 768px) {
+          .title_subtitle_container {
+            display: flex;
+            gap: 20px;
+          }
+        }
+        @media (max-width: 768px) {
+          .title_subtitle_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        h3 {
+          text-align: center;
+          margin-top: 5px;
+        }
+      }
       @media (min-width: 768px) {
-        display: block;
-        font-size: 1rem;
-      }
-    }
-    .card-title {
-      color: rgb(245, 80, 79);
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .cardsub-title{
-      font-size: 14px;
-      font-weight: bold;
-      
-      @media (max-width:768px){
-        margin-top:5px
-      }
-    }
-
-    
-    @media (min-width: 768px) {
-      padding: 0px;
-
-      @media (min-width: 1024px) {
-        height: 30rem;
-        max-width: 350px;
-      }
-
-      #unImage {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/fc-mural-mock-v11.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage2 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage3 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage4 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image4.png.adapt.crop16x9.431p.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage5 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image5.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage6 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(image-uN/image6.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage7 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage8 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage9 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage10 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage11 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage12 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage13 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(image-uN/image13.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage14 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage15 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(image-uN/image15.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage16 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/wc-predictor-trophy-image-16x9-carousel-1-1.png.adapt.crop16x9.431p.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage17 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image17.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage18 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/main.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage19 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image18.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage20 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image19.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage21 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image1.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage22 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image21.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage23 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image23.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage24 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/main.jpg.adapt.crop16x9.431p.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage25 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image25.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage26 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image26.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage27 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image27.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage28 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image28.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage29 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image29.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage30 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image30.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage31 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image31.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage32 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image32.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage33 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image33.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage34 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image34.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage35 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image35.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage36 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image36.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage37 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image37.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage38 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image38.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage39 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image39.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage40 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image40.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage41 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image41.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage42 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image42.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage43 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image43.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage44 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image44.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage45 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image45.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage46 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image46.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage47 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image47.png);
-        background-position: center;
-        background-size: cover;
-      }
-      #unImage48 {
-        width: 100%;
-        height: 12rem;
-        background-image: url(./image-uN/image48.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-    }
-  }
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 1rem 3rem;
-
-    #ultimeNovità-cardContainer {
-      width: 100%;
-      min-height: min-content;
-      background-color: $page-bg;
-      position: relative;
-      .content {
-        &:not(.visible) {
-          display: none;
+        h3 {
+          margin-top: 10px;
         }
-        &.visible {
+      }
+
+      &.card-up {
+        box-shadow: 0px 25px 30px 1px rgba(120, 120, 120, 0.76);
+        transform: translateY(-10px);
+      }
+
+      .par {
+        display: none;
+        @media (min-width: 768px) {
           display: block;
+          font-size: 1rem;
+        }
+      }
+      .card-title {
+        color: rgb(245, 80, 79);
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .cardsub-title {
+        font-size: 14px;
+        font-weight: bold;
+
+        @media (max-width: 768px) {
+          margin-top: 5px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        padding: 0px;
+
+        @media (min-width: 1024px) {
+          height: 30rem;
+          max-width: 350px;
         }
 
+        #unImage {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/fc-mural-mock-v11.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage2 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage3 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage4 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image4.png.adapt.crop16x9.431p.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage5 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image5.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage6 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(image-uN/image6.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage7 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage8 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage9 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage10 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage11 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage12 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage13 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(image-uN/image13.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage14 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage15 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(image-uN/image15.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage16 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/wc-predictor-trophy-image-16x9-carousel-1-1.png.adapt.crop16x9.431p.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage17 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image17.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage18 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/main.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage19 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image18.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage20 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image19.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage21 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image1.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage22 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image21.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage23 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image23.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage24 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/main.jpg.adapt.crop16x9.431p.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage25 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image25.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage26 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image26.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage27 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image27.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage28 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image28.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage29 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image29.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage30 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image30.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage31 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image31.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage32 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image32.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage33 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image33.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage34 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image34.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage35 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image35.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage36 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image36.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage37 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image37.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage38 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image38.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage39 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image39.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage40 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image40.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage41 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image41.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage42 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image42.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage43 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image43.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage44 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image44.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage45 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image45.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage46 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image46.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage47 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image47.png);
+          background-position: center;
+          background-size: cover;
+        }
+        #unImage48 {
+          width: 100%;
+          height: 12rem;
+          background-image: url(./image-uN/image48.jpg);
+          background-position: center;
+          background-size: cover;
+        }
       }
+    }
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 1rem 3rem;
+
+      #ultimeNovità-cardContainer {
+        width: 100%;
+        min-height: min-content;
+        background-color: $page-bg;
+        position: relative;
+        .content {
+          &:not(.visible) {
+            display: none;
+          }
+          &.visible {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #readMore_button_container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    // background-color: red;
+    height: 7rem;
+    margin-bottom:16px;
+    width: 100%;
+    #readMore_cards{
+      height: 50px;
+      width: 100%;
+      margin:0 24px;
+      font-size: 1rem;
+      border:2px solid black;
+      border-radius: 3px;
     }
   }
 }
