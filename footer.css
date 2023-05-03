@@ -54,7 +54,7 @@ footer {
 }
 .background img {
   width: 100%;
-  height: 100%;
+  height: 60%;
 }
 .hover {
   position: absolute;
@@ -116,7 +116,7 @@ footer {
 .leftLinks a {
   text-decoration: none;
   color: black;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .leftLinks a:hover {
   color: red;
@@ -228,8 +228,8 @@ footer {
 }
 #stati-menu {
   position: absolute;
-  top: 3050px;
-  right: 590px;
+  top: 3860px;
+  right: 610px;
   background-color: white;
   width: 590px;
   height: 550px;
@@ -304,11 +304,11 @@ footer {
 
 #bandiere-menu {
   position: absolute;
-  top: 3030px;
-  right: 390px;
+  top: 3830px;
+  right: 410px;
   background-color: white;
   width: 550px;
-  height: 530px;
+  height: 580px;
   border: solid rgb(200, 200, 200);
   visibility: hidden;
   display: flex;
@@ -468,10 +468,10 @@ footer {
   }
   #stati-menu {
     position: absolute;
-    top: 55px;
+    top: 3900px;
     right: 420px;
     background-color: white;
-    width: 334px;
+    width: 300px;
     height: 970px;
     display: block;
     visibility: hidden;
@@ -481,7 +481,7 @@ footer {
   }
   #bandiere-menu {
     position: absolute;
-    top: 55px;
+    top: 3900px;
     right: 47px;
     background-color: white;
     width: 334px;
@@ -491,6 +491,8 @@ footer {
     border: solid rgb(200, 200, 200);
     border-radius: 5px;
     overflow: auto;
+    text-align: start;
+
   }
   .column-one-flag div,
   .column-two-flag div,
@@ -503,6 +505,7 @@ footer {
   .column-three-flag div {
     margin: 0;
     padding: 0;
+    padding-top: 13px;
   }
   .footer-links-title {
     display: flex;
@@ -536,6 +539,16 @@ footer {
   .language span img {
     margin-left: 220px;
   }
+  .rightLinks{
+    margin-left: 5%;
+  }
+  .column-two-flag{
+    padding-left: 20;
+  }
+  .column-one{
+    margin-left: 10px;
+  }
+  
 }
 @media (max-width: 414px) {
   .hover {
@@ -584,10 +597,10 @@ footer {
   }
   #stati-menu {
     position: absolute;
-    top: 4850px;
+    top: 4600px;
     right: 30px;
     background-color: white;
-    width: 324px;
+    width: 333px;
     height: 970px;
     display: block;
     visibility: hidden;
@@ -598,10 +611,10 @@ footer {
   }
   #bandiere-menu {
     position: absolute;
-    top: 4990px;
+    top: 4750px;
     right: 30px;
     background-color: white;
-    width: 324px;
+    width: 333px;
     height: 1060px;
     display: block;
     visibility: hidden;
@@ -610,6 +623,7 @@ footer {
     overflow: hidden;
     height: 350px;
     text-align: start;
+    overflow: scroll;
   }
   .country-icons {
     display: none;
@@ -643,5 +657,14 @@ footer {
   }
   .language span img {
     margin-left: 240px;
+  }
+  .rightLinks{
+    margin-left: 5%;
+  }
+  .column-two-flag{
+    padding-left: 20;
+  }
+  .column-one{
+    margin-left: 10px;
   }
 }
