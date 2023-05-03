@@ -10,7 +10,7 @@
 }
 
  .external-container{
-  background-color: s.$white1;
+  background-color: s.$page-bg;
 } 
 .container-ea-game{
   width: 85%;
@@ -38,29 +38,48 @@
   
 }
 .container-last-games{
-  background-color: s.$white1;
-  height: 200px;
+  background-color: s.$page-bg;
+  height: 100px;
   display: flex;
   justify-content: center;
+  /* background-color: tomato; */
+  position: relative;
   
+}
+.button-text-container{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  /* position: relative; */
+  p {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(-50% -50%);
+    
+    
+  }
 }
 .last-games{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 85%;
-  margin-top: 30px;
-  height: 30%;
-  padding: 12px 20px;
+  /* margin-top: 30px; */
+  height: 50px;
+ /*  padding: 12px 20px; */
   font-size: 18px;
   border: 2px solid s.$nero;
   border-radius: 3px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .last-games:hover{
-  width: 86%;
-  height: 32%;
-  transition: 0.1s;
+ transform: scale(1.1);
+  
 }
 
 @property --myColor1 {
@@ -113,7 +132,7 @@
   width: 40%;
  }
  .central-text{
-  color: s.$white1;
+  color: s.$page-bg;
   display: none;
  }
  .overlay:hover > .name-container-game > .central-text{
@@ -123,11 +142,7 @@
   .last-games{
     width: 200px;
   }
-  .last-games:hover{
-    width: 210px;
-    height: 65px;
-    transition: 0.1s;
-  }
+  
  }
  @media screen and (min-width: 768px){
    .wrapper-img-game{
@@ -140,11 +155,7 @@
  .last-games{
   width: 160px;
 }
-.last-games:hover{
-  width: 170px;
-  height: 65px;
-  transition: 0.1s;
-}
+
  /* .external-container{
   height: 15vh;
 } */
@@ -156,10 +167,10 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .container-last-games{
-  height: 330px;
+  height: 100px;
 }
 .last-games{
-height: 18%;
+padding: 12px 20px;
 }
  }
  @media screen and (min-width:1300px) {
