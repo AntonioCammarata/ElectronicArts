@@ -84,7 +84,7 @@
 @media (min-width: 1024px) {
   #ultimeNovità-container #ultimeNovità-cardMenu {
     justify-content: flex-start;
-    padding-left: 15%;
+    padding-left: 21%;
   }
 }
 #ultimeNovità-container #ultimeNovità-cardMenu::-webkit-scrollbar {
